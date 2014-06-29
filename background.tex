@@ -1,0 +1,16 @@
+\chapter{Background and Goals}
+
+Fig.~\ref{fig:bpcanonical} shows the organization of a typical branch predictor comprising: (1)~a DIR, (2)~a BTB, and (3)~a RAS.  The predictor operates in the fetch stage where it aims to predict the program counter (PC), that is the address in memory, of the instruction to fetch in the next cycle using the current instruction's PC and other dynamically collected information. The DIR guesses whether the branch will be taken or not. The BTB and the RAS guess the address for  predicted as taken branches and function returns respectively. The multiplexer at the end selects based on the branch type and the direction prediction whether the target is the fall through address (PC+4 in Nios~II), the target predicted by the BTB, or the target provided by the RAS. Since, at this point in time, the actual instruction is not available in a typical ASIC implementation, it is not directly possible to determine whether the instruction is a return, a branch, or some other instruction. Accordingly, a Selection Logic block uses either pre-decode information or a PC-based, dynamically populated lookup table to guess which target is best to use. With the latter scheme, when no entry exists in the lookup table, some default action is taken until the first time a branch is encountered. Once the branch executes, its type is stored in the lookup table where it serves to identify the branch type on subsequent encounters. This scheme is not perfectly accurate due to aliasing.
+\kfig{bpcanonical.pdf}{fig:bpcanonical}{Canonical Branch Predictor.}{angle = 0, trim = 1in 1in 0.5in 0.8in, clip, width=0.6\textwidth}
+
+
+\section{Design Goals}
+\label{sec:goal}
+
+This work aims to design a branch predictor that (1)~balances operating frequency and accuracy to maximize execution performance, and (2)~uses as few on-chip resources as possible.
+
+This work proposes a minimalistic branch predictor for Altera's highest performing soft-processor Nios~II-f. Since Nios~II-f uses three BRAMs in total and only one BRAM is used for branch prediction~\cite{niosiif}, the proposed minimalistic branch predictor has a limited resource budget of one BRAM; each additional BRAM would represent a more than 1/3 overhead in terms of BRAM resources. The design of the minimalistic predictor considers the most commonly used direction predictors, bimodal, gshare and gselect. These predictors use a single lookup table and map relatively well onto a single BRAM.
+
+This work also includes an investigation of perceptron and TAGE predictors. The study implements these predictors in a modified Nios~II-f that has a deeper pipeline because these predictors often cannot be accessed within a single cycle. A simple bimodal predictor is used to provide base prediction, and the more elaborate predictor overrides the base prediction if it disagrees with the bimodal predictor.
+
+

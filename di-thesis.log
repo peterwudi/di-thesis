@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2014.6.26)  27 JUN 2014 00:40
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2014.6.26)  29 JUN 2014 17:38
 entering extended mode
 **E:/University*of*Toronto/masters/thesis/di-thesis.tex
 ("E:/University of Toronto/masters/thesis/di-thesis.tex"
@@ -84,20 +84,50 @@ Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 ("D:\Program Files (x86)\MiKTeX 2.9\tex\latex\setspace\setspace.sty"
 Package: setspace 2011/12/19 v6.7a set line spacing
 ))
+("D:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\graphicx.sty"
+Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
+
+("D:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\graphics.sty"
+Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+
+("D:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\trig.sty"
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+("D:\Program Files (x86)\MiKTeX 2.9\tex\latex\00miktex\graphics.cfg"
+File: graphics.cfg 2007/01/18 v1.5 graphics configuration of teTeX/TeXLive
+)
+Package graphics Info: Driver file: pdftex.def on input line 91.
+
+("D:\Program Files (x86)\MiKTeX 2.9\tex\latex\pdftex-def\pdftex.def"
+File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
+
+("D:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\infwarerr.sty"
+Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
+)
+("D:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\ltxcmds.sty"
+Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
+)
+\Gread@gobject=\count94
+))
+\Gin@req@height=\dimen113
+\Gin@req@width=\dimen114
+)
 ("E:\University of Toronto\masters\thesis\di-thesis.aux"
-("E:\University of Toronto\masters\thesis\chapter1.aux"))
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 95.
-LaTeX Font Info:    ... okay on input line 95.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 95.
-LaTeX Font Info:    ... okay on input line 95.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 95.
-LaTeX Font Info:    ... okay on input line 95.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 95.
-LaTeX Font Info:    ... okay on input line 95.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 95.
-LaTeX Font Info:    ... okay on input line 95.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 95.
-LaTeX Font Info:    ... okay on input line 95.
+("E:\University of Toronto\masters\thesis\introduction.aux")
+("E:\University of Toronto\masters\thesis\background.aux")
+("E:\University of Toronto\masters\thesis\minimal.aux"))
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 108.
+LaTeX Font Info:    ... okay on input line 108.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 108.
+LaTeX Font Info:    ... okay on input line 108.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 108.
+LaTeX Font Info:    ... okay on input line 108.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 108.
+LaTeX Font Info:    ... okay on input line 108.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 108.
+LaTeX Font Info:    ... okay on input line 108.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 108.
+LaTeX Font Info:    ... okay on input line 108.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -133,21 +163,35 @@ LaTeX Font Info:    ... okay on input line 95.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 102.
+("D:\Program Files (x86)\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count95
+\scratchdimen=\dimen115
+\scratchbox=\box26
+\nofMPsegments=\count96
+\nofMParguments=\count97
+\everyMPshowfont=\toks16
+\MPscratchCnt=\count98
+\MPscratchDim=\dimen116
+\MPnumerator=\count99
+\makeMPintoPDFobject=\count100
+\everyMPtoPDFconversion=\toks17
+)
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 115.
 
-("D:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\omscmr.fd"
+ ("D:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\omscmr.fd"
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 102.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 115.
  [1
 
 {C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}] [2] [3]
 ("E:\University of Toronto\masters\thesis\di-thesis.toc"
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 2.
+(Font)              <7> on input line 3.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 2.
+(Font)              <5> on input line 3.
 )
 \tf@toc=\write3
  [4
@@ -163,45 +207,129 @@ LaTeX Font Info:    External font `cmex10' loaded for size
  [6
 
 ]
-("E:\University of Toronto\masters\thesis\chapter1.tex"
+("E:\University of Toronto\masters\thesis\introduction.tex"
 Chapter 1.
 
-Overfull \hbox (31.61026pt too wide) in paragraph at lines 2--3
-\OT1/cmr/m/n/10 oh? yea?adfasf;laskjfasdl;fjasdl;kfjasdl;fjasdl;kfjasdl;kfjasdl
-;kfjsdl;fjasdl;fjasdl;kfjasdl;fasdlkfjasd;fjasl;jdls;fjawhy
+Overfull \hbox (44.52625pt too wide) in paragraph at lines 11--12
+\OT1/cmr/m/n/10 branch pre-dic-tors as over-rid-ing pre-dic-tors. It shows that
+ XXXXXXXXXXXXX????????????????????????????????? 
  []
 
-) [1
+[1
 
 
 
-] ("E:\University of Toronto\masters\thesis\di-thesis.bbl"
+]) [2] ("E:\University of Toronto\masters\thesis\background.tex"
+Chapter 2.
+<Figures/bpcanonical.pdf, id=34, 794.97pt x 614.295pt>
+File: Figures/bpcanonical.pdf Graphic file (type pdf)
 
-LaTeX Warning: Empty `thebibliography' environment on input line 3.
+<use Figures/bpcanonical.pdf>
+Package pdftex.def Info: Figures/bpcanonical.pdf used on input line 4.
+(pdftex.def)             Requested size: 686.56339pt x 484.20763pt.
+ [3
 
-) [2
+
+
+ <E:/University of Toronto/masters/thesis/Figures/bpcanonical.pdf>]) [4] ("E:\U
+niversity of Toronto\masters\thesis\minimal.tex"
+Chapter 3.
+
+LaTeX Warning: Reference `sec:evaluation' on page 5 undefined on input line 9.
+
+
+LaTeX Warning: Reference `sec:evaluation' on page 5 undefined on input line 9.
+
+[5
+
+
+
+] <Figures/bimodalCP.pdf, id=57, 722.7pt x 542.025pt>
+File: Figures/bimodalCP.pdf Graphic file (type pdf)
+
+<use Figures/bimodalCP.pdf>
+Package pdftex.def Info: Figures/bimodalCP.pdf used on input line 18.
+(pdftex.def)             Requested size: 722.69823pt x 455.30014pt.
+
+
+LaTeX Warning: Reference `sec:eval:methodology' on page 6 undefined on input li
+ne 20.
+
+<Figures/histogram.pdf, id=59, 597.55246pt x 845.07718pt>
+File: Figures/histogram.pdf Graphic file (type pdf)
+
+<use Figures/histogram.pdf>
+Package pdftex.def Info: Figures/histogram.pdf used on input line 22.
+(pdftex.def)             Requested size: 489.1463pt x 303.05148pt.
+
+<Figures/histogram_ind_jmp.pdf, id=61, 597.55246pt x 845.07718pt>
+File: Figures/histogram_ind_jmp.pdf Graphic file (type pdf)
+
+<use Figures/histogram_ind_jmp.pdf>
+Package pdftex.def Info: Figures/histogram_ind_jmp.pdf used on input line 31.
+(pdftex.def)             Requested size: 496.37262pt x 288.59663pt.
+
+
+LaTeX Warning: Reference `sec:evaluation' on page 6 undefined on input line 35.
+
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [6 <E:/University of Toronto/masters/thesis/Figures/bimodalCP.pdf>]
+
+LaTeX Warning: Reference `sec:eval:direction' on page 7 undefined on input line
+ 40.
+
+[7 <E:/University of Toronto/masters/thesis/Figures/histogram.pdf> <E:/Universi
+ty of Toronto/masters/thesis/Figures/histogram_ind_jmp.pdf>]
+
+LaTeX Warning: Reference `sec:evaluation' on page 8 undefined on input line 42.
+
+
+
+LaTeX Warning: Reference `sec:arch:goal' on page 8 undefined on input line 53.
+
+
+LaTeX Warning: Reference `sec:arch' on page 8 undefined on input line 55.
+
+[8] <Figures/GSelectCP.pdf, id=112, 1084.05pt x 939.51pt>
+File: Figures/GSelectCP.pdf Graphic file (type pdf)
+
+<use Figures/GSelectCP.pdf>
+Package pdftex.def Info: Figures/GSelectCP.pdf used on input line 63.
+(pdftex.def)             Requested size: 316.17987pt x 166.69356pt.
+) [9 <E:/University of Toronto/masters/thesis/Figures/GSelectCP.pdf>] ("E:\Univ
+ersity of Toronto\masters\thesis\di-thesis.bbl")
+[10
 
 
 ] ("E:\University of Toronto\masters\thesis\di-thesis.aux"
-("E:\University of Toronto\masters\thesis\chapter1.aux")) ) 
+("E:\University of Toronto\masters\thesis\introduction.aux")
+("E:\University of Toronto\masters\thesis\background.aux")
+("E:\University of Toronto\masters\thesis\minimal.aux"))
+
+LaTeX Warning: There were undefined references.
+
+ ) 
 Here is how much of TeX's memory you used:
- 975 strings out of 493921
- 14580 string characters out of 3144876
- 67405 words of memory out of 3000000
- 4295 multiletter control sequences out of 15000+200000
- 6621 words of font info for 24 fonts, out of 3000000 for 9000
+ 1914 strings out of 493921
+ 28119 string characters out of 3144876
+ 85620 words of memory out of 3000000
+ 5186 multiletter control sequences out of 15000+200000
+ 7928 words of font info for 28 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 30i,5n,34p,1042b,199s stack positions out of 5000i,500n,10000p,200000b,50000s
-<D:/Program Files (x
-86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><D:/Program Files (x86
-)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><D:/Program Files (x86)/
-MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><D:/Program Files (x86)/M
-iKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><D:/Program Files (x86)/MiKT
-eX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><D:/Program Files (x86)/MiKTeX 
-2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on di-thesis.pdf (8 pages, 89046 bytes).
+ 30i,8n,34p,1570b,245s stack positions out of 5000i,500n,10000p,200000b,50000s
+<D:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb>
+<D:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><D
+:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><D:
+/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><D:/Pr
+ogram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><D:/Progr
+am Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><D:/Program
+ Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb>
+Output written on di-thesis.pdf (16 pages, 602753 bytes).
 PDF statistics:
- 53 PDF objects out of 1000 (max. 8388607)
+ 173 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 56 words of extra memory for PDF output out of 10000 (max. 10000000)
 

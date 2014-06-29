@@ -1,0 +1,70 @@
+\chapter{The Minimalistic FPGA-Friendly Branch predictor}
+This section discusses the architecture of the various FPGA-friendly branch predictors considered. 
+Section~\ref{sec:arch:target} discusses target prediction, while Section~\ref{sec:arch:direction} discusses direction prediction.
+
+\section{Target Prediction}
+\label{sec:arch:target}
+A conventional method to predict branch targets is to use Branch Target Buffers (BTB). A BTB is a table that caches branch target addresses. When a branch executes for the first time, the BTB stores the target address so that it can be used on subsequent encounters of the branch. Ideally, the BTB would be large enough so that each branch can use a separate entry. In a practical implementation, however, aliasing will occur reducing prediction accuracy.  
+
+The simplest BTB design does not use an address tag per entry and directly predicts the target address for all instructions. Not using a tag results in a fast design that uses one direct SRAM lookup. In addition, not filtering non-branch instructions is desirable since at the time of access the instruction opcode is not available. Unfortunately, as Section~\ref{sec:evaluation} shows, when all instructions use the BTB, high destructive aliasing results in poor accuracy. To reduce aliasing, a small decode logic can prevent non-branches from updating the BTB. However, as Section~\ref{sec:evaluation} shows, while this solution increases target prediction accuracy by 30\%, the additional logic reduces the maximum frequency by 35\%. An alternative is to calculate the target address during the fetch cycle.
+
+\subsection{Target Address Pre-calculation}
+\label{sec:arch:addrprecalc}
+
+ASIC processor implementations use a BTB since the cache latency dominates the clock cycle leaving no room for further action. This is not true in an FPGA implementation where memory is generally faster than logic. This creates an opportunity to pre-calculate the target address for branches and thus eliminate the BTB. In this scheme the processor fetches the instruction from the cache and then, during the same cycle, calculates the instruction's taken address. As an added benefit, address pre-calculation  may improve accuracy since, if possible, it is always correct. Unfortunately, it is not possible to pre-calculate the target address for all branches. The Nios~II ISA includes two types of branches: \textit{direct} and \textit{indirect}. The target of a direct branch can be calculated using the current PC and an offset that is embedded in the instruction. Indirect branch targets are read from the register file.  
+
+This work proposes enhancing target prediction with \textit{Full Address Calculation} (FAC), which as Fig.~\ref{fig:bimodalCP} shows, calculates the target address for all direct branches and uses a BTB\ or some other storage for indirect branches. A selection logic identifies direct branches which can benefit from FAC. FAC selects among four possible addresses depending on the branch type. The Nios~II ISA supports two schemes for direct branch target addresses, one uses a 16-bit offset (IMM16) and the other a 26-bit range (IMM26). Combined with the fall-through address (i.e., PC + 4) and the predicted address coming from the BTB, BTB+FAC uses a four-way multiplexer to select among these four possible addresses. Unfortunately, this multiplexer falls into the critical path. 
+
+\kfig{bimodalCP.pdf}{fig:bimodalCP}{BTB with Full Address Calculation.}{angle = 0, trim = 0in 0.8in 0in 0.4in, clip, width=0.6\textwidth}
+
+A lower cost and faster alternative to FAC is \textit{Partial Address Calculation} (PAC) which relies on typical program behavior to reduce the number of choices for the final address multiplexer. Fig.~\ref{fig:bptype} reports the relative frequency of the various branch types (see Section~\ref{sec:eval:methodology} for the methodology). Since IMM26 branches are far less frequent than IMM16 branches, PAC precalculates IMM16 branches and uses the BTB for IMM26 and indirect branches.
+
+\kfig{histogram.pdf}{fig:bptype}{Branch Target Type Distribution.}{angle = 0, trim = 0.8in 3.5in 0.7in 4.0in, clip, width=0.7\textwidth}
+
+\subsection{Return Address Stack}
+\label{sec:arch:ras}
+
+The RAS is a hardware, stack-like structure that accurately predicts the target address of function returns. When a call instruction executes, it also pushes its return address  onto the RAS. Upon fetching a return instruction, the branch predictor can pop the top value from the RAS  accurately predicting the return address. As long as the RAS has enough entries, it will accurately predict all return instructions. Since the call depth of typical workloads is not deep, virtually all high performance processors incorporate a shallow RAS. For the workloads studied a 16-entry RAS proves sufficient. The RAS for a simple pipeline is simple to implement on an FPGA.
+Deeper pipelines may require support for speculative RAS insertions and deletions complicating its design. 
+%\kfig{chart_bhist.png}{fig:bptypeInd}{For each benchmark the left bar shows the branch type break down and the right bar shows the target address type breakdown.}{width=0.5\textwidth}
+
+\kfig{histogram_ind_jmp.pdf}{fig:bptypeInd}{Indirect Branch Instruction Type Distribution.}{angle = 0, trim = 0.8in 3.6in 0.6in 4.1in, clip, width=0.7\textwidth}
+
+\subsection{Eliminating the BTB}
+\label{sec:arch:nobtb}
+Fig.~\ref{fig:bptypeInd} shows that for the workloads studied in this work, 97\% of the indirect branches are returns (other workloads, e.g., those using virtual functions, may behave differently). Once a RAS is included along with FAC, the BTB ends up being used for only less than 1\% of all branches. Accordingly, the BTB can be eliminated, and instead use a static, not-taken predictor for all indirect branches other than returns. Section~\ref{sec:evaluation} shows that removing the BTB in the presence of RAS reduces accuracy negligibly. Section~\ref{sec:fpga:nobtb} explains that lower-level FPGA related considerations also favor eliminating the BTB.
+
+\section{Direction Prediction}
+\label{sec:arch:direction}
+
+A bimodal branch direction predictor is a table of two-bit saturating counters that is indexed with a portion of the PC~\cite{bimodal}. The counters are updated up or down depending on whether the branch is taken or not respectively. The lower bit provides hysteresis to changes while the upper bit provides the prediction. As Section~\ref{sec:eval:direction} corroborates, increasing the number of bimodal entries does not proportionally improve accuracy. Eventually, using a larger bimodal ceases to provide any improvement since bimodel is fundamentally limited on the branch prediction patterns it can predict.
+
+Gshare is a pattern-based predictor wihch uses a combination of the PC and a global direction history register (GHR) to index the counter table~\cite{McFarling}. GHR stores the direction of the last few branches in a bit vector. Each GHR bit stores the direction (taken or not) of a previous branch.  Section~\ref{sec:evaluation} shows that gshare is far more accurate than bimodal. However, as Section~\ref{sec:fpga} explains, latency suffers with gshare due to its more complex indexing scheme. Gselect, an alternative to gshare, indexes the counter table using a simple concatenation of the GHR and the PC~\cite{McFarling}. For practical table sizes, gshare proves more accurate than gselect. Section~\ref{sec:fpga:indexing} explains that with proper modification, gselect proves faster than gshare on an FPGA while sacrificing little in accuracy.
+
+\section{FPGA implementation optimizations}
+\label{sec:fpga}
+
+This section discusses additional FPGA-specific implementation optimizations. 
+%Specifically, Section~\ref{sec:fpga:nobtb} discusses fusing the BTB and the direction predictor over a single BRAM and explains that it is best to avoid the BTB altogether. Section~\ref{sec:fpga:indexing} explains how gselect can be adapted to map well on an FPGA. Section~\ref{sec:fpga:predecode} discusses the use of pre-decoding, and Section~\ref{sec:fpga:alutmap} explains how the predictor can be organized to best map onto the logic building blocks of FPGAs. Finally, Section~\ref{sec:fpga:ras} dicusses the FPGA implementation of the RAS. 
+While this section assumes a modern, Altera FPGA, the optimizations presented should be broadly applicable.
+
+\subsection{Eliminating the BTB}
+\label{sec:fpga:nobtb}
+As Section~\ref{sec:arch:goal} explained, this work aims to use one M9K BRAM. An M9K\ BRAM can be configured as wide as 36 bits with 256 rows~\cite{StratixIVM9K}, and it can be used to implement a fused BTB and direction predictor. Specifically, each BRAM\ row can store one BTB entry along with up to three direction prediction entries for a total of 768 direction entries and 256 target entries. This fused BTB+DIR\ predictor works well with  a bimodal DIR. The PC\ indexes a row which contains a single target prediction entry and up  to three direction prediction entries. Another portion of the PC selects one of these direction prediction entries. The target is used only from taken branches. 
+
+Unfortunately, it is not possible to use one BRAM\ for both a BTB\ and the most accurate of the direction predictors considered, gshare. There are two reasons why: (1)~gshare uses a different indexing scheme than the BTB, and (2)~there is a limited number of ports per BRAM~\cite{StratixIVM9K}. As Section~\ref{sec:arch} discussed, the BTB can be eliminated when address precalculation and a RAS are used. Eliminating the BTB frees up the entire BRAM for direction prediction. 
+
+\subsection{FPGA-Friendly Direction Predictor Indexing}
+\label{sec:fpga:indexing}
+This section investigates which of the three branch direction predictors is best to use on an FPGA. Focusing just on accuracy gshare would be the best. However, performance is not the highest with gshare since its indexing scheme results\ in low clock frequency. Fig.~\ref{fig:bimodalCP} depicts why the predictor's indexing scheme, when implemented on an FPGA, falls into the critical path. At every clock cycle the predicted PC is used to index the direction predictor table for the next instruction. Since BRAMs are synchronous, their index must arrive before the clock edge and thus it cannot be a registered signal of the Predicted PC~\cite{StratixIVM9K}. Moreover, the setup time for the BRAM\ is longer than that of simple registers. Therefore, the entire path starting from the BRAM data output, through the prediction logic and back into the lookup address of the BRAM forms the critical path. This is especially a concern with gshare that uses the exclusive-or of the global history register (GHR) with Predicted PC to index the BRAM. This extra XOR logic prolongs the critical path, reducing the operating frequency.
+
+Contrary to gshare, gselect has a simpler indexing scheme. Specifically, gselect uses a simple \textit{concatenation} of the GHR with Predicted PC as index. Not only is gselect's indexing fast, but it can also  be tailored to map well onto FPGAs. This work proposes \textit{gRselect} which breaks the BRAM-to-BRAM critical path by breaking the BRAM\ access into two parts the first of which does not need to be ``predicted PC". It uses GHR, which is a registered signal, to index the BRAM to retrieve one wide row of counters. Fig.~\ref{fig:GSelectCP} shows the gRselect scheme in more detail.
+
+\kfig{GSelectCP.pdf}{fig:GSelectCP}{FAC with gRselect.}{trim = 0in 5.9in 2.5in 0.51in, clip, width=0.7\textwidth}
+
+\subsection{Instruction Decoding}
+\label{sec:fpga:predecode}
+To be able to select the appropriate target, the predictor needs to determine whether an instruction is a branch and if so, what kind of branch it is. This information is needed to select the corresponding predicted target through the output multiplexer. However, the decode logic lies in the critical path. To eliminate this delay, the predictor pre-decodes the instructions prior to installing them in the instruction cache. The pre-decode information is stored along with the instruction. This is similar to  typical ASIC implementations.
+
+
+

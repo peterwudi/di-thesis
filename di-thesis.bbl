@@ -1,3 +1,34 @@
-\begin{thebibliography}{}
+\begin{thebibliography}{1}
+
+\bibitem{tage}
+{A. Seznec and P. Michaud}.
+\newblock {A case for (partially) tagged geometric history length predictors}.
+\newblock In {\em Journal of Instruction Level Parallelism
+  (http://www.jilp.org/vol7)}, April 2006.
+
+\bibitem{StratixIVM9K}
+Altera Corp.
+\newblock {\em {TriMatrix Embedded Memory Blocks in Stratix IV Devices}}, Dec.
+  2011.
+
+\bibitem{niosiif}
+Altera Corporation.
+\newblock {\em {Nios II Processor Reference}}, May 2011.
+
+\bibitem{perceptron}
+{D. A. Jimenez and C. Lin}.
+\newblock {Dynamic Branch Prediction with Perceptrons}.
+\newblock In {\em Intl' Symposium on High-Performance Computer Architecture},
+  January 2001.
+
+\bibitem{bimodal}
+{J. E. Smith}.
+\newblock {A study of branch prediction strategies}.
+\newblock In {\em Annual Symposium on Computer Architecture}, June 1981.
+
+\bibitem{McFarling}
+S.~McFarling.
+\newblock {Combining Branch Predictors}.
+\newblock {TN-36}, {Digital Western Research Laboratory}, June 1993.
 
 \end{thebibliography}
