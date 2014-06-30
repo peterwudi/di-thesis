@@ -42,6 +42,14 @@
 %% *** Add any desired options. ***
 \documentclass{ut-thesis}
 \usepackage{graphicx}
+\usepackage{hyperref}
+\hypersetup{
+  colorlinks   = true, %Colours links instead of ugly boxes
+  urlcolor     = blue, %Colour for external hyperlinks
+  linkcolor    = blue, %Colour of internal links
+  citecolor   = red %Colour of citations
+}
+
 
 %% *** Add \usepackage declarations here. ***
 %% The standard packages `geometry' and `setspace' are already loaded by
@@ -186,6 +194,9 @@ Finally, I would like to thank my parents for all the unconditioned love and sup
 \include{introduction}
 \include{background}
 \include{minimal}
+\include{evaluation}
+\include{conclusion}
+
 
 %\includeonly{chapter1, chapter2, chapter3}
 

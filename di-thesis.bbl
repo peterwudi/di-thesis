@@ -1,5 +1,9 @@
 \begin{thebibliography}{1}
 
+\bibitem{uclinux}
+{Arcturus Networks Inc.}, {uClinux}.
+\newblock \url{http://www.uclinux.org/}.
+
 \bibitem{tage}
 {A. Seznec and P. Michaud}.
 \newblock {A case for (partially) tagged geometric history length predictors}.
@@ -10,6 +14,10 @@
 Altera Corp.
 \newblock {\em {TriMatrix Embedded Memory Blocks in Stratix IV Devices}}, Dec.
   2011.
+
+\bibitem{niosfmax}
+Altera Corp.
+\newblock {\em {Nios II Performance Benchmarks}}, Dec. 2012.
 
 \bibitem{niosiif}
 Altera Corporation.
@@ -30,5 +38,10 @@ Altera Corporation.
 S.~McFarling.
 \newblock {Combining Branch Predictors}.
 \newblock {TN-36}, {Digital Western Research Laboratory}, June 1993.
+
+\bibitem{spec2k6}
+{Standard Performance Evaluation Corporation}.
+\newblock {SPEC CPU 2006}.
+\newblock \url{http://www.spec.org/cpu2006/}.
 
 \end{thebibliography}
