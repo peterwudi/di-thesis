@@ -1,6 +1,23 @@
 \chapter{Background and Goals}
+This chapter covers the background of branch prediction and the goal of this thesis. 
 
-Fig.~\ref{fig:bpcanonical} shows the organization of a typical branch predictor comprising: (1)~a DIR, (2)~a BTB, and (3)~a RAS.  The predictor operates in the fetch stage where it aims to predict the program counter (PC), that is the address in memory, of the instruction to fetch in the next cycle using the current instruction's PC and other dynamically collected information. The DIR guesses whether the branch will be taken or not. The BTB and the RAS guess the address for  predicted as taken branches and function returns respectively. The multiplexer at the end selects based on the branch type and the direction prediction whether the target is the fall through address (PC+4 in Nios~II), the target predicted by the BTB, or the target provided by the RAS. Since, at this point in time, the actual instruction is not available in a typical ASIC implementation, it is not directly possible to determine whether the instruction is a return, a branch, or some other instruction. Accordingly, a Selection Logic block uses either pre-decode information or a PC-based, dynamically populated lookup table to guess which target is best to use. With the latter scheme, when no entry exists in the lookup table, some default action is taken until the first time a branch is encountered. Once the branch executes, its type is stored in the lookup table where it serves to identify the branch type on subsequent encounters. This scheme is not perfectly accurate due to aliasing.
+\section{Why Branch Prediction?}
+In modern microprocessors, instruction pipelining is a key feature to improve performances. At each cycle, a new instruction is read from the memory at the location indicated by the program counter (PC). The pipeline works ideally when there is no transfer of control, where PC is incremented by a constant at each cycle to fetch the next instruction. However, when there is a transfer of control (e.g. a taken branch instruction), the next instruction to fetch is unknown at this point. The processor has to stall the pipeline to wait until the branch is resolved to fetch the correct instruction, hence severely impacts
+
+
+
+
+
+
+
+
+
+\section{Canonical Branch Predictor}
+Fig.~\ref{fig:bpcanonical} shows the organization of a typical branch predictor comprising: (1)~a DIR, (2)~a BTB, and (3)~a RAS.  
+
+The predictor operates in the fetch stage where it aims to predict the program counter (PC), that is the address in memory, of the instruction to fetch in the next cycle using the current instruction's PC and other dynamically collected information. 
+
+The DIR guesses whether the branch will be taken or not. The BTB and the RAS guess the address for  predicted as taken branches and function returns respectively. The multiplexer at the end selects based on the branch type and the direction prediction whether the target is the fall through address (PC+4 in Nios~II), the target predicted by the BTB, or the target provided by the RAS. Since, at this point in time, the actual instruction is not available in a typical ASIC implementation, it is not directly possible to determine whether the instruction is a return, a branch, or some other instruction. Accordingly, a Selection Logic block uses either pre-decode information or a PC-based, dynamically populated lookup table to guess which target is best to use. With the latter scheme, when no entry exists in the lookup table, some default action is taken until the first time a branch is encountered. Once the branch executes, its type is stored in the lookup table where it serves to identify the branch type on subsequent encounters. This scheme is not perfectly accurate due to aliasing.
 \kfig{bpcanonical.pdf}{fig:bpcanonical}{Canonical Branch Predictor.}{angle = 0, trim = 1in 1in 0.5in 0.8in, clip, width=0.6\textwidth}
 
 
