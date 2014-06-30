@@ -3,9 +3,13 @@ This chapter covers the background of branch prediction and the goal of this the
 
 \section{Why Branch Prediction?}
 \label{sec:background:whybp}
-In modern microprocessors, instruction pipelining is a key feature to improve performances. At each cycle, a new instruction is read from the memory at the location indicated by the program counter (PC). The pipeline works ideally when there is no transfer of control, where PC is incremented by a constant at each cycle to fetch the next instruction. However, when there is a transfer of control (e.g. a taken branch instruction), the next instruction to fetch is unknown at this point. The processor has to stall the pipeline to wait until the branch is resolved to fetch the correct instruction, hence severely impacts
+In modern microprocessors, instruction pipelining is a key feature to improve performances. At each cycle, a new instruction is read from the memory at the location indicated by the program counter (PC). The pipeline works ideally when there is no transfer of control, i.e., PC is incremented by a constant at each cycle to fetch the next instruction. However, when there is a transfer of control (e.g. a taken branch instruction), the next instruction to fetch is unknown at this point. The processor has to stall the pipeline to wait until the branch is resolved to fetch the correct instruction, hence severely impacts performance.
 
+Branch prediction is a technique to improve performance by guessing the branch target (i.e. the next instruction) to allow the processor to run speculatively. The processor fetches the predicted target, and compares the prediction with the actual target when the branch is resolved several cycles later. If the prediction was correct, the processor fetched the correct instructions without stalling the pipeline, as if the instruction stream were not disrupted. On the other hand, if the prediction was incorrect, the processor fetched wrong instructions, and the intermediate results related to those wrong instructions has to be squashed, possibly with an extra maintenance penalty.
 
+\section{Branch Prediction Scheme}
+\label{sec:background:bpscheme}
+A branch predictor usually 
 
 
 
