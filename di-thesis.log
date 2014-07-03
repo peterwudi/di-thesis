@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2014.6.26)  30 JUN 2014 09:01
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2014.6.26)  3 JUL 2014 00:54
 entering extended mode
 **E:/University*of*Toronto/masters/thesis/di-thesis.tex
 ("E:/University of Toronto/masters/thesis/di-thesis.tex"
@@ -364,7 +364,7 @@ Overfull \hbox (44.52625pt too wide) in paragraph at lines 11--12
 
 ]) [2] ("E:\University of Toronto\masters\thesis\background.tex"
 Chapter 2.
-<Figures/bpcanonical.pdf, id=208, 794.97pt x 614.295pt>
+<Figures/bpcanonical.pdf, id=230, 794.97pt x 614.295pt>
 File: Figures/bpcanonical.pdf Graphic file (type pdf)
 
 <use Figures/bpcanonical.pdf>
@@ -374,34 +374,44 @@ Package pdftex.def Info: Figures/bpcanonical.pdf used on input line 19.
 
 
 
-]) [4 <E:/University of Toronto/masters/thesis/Figures/bpcanonical.pdf>] ("E:\U
-niversity of Toronto\masters\thesis\minimal.tex"
+]
+Underfull \vbox (badness 2582) has occurred while \output is active []
+
+ [4 <E:/University of Toronto/masters/thesis/Figures/bpcanonical.pdf>]
+<Figures/simpleDIR.pdf, id=296, 722.7pt x 542.025pt>
+File: Figures/simpleDIR.pdf Graphic file (type pdf)
+
+<use Figures/simpleDIR.pdf>
+Package pdftex.def Info: Figures/simpleDIR.pdf used on input line 36.
+(pdftex.def)             Requested size: 650.42845pt x 411.9378pt.
+ [5 <E:/University of Toronto/masters/thesis/Figures/simpleDIR.pdf>]) [6] ("E:\
+University of Toronto\masters\thesis\minimal.tex"
 Chapter 3.
 
-LaTeX Warning: Reference `sec:evaluation' on page 5 undefined on input line 9.
+LaTeX Warning: Reference `sec:evaluation' on page 7 undefined on input line 9.
 
 
-LaTeX Warning: Reference `sec:evaluation' on page 5 undefined on input line 9.
+LaTeX Warning: Reference `sec:evaluation' on page 7 undefined on input line 9.
 
-[5
+[7
 
 
 
-] <Figures/bimodalCP.pdf, id=239, 722.7pt x 542.025pt>
+] <Figures/bimodalCP.pdf, id=334, 722.7pt x 542.025pt>
 File: Figures/bimodalCP.pdf Graphic file (type pdf)
 
 <use Figures/bimodalCP.pdf>
 Package pdftex.def Info: Figures/bimodalCP.pdf used on input line 18.
 (pdftex.def)             Requested size: 722.69823pt x 455.30014pt.
 
-<Figures/histogram.pdf, id=243, 597.55246pt x 845.07718pt>
+<Figures/histogram.pdf, id=338, 597.55246pt x 845.07718pt>
 File: Figures/histogram.pdf Graphic file (type pdf)
 
 <use Figures/histogram.pdf>
 Package pdftex.def Info: Figures/histogram.pdf used on input line 22.
 (pdftex.def)             Requested size: 489.1463pt x 303.05148pt.
 
-<Figures/histogram_ind_jmp.pdf, id=245, 597.55246pt x 845.07718pt>
+<Figures/histogram_ind_jmp.pdf, id=340, 597.55246pt x 845.07718pt>
 File: Figures/histogram_ind_jmp.pdf Graphic file (type pdf)
 
 <use Figures/histogram_ind_jmp.pdf>
@@ -409,80 +419,80 @@ Package pdftex.def Info: Figures/histogram_ind_jmp.pdf used on input line 31.
 (pdftex.def)             Requested size: 496.37262pt x 288.59663pt.
 
 
-LaTeX Warning: Reference `sec:evaluation' on page 6 undefined on input line 35.
+LaTeX Warning: Reference `sec:evaluation' on page 8 undefined on input line 35.
 
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [6 <E:/University of Toronto/masters/thesis/Figures/bimodalCP.pdf>] [7 <E:/Uni
+ [8 <E:/University of Toronto/masters/thesis/Figures/bimodalCP.pdf>] [9 <E:/Uni
 versity of Toronto/masters/thesis/Figures/histogram.pdf> <E:/University of Toro
 nto/masters/thesis/Figures/histogram_ind_jmp.pdf>]
 
-LaTeX Warning: Reference `sec:evaluation' on page 8 undefined on input line 42.
+LaTeX Warning: Reference `sec:evaluation' on page 10 undefined on input line 42
+.
 
 
+LaTeX Warning: Reference `sec:min:goal' on page 10 undefined on input line 53.
 
-LaTeX Warning: Reference `sec:min:goal' on page 8 undefined on input line 53.
-
-[8] <Figures/GSelectCP.pdf, id=314, 1084.05pt x 939.51pt>
+[10] <Figures/GSelectCP.pdf, id=438, 1084.05pt x 939.51pt>
 File: Figures/GSelectCP.pdf Graphic file (type pdf)
 
 <use Figures/GSelectCP.pdf>
 Package pdftex.def Info: Figures/GSelectCP.pdf used on input line 63.
 (pdftex.def)             Requested size: 316.17987pt x 166.69356pt.
-) [9 <E:/University of Toronto/masters/thesis/Figures/GSelectCP.pdf>] ("E:\Univ
-ersity of Toronto\masters\thesis\evaluation.tex"
+) [11 <E:/University of Toronto/masters/thesis/Figures/GSelectCP.pdf>] ("E:\Uni
+versity of Toronto\masters\thesis\evaluation.tex"
 Chapter 4.
-[10
+[12
 
 
 
-] <Figures/target_mpki.pdf, id=365, 845.07718pt x 597.55246pt>
+] <Figures/target_mpki.pdf, id=543, 845.07718pt x 597.55246pt>
 File: Figures/target_mpki.pdf Graphic file (type pdf)
 
 <use Figures/target_mpki.pdf>
 Package pdftex.def Info: Figures/target_mpki.pdf used on input line 25.
 (pdftex.def)             Requested size: 198.7436pt x 90.48145pt.
 
-<Figures/direction_mpki.pdf, id=368, 597.55246pt x 845.07718pt>
+<Figures/direction_mpki.pdf, id=546, 597.55246pt x 845.07718pt>
 File: Figures/direction_mpki.pdf Graphic file (type pdf)
 
 <use Figures/direction_mpki.pdf>
 Package pdftex.def Info: Figures/direction_mpki.pdf used on input line 38.
 (pdftex.def)             Requested size: 203.258pt x 112.57692pt.
- [11 <E:/University of Toronto/masters/thesis/Figures/target_mpki.pdf> <E:/Univ
+ [13 <E:/University of Toronto/masters/thesis/Figures/target_mpki.pdf> <E:/Univ
 ersity of Toronto/masters/thesis/Figures/direction_mpki.pdf>] <Figures/Fmax.pdf
-, id=392, 597.55246pt x 845.07718pt>
+, id=571, 597.55246pt x 845.07718pt>
 File: Figures/Fmax.pdf Graphic file (type pdf)
 
 <use Figures/Fmax.pdf>
 Package pdftex.def Info: Figures/Fmax.pdf used on input line 56.
 (pdftex.def)             Requested size: 203.258pt x 127.0545pt.
- <Figures/ipc.pdf, id=395, 845.07718pt x 597.55246pt>
+ <Figures/ipc.pdf, id=574, 845.07718pt x 597.55246pt>
 File: Figures/ipc.pdf Graphic file (type pdf)
 
 <use Figures/ipc.pdf>
 Package pdftex.def Info: Figures/ipc.pdf used on input line 63.
 (pdftex.def)             Requested size: 203.258pt x 88.73604pt.
- <Figures/ips.pdf, id=399, 597.55246pt x 845.07718pt>
+ <Figures/ips.pdf, id=578, 597.55246pt x 845.07718pt>
 File: Figures/ips.pdf Graphic file (type pdf)
 
 <use Figures/ips.pdf>
 Package pdftex.def Info: Figures/ips.pdf used on input line 67.
 (pdftex.def)             Requested size: 203.258pt x 106.48079pt.
-) [12 <E:/University of Toronto/masters/thesis/Figures/Fmax.pdf> <E:/University
- of Toronto/masters/thesis/Figures/ipc.pdf>] [13 <E:/University of Toronto/mast
+) [14 <E:/University of Toronto/masters/thesis/Figures/Fmax.pdf> <E:/University
+ of Toronto/masters/thesis/Figures/ipc.pdf>] [15 <E:/University of Toronto/mast
 ers/thesis/Figures/ips.pdf>]
 ("E:\University of Toronto\masters\thesis\conclusion.tex"
 Chapter 5.
-) [14
+) [16
 
 
 
 ] ("E:\University of Toronto\masters\thesis\di-thesis.bbl")
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 218.
- [15
+ [17
 
 
 ]
@@ -497,7 +507,7 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 218.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 218.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 218.
 Package rerunfilecheck Info: File `di-thesis.out' has not changed.
-(rerunfilecheck)             Checksum: BA2495F6C9F0C98F7ABFD1F5A9FF2E5F;1822.
+(rerunfilecheck)             Checksum: 5D5B6BAF7298F2049D0686C97BDB0639;2106.
 
 
 LaTeX Warning: There were undefined references.
@@ -505,10 +515,10 @@ LaTeX Warning: There were undefined references.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 218.
  ) 
 Here is how much of TeX's memory you used:
- 5868 strings out of 493921
- 89314 string characters out of 3144876
- 175397 words of memory out of 3000000
- 9002 multiletter control sequences out of 15000+200000
+ 5889 strings out of 493921
+ 89706 string characters out of 3144876
+ 175656 words of memory out of 3000000
+ 9015 multiletter control sequences out of 15000+200000
  8096 words of font info for 29 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
  30i,9n,34p,1220b,395s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -520,9 +530,9 @@ ogram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><D:/Progr
 am Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><D:/Program
  Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb><D:/Program F
 iles (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on di-thesis.pdf (21 pages, 1087898 bytes).
+Output written on di-thesis.pdf (23 pages, 1154669 bytes).
 PDF statistics:
- 500 PDF objects out of 1000 (max. 8388607)
- 72 named destinations out of 1000 (max. 500000)
- 319 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 681 PDF objects out of 1000 (max. 8388607)
+ 79 named destinations out of 1000 (max. 500000)
+ 362 words of extra memory for PDF output out of 10000 (max. 10000000)
 

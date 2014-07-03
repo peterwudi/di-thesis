@@ -5,22 +5,41 @@ This chapter covers the background of branch prediction and the goal of this the
 \label{sec:background:whybp}
 In modern microprocessors, instruction pipelining is a key feature to improve performances. At each cycle, a new instruction is read from the memory at the location indicated by the program counter (PC). The pipeline works ideally when there is no transfer of control, i.e., PC is incremented by a constant at each cycle to fetch the next instruction. However, when there is a transfer of control (e.g. a taken branch instruction), the next instruction to fetch is unknown at this point. The processor has to stall the pipeline to wait until the branch is resolved to fetch the correct instruction, hence severely impacts performance.
 
-Branch prediction is a technique to improve performance by guessing the branch target (i.e. the next instruction) to allow the processor to run speculatively. The processor fetches the predicted target, and compares the prediction with the actual target when the branch is resolved several cycles later. If the prediction was correct, the processor fetched the correct instructions without stalling the pipeline, as if the instruction stream were not disrupted. On the other hand, if the prediction was incorrect, the processor fetched wrong instructions, and the intermediate results related to those wrong instructions has to be squashed, possibly with an extra maintenance penalty.
+Branch prediction is a technique to improve performance by guessing the branch target (i.e. the next instruction) to allow the processor to run speculatively. The processor fetches the predicted target, and compares the prediction with the actual target when the branch is resolved several cycles later. If the prediction was correct, the processor fetched the correct instructions without stalling the pipeline, as if the instruction stream were not disrupted. On the other hand, if the prediction was incorrect, the processor fetched wrong instructions, and the intermediate results related to those wrong instructions has to be squashed, possibly with an extra maintenance penalty. Therefore, prediction accuracy is the key to high performance.
 
 \section{Branch Prediction Scheme}
 \label{sec:background:bpscheme}
-A branch predictor usually 
+Branch prediction has two aspects, i.e., direction prediction and target prediction. Branch direction prediction predicts whether a branch instruction will be taken or not, while branch target prediction predicts the target instruction address if the branch is taken.
 
-
-
-\section{Canonical Branch Predictor}
-\label{sec:background:canonical}
-Fig.~\ref{fig:bpcanonical} shows the organization of a typical branch predictor comprising: (1)~a DIR, (2)~a BTB, and (3)~a RAS.  
+Fig.~\ref{fig:bpcanonical} shows the organization of a typical branch predictor comprising: (1)~a direction predictor (DIR), (2)~a Branch Target Buffer (BTB), and (3)~a Return Address Stack (RAS).  
 
 The predictor operates in the fetch stage where it aims to predict the program counter (PC), that is the address in memory, of the instruction to fetch in the next cycle using the current instruction's PC and other dynamically collected information. 
 
 The DIR guesses whether the branch will be taken or not. The BTB and the RAS guess the address for  predicted as taken branches and function returns respectively. The multiplexer at the end selects based on the branch type and the direction prediction whether the target is the fall through address (PC+4 in Nios~II), the target predicted by the BTB, or the target provided by the RAS. Since, at this point in time, the actual instruction is not available in a typical ASIC implementation, it is not directly possible to determine whether the instruction is a return, a branch, or some other instruction. Accordingly, a Selection Logic block uses either pre-decode information or a PC-based, dynamically populated lookup table to guess which target is best to use. With the latter scheme, when no entry exists in the lookup table, some default action is taken until the first time a branch is encountered. Once the branch executes, its type is stored in the lookup table where it serves to identify the branch type on subsequent encounters. This scheme is not perfectly accurate due to aliasing.
 \kfig{bpcanonical.pdf}{fig:bpcanonical}{Canonical Branch Predictor.}{angle = 0, trim = 1in 1in 0.5in 0.8in, clip, width=0.6\textwidth}
+
+\section{Branch Direction Predictors}
+\label{sec:background:dirpred}
+This section describes the branch direction predictors considered in this thesis.
+
+\section{Static Predictor}
+\label{sec:background:dirpred:static}
+Static branch direction predictors statically predicts a branch to be taken or non-taken. This strategy is based on the observation that most branches are taken. The main weakness of static branch predictors is its inability to adapt to various applications. There are some other variations of static branch predictors such as ``backward-taken forward-not-taken". However, the improvements in accuracy is not significant. As the pipeline in modern processors becomes deeper, the misprediction penalties increases, which necessitates more accurate \textit{dynamic} branch predictors.
+
+\subsection{Bimodal, Gshare and Gselect}
+\label{sec:background:dirpred:bimodal}
+Bimodal, Gshare and Gselect~\cite{McFarling} are some of the simplest dynamic direction prediction schemes. Fig.~\ref{fig:simpleDIR} shows the organization of these three predictors. Each of these predictors has a \textit{Pattern History Table} (PHT). The entries of a PHT are called \textit{2-bit saturating counters}, which are used to record the directions of the previously seen branches. The 2-bit saturating counters are incremented/decremented when their corresponding branch is taken/not taken, and the high order bit is used as direction prediction.
+
+The PHT in bimodal is indexed by selected bits of PC. Since not all bits of PC are used to index the PHT, multiple different branches can be assigned to the same 2-bit saturating counter. This \textit{aliasing} can be destructive to the direction records, hence degrades performance.
+
+Gshare and gselect utilize a structure called a \textit{Global History Register} (GHR). The GHR is a shift register that stores recently resolved branch directions. The only difference between bimodal, gshare and gselect is the indexing of the PHTs. Bimodal uses partial PC, gshare uses partial PC XORed with GHR, and gselect uses partial PC concatenated with GHR. Gshare and gselect has better accuracy over bimodal because it reduces aliasing by correlating local history (i.e. PC) and global history (i.e. GHR).
+\kfig{simpleDIR.pdf}{fig:simpleDIR}{Bimodal, Gshare and Gselect.}{angle = 0, trim = 0.5in 1in 0.5in 0.8in, clip, width=0.6\textwidth}
+
+
+\subsection{Perceptron}
+\label{sec:background:dirpred:perceptron}
+
+
 
 
 \section{Field Programmable Gate Arrays (FPGAs)}
