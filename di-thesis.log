@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2014.6.26)  3 JUL 2014 00:54
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2014.6.26)  4 JUL 2014 00:13
 entering extended mode
 **E:/University*of*Toronto/masters/thesis/di-thesis.tex
 ("E:/University of Toronto/masters/thesis/di-thesis.tex"
@@ -335,19 +335,19 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <7> on input line 3.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <5> on input line 3.
-)
-\tf@toc=\write4
  [4
 
-]
+])
+\tf@toc=\write4
+ [5]
 ("E:\University of Toronto\masters\thesis\di-thesis.lot")
 \tf@lot=\write5
- [5
+ [6
 
 ]
 ("E:\University of Toronto\masters\thesis\di-thesis.lof")
 \tf@lof=\write6
- [6
+ [7
 
 ]
 ("E:\University of Toronto\masters\thesis\introduction.tex"
@@ -364,7 +364,7 @@ Overfull \hbox (44.52625pt too wide) in paragraph at lines 11--12
 
 ]) [2] ("E:\University of Toronto\masters\thesis\background.tex"
 Chapter 2.
-<Figures/bpcanonical.pdf, id=230, 794.97pt x 614.295pt>
+<Figures/bpcanonical.pdf, id=241, 794.97pt x 614.295pt>
 File: Figures/bpcanonical.pdf Graphic file (type pdf)
 
 <use Figures/bpcanonical.pdf>
@@ -378,14 +378,25 @@ Package pdftex.def Info: Figures/bpcanonical.pdf used on input line 19.
 Underfull \vbox (badness 2582) has occurred while \output is active []
 
  [4 <E:/University of Toronto/masters/thesis/Figures/bpcanonical.pdf>]
-<Figures/simpleDIR.pdf, id=296, 722.7pt x 542.025pt>
+<Figures/simpleDIR.pdf, id=307, 722.7pt x 542.025pt>
 File: Figures/simpleDIR.pdf Graphic file (type pdf)
 
 <use Figures/simpleDIR.pdf>
 Package pdftex.def Info: Figures/simpleDIR.pdf used on input line 36.
 (pdftex.def)             Requested size: 650.42845pt x 411.9378pt.
- [5 <E:/University of Toronto/masters/thesis/Figures/simpleDIR.pdf>]) [6] ("E:\
-University of Toronto\masters\thesis\minimal.tex"
+
+<Figures/perceptron.pdf, id=311, 722.7pt x 542.025pt>
+File: Figures/perceptron.pdf Graphic file (type pdf)
+
+<use Figures/perceptron.pdf>
+Package pdftex.def Info: Figures/perceptron.pdf used on input line 44.
+(pdftex.def)             Requested size: 505.88881pt x 180.67458pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [5 <E:/University of Toronto/masters/thesis/Figures/simpleDIR.pdf>]) [6 <E:/Un
+iversity of Toronto/masters/thesis/Figures/perceptron.pdf>]
+("E:\University of Toronto\masters\thesis\minimal.tex"
 Chapter 3.
 
 LaTeX Warning: Reference `sec:evaluation' on page 7 undefined on input line 9.
@@ -397,21 +408,21 @@ LaTeX Warning: Reference `sec:evaluation' on page 7 undefined on input line 9.
 
 
 
-] <Figures/bimodalCP.pdf, id=334, 722.7pt x 542.025pt>
+] <Figures/bimodalCP.pdf, id=409, 722.7pt x 542.025pt>
 File: Figures/bimodalCP.pdf Graphic file (type pdf)
 
 <use Figures/bimodalCP.pdf>
 Package pdftex.def Info: Figures/bimodalCP.pdf used on input line 18.
 (pdftex.def)             Requested size: 722.69823pt x 455.30014pt.
 
-<Figures/histogram.pdf, id=338, 597.55246pt x 845.07718pt>
+<Figures/histogram.pdf, id=413, 597.55246pt x 845.07718pt>
 File: Figures/histogram.pdf Graphic file (type pdf)
 
 <use Figures/histogram.pdf>
 Package pdftex.def Info: Figures/histogram.pdf used on input line 22.
 (pdftex.def)             Requested size: 489.1463pt x 303.05148pt.
 
-<Figures/histogram_ind_jmp.pdf, id=340, 597.55246pt x 845.07718pt>
+<Figures/histogram_ind_jmp.pdf, id=415, 597.55246pt x 845.07718pt>
 File: Figures/histogram_ind_jmp.pdf Graphic file (type pdf)
 
 <use Figures/histogram_ind_jmp.pdf>
@@ -435,7 +446,7 @@ LaTeX Warning: Reference `sec:evaluation' on page 10 undefined on input line 42
 
 LaTeX Warning: Reference `sec:min:goal' on page 10 undefined on input line 53.
 
-[10] <Figures/GSelectCP.pdf, id=438, 1084.05pt x 939.51pt>
+[10] <Figures/GSelectCP.pdf, id=513, 1084.05pt x 939.51pt>
 File: Figures/GSelectCP.pdf Graphic file (type pdf)
 
 <use Figures/GSelectCP.pdf>
@@ -448,14 +459,14 @@ Chapter 4.
 
 
 
-] <Figures/target_mpki.pdf, id=543, 845.07718pt x 597.55246pt>
+] <Figures/target_mpki.pdf, id=619, 845.07718pt x 597.55246pt>
 File: Figures/target_mpki.pdf Graphic file (type pdf)
 
 <use Figures/target_mpki.pdf>
 Package pdftex.def Info: Figures/target_mpki.pdf used on input line 25.
 (pdftex.def)             Requested size: 198.7436pt x 90.48145pt.
 
-<Figures/direction_mpki.pdf, id=546, 597.55246pt x 845.07718pt>
+<Figures/direction_mpki.pdf, id=622, 597.55246pt x 845.07718pt>
 File: Figures/direction_mpki.pdf Graphic file (type pdf)
 
 <use Figures/direction_mpki.pdf>
@@ -463,19 +474,19 @@ Package pdftex.def Info: Figures/direction_mpki.pdf used on input line 38.
 (pdftex.def)             Requested size: 203.258pt x 112.57692pt.
  [13 <E:/University of Toronto/masters/thesis/Figures/target_mpki.pdf> <E:/Univ
 ersity of Toronto/masters/thesis/Figures/direction_mpki.pdf>] <Figures/Fmax.pdf
-, id=571, 597.55246pt x 845.07718pt>
+, id=646, 597.55246pt x 845.07718pt>
 File: Figures/Fmax.pdf Graphic file (type pdf)
 
 <use Figures/Fmax.pdf>
 Package pdftex.def Info: Figures/Fmax.pdf used on input line 56.
 (pdftex.def)             Requested size: 203.258pt x 127.0545pt.
- <Figures/ipc.pdf, id=574, 845.07718pt x 597.55246pt>
+ <Figures/ipc.pdf, id=649, 845.07718pt x 597.55246pt>
 File: Figures/ipc.pdf Graphic file (type pdf)
 
 <use Figures/ipc.pdf>
 Package pdftex.def Info: Figures/ipc.pdf used on input line 63.
 (pdftex.def)             Requested size: 203.258pt x 88.73604pt.
- <Figures/ips.pdf, id=578, 597.55246pt x 845.07718pt>
+ <Figures/ips.pdf, id=653, 597.55246pt x 845.07718pt>
 File: Figures/ips.pdf Graphic file (type pdf)
 
 <use Figures/ips.pdf>
@@ -507,7 +518,7 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 218.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 218.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 218.
 Package rerunfilecheck Info: File `di-thesis.out' has not changed.
-(rerunfilecheck)             Checksum: 5D5B6BAF7298F2049D0686C97BDB0639;2106.
+(rerunfilecheck)             Checksum: 7BD9A161C07849268B242A4657B0F621;2238.
 
 
 LaTeX Warning: There were undefined references.
@@ -515,13 +526,13 @@ LaTeX Warning: There were undefined references.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 218.
  ) 
 Here is how much of TeX's memory you used:
- 5889 strings out of 493921
- 89706 string characters out of 3144876
- 175656 words of memory out of 3000000
- 9015 multiletter control sequences out of 15000+200000
+ 5900 strings out of 493921
+ 89924 string characters out of 3144876
+ 176822 words of memory out of 3000000
+ 9022 multiletter control sequences out of 15000+200000
  8096 words of font info for 29 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 30i,9n,34p,1220b,395s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 30i,9n,34p,1220b,411s stack positions out of 5000i,500n,10000p,200000b,50000s
 <D:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb>
 <D:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><D
 :/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><D:
@@ -530,9 +541,9 @@ ogram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><D:/Progr
 am Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><D:/Program
  Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb><D:/Program F
 iles (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on di-thesis.pdf (23 pages, 1154669 bytes).
+Output written on di-thesis.pdf (24 pages, 1356444 bytes).
 PDF statistics:
- 681 PDF objects out of 1000 (max. 8388607)
- 79 named destinations out of 1000 (max. 500000)
- 362 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 756 PDF objects out of 1000 (max. 8388607)
+ 82 named destinations out of 1000 (max. 500000)
+ 381 words of extra memory for PDF output out of 10000 (max. 10000000)
 

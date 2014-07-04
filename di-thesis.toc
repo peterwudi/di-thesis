@@ -4,10 +4,11 @@
 \contentsline {section}{\numberline {2.2}Branch Prediction Scheme}{3}{section.2.2}
 \contentsline {section}{\numberline {2.3}Branch Direction Predictors}{4}{section.2.3}
 \contentsline {section}{\numberline {2.4}Static Predictor}{4}{section.2.4}
-\contentsline {subsection}{\numberline {2.4.1}Bimodal, Gshare and Gselect}{5}{subsection.2.4.1}
-\contentsline {subsection}{\numberline {2.4.2}Perceptron}{5}{subsection.2.4.2}
-\contentsline {section}{\numberline {2.5}Field Programmable Gate Arrays (FPGAs)}{5}{section.2.5}
-\contentsline {section}{\numberline {2.6}Design Goals}{5}{section.2.6}
+\contentsline {subsection}{\numberline {2.4.1}Bimodal, Gshare and Gselect Predictor}{5}{subsection.2.4.1}
+\contentsline {subsection}{\numberline {2.4.2}Perceptron Predictor}{5}{subsection.2.4.2}
+\contentsline {subsection}{\numberline {2.4.3}TAgged GEometric history length Branch Predictor (TAGE)}{6}{subsection.2.4.3}
+\contentsline {section}{\numberline {2.5}Field Programmable Gate Arrays (FPGAs)}{6}{section.2.5}
+\contentsline {section}{\numberline {2.6}Design Goals}{6}{section.2.6}
 \contentsline {chapter}{\numberline {3}The Minimalistic FPGA-Friendly Branch predictor}{7}{chapter.3}
 \contentsline {section}{\numberline {3.1}Target Prediction}{7}{section.3.1}
 \contentsline {subsection}{\numberline {3.1.1}Target Address Pre-calculation}{7}{subsection.3.1.1}

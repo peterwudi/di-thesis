@@ -26,7 +26,7 @@ This section describes the branch direction predictors considered in this thesis
 \label{sec:background:dirpred:static}
 Static branch direction predictors statically predicts a branch to be taken or non-taken. This strategy is based on the observation that most branches are taken. The main weakness of static branch predictors is its inability to adapt to various applications. There are some other variations of static branch predictors such as ``backward-taken forward-not-taken". However, the improvements in accuracy is not significant. As the pipeline in modern processors becomes deeper, the misprediction penalties increases, which necessitates more accurate \textit{dynamic} branch predictors.
 
-\subsection{Bimodal, Gshare and Gselect}
+\subsection{Bimodal, Gshare and Gselect Predictor}
 \label{sec:background:dirpred:bimodal}
 Bimodal, Gshare and Gselect~\cite{McFarling} are some of the simplest dynamic direction prediction schemes. Fig.~\ref{fig:simpleDIR} shows the organization of these three predictors. Each of these predictors has a \textit{Pattern History Table} (PHT). The entries of a PHT are called \textit{2-bit saturating counters}, which are used to record the directions of the previously seen branches. The 2-bit saturating counters are incremented/decremented when their corresponding branch is taken/not taken, and the high order bit is used as direction prediction.
 
@@ -36,10 +36,16 @@ Gshare and gselect utilize a structure called a \textit{Global History Register}
 \kfig{simpleDIR.pdf}{fig:simpleDIR}{Bimodal, Gshare and Gselect.}{angle = 0, trim = 0.5in 1in 0.5in 0.8in, clip, width=0.6\textwidth}
 
 
-\subsection{Perceptron}
+\subsection{Perceptron Predictor}
 \label{sec:background:dirpred:perceptron}
+The perceptron predictor use vectors of weights (i.e., perceptrons) to represent correlations among branch instructions~\cite{perceptron}. Fig.~\ref{fig:perceptron} shows the structure of a perceptron predictor.
+
+Perceptron uses a table to store vectors of weights. When making a prediction, a weight vector is loaded from the table, and each weight is multiplied by the corresponding global branch history (i.e. 1 if taken and -1 if not-taken) from the GHR. Finally, the multiplication results are summed up, and perceptron predicts taken if the sum is positive, and not taken otherwise.
+\kfig{perceptron.pdf}{fig:perceptron}{The preceptron branch predictor.}{angle = 0, trim = 1in 3.5in 2in 1.5in, clip, width=0.6\textwidth}
 
 
+\subsection{TAgged GEometric history length Branch Predictor (TAGE)}
+\label{sec:background:dirpred:tage}
 
 
 \section{Field Programmable Gate Arrays (FPGAs)}

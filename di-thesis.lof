@@ -2,6 +2,7 @@
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {2.1}{\ignorespaces Canonical Branch Predictor.}}{4}{figure.2.1}
 \contentsline {figure}{\numberline {2.2}{\ignorespaces Bimodal, Gshare and Gselect.}}{5}{figure.2.2}
+\contentsline {figure}{\numberline {2.3}{\ignorespaces The preceptron branch predictor.}}{6}{figure.2.3}
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {3.1}{\ignorespaces BTB with Full Address Calculation.}}{8}{figure.3.1}
 \contentsline {figure}{\numberline {3.2}{\ignorespaces Branch Target Type Distribution.}}{9}{figure.3.2}
