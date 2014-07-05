@@ -33,7 +33,7 @@ Bimodal, Gshare and Gselect~\cite{McFarling} are some of the simplest dynamic di
 The PHT in bimodal is indexed by selected bits of PC. Since not all bits of PC are used to index the PHT, multiple different branches can be assigned to the same 2-bit saturating counter. This \textit{aliasing} can be destructive to the direction records, hence degrades performance.
 
 Gshare and gselect utilize a structure called a \textit{Global History Register} (GHR). The GHR is a shift register that stores recently resolved branch directions. The only difference between bimodal, gshare and gselect is the indexing of the PHTs. Bimodal uses partial PC, gshare uses partial PC XORed with GHR, and gselect uses partial PC concatenated with GHR. Gshare and gselect has better accuracy over bimodal because it reduces aliasing by correlating local history (i.e. PC) and global history (i.e. GHR).
-\kfig{simpleDIR.pdf}{fig:simpleDIR}{Bimodal, Gshare and Gselect.}{angle = 0, trim = 0.5in 1in 0.5in 0.8in, clip, width=0.6\textwidth}
+\kfig{simpleDIR.pdf}{fig:simpleDIR}{Bimodal, Gshare and Gselect.}{angle = 0, trim = 0.7in 1.1in 0.5in 1.3in, clip, width=0.6\textwidth}
 
 
 \subsection{Perceptron Predictor}
@@ -46,11 +46,20 @@ Perceptron uses a table to store vectors of weights. When making a prediction, a
 
 \subsection{TAgged GEometric history length Branch Predictor (TAGE)}
 \label{sec:background:dirpred:tage}
+The TAGE predictor features a bimodal predictor as base predictor $T_0$ to provide a basic prediction and a set of $M$ tagged predictor components $T_i$~\cite{tage}. These tagged predictor components $T_i$, where $1\leq i\leq M$, are indexed with hash functions of the branch address and the global branch/path history with various length. The global history lengths used for computing the indexing functions for tables $T_i$ form a geometric series, i.e., $L(i) = (int)(\alpha^{i−1}\times L(1)+0.5)$. TAGE achieves its high accuracy by utilizing very long history lengths
+
+Fig.~\ref{fig:tage} shows a 5-component TAGE predictor. Each table entry has a 3-bit saturating counter \textit{ctr} for prediction result, a \textit{tag}, and a 2-bit useful counter \textit{u}. The indices of the tables are produced by hashing PC and global history with various lengths. A valid prediction result from each table is provided only on a tag match (i.e. a hit). The final prediction of TAGE comes from the hitting tagged predictor component that uses the longest history.
+\kfig{tage.pdf}{fig:tage}{A 5-component TAGE branch predictor.}{angle = 0, trim = 1in 3.5in 2in 1.5in, clip, width=0.6\textwidth}
 
 
-\section{Field Programmable Gate Arrays (FPGAs)}
+
+\section{Field Programmable Gate Arrays (FPGAs) and Soft Processors}
 \label{sec:background:fpga}
+Field Programmable Gate Arrays (FPGAs) are chips that can be reconfigured by designers. Modern FPGAs such as Altera's Stratix IV~\cite{StratixIV} have large number of logic blocks connected by reconfigurable interconnects. The logic blocks usually consist of Look-up Tables (LUTs), registers and Block RAMs (BRAMs) etc. Designers program digital circuits with Hardware Description Languages (HDLs) such as Verilog and VHDL, and then use CAD tools provided by the FPGA vendors to synthesize the design.
 
+FPGAs can be reconfigured to fit specific requirements of various applications, therefore they are popular choices for hardware acceleration. Due to the increasing cost and time of designing ASIC, an increasing number of embedded systems are being built using FPGA platforms~\cite{softprocessor}. These systems usually contain one or more embedded processors, necessitates high-performance FPGAs-based \textit{soft processors}. 
+
+Since an FPGA platform is significantly different than ASIC, hard and soft processors have distinct design tradeoffs. Commercial soft processors such as Alteras's Nios~II-f~\cite{niosiif} and Xilinx's MicroBlaze~\cite{microblaze} usually have shallow pipelines, mostly because the relative speed gap between memory and logic is much smaller than on ASIC. Accordingly, branch predictor designs for soft processors also have to be re-evaluated.
 
 
 \section{Design Goals}
@@ -60,6 +69,6 @@ This work aims to design a branch predictor that (1)~balances operating frequenc
 
 This work proposes a minimalistic branch predictor for Altera's highest performing soft-processor Nios~II-f. Since Nios~II-f uses three BRAMs in total and only one BRAM is used for branch prediction~\cite{niosiif}, the proposed minimalistic branch predictor has a limited resource budget of one BRAM; each additional BRAM would represent a more than 1/3 overhead in terms of BRAM resources. The design of the minimalistic predictor considers the most commonly used direction predictors, bimodal, gshare and gselect. These predictors use a single lookup table and map relatively well onto a single BRAM.
 
-This work also includes an investigation of perceptron and TAGE predictors. The study implements these predictors in a modified Nios~II-f that has a deeper pipeline because these predictors often cannot be accessed within a single cycle. A simple bimodal predictor is used to provide base prediction, and the more elaborate predictor overrides the base prediction if it disagrees with the bimodal predictor.
+This work also includes an investigation of the state-of-the-art perceptron and TAGE predictors. These more elaborated branch predictors are generally more accurate, but often cannot be accessed within a single cycle. Therefore, this work considers an overriding predictor that uses a simple bimodal predictor to provide base prediction, and then a more accurate predictor to override the base prediction if it disagrees with the bimodal predictor.
 
 

@@ -1,4 +1,4 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
 
 \bibitem{uclinux}
 {Arcturus Networks Inc.}, {uClinux}.
@@ -9,6 +9,10 @@
 \newblock {A case for (partially) tagged geometric history length predictors}.
 \newblock In {\em Journal of Instruction Level Parallelism
   (http://www.jilp.org/vol7)}, April 2006.
+
+\bibitem{StratixIV}
+Altera Corp.
+\newblock {\em Stratix IV Device Handbook}, Feb. 2011.
 
 \bibitem{StratixIVM9K}
 Altera Corp.
@@ -43,5 +47,16 @@ S.~McFarling.
 {Standard Performance Evaluation Corporation}.
 \newblock {SPEC CPU 2006}.
 \newblock \url{http://www.spec.org/cpu2006/}.
+
+\bibitem{microblaze}
+Xilinx Inc.
+\newblock {\em {MicroBlaze Processor Reference Guide}}, July 2012.
+
+\bibitem{softprocessor}
+Peter Yiannacouras, Jonathan Rose, and J~Gregory Steffan.
+\newblock The microarchitecture of fpga-based soft processors.
+\newblock In {\em Proceedings of the 2005 international conference on
+  Compilers, architectures and synthesis for embedded systems}, pages 202--212.
+  ACM, 2005.
 
 \end{thebibliography}

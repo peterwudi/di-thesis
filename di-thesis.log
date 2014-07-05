@@ -1,26 +1,26 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2014.6.26)  4 JUL 2014 00:13
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9) (preloaded format=pdflatex 2013.12.2)  5 JUL 2014 16:27
 entering extended mode
-**E:/University*of*Toronto/masters/thesis/di-thesis.tex
-("E:/University of Toronto/masters/thesis/di-thesis.tex"
+**D:/github/di-thesis/di-thesis.tex
+(D:/github/di-thesis/di-thesis.tex
 LaTeX2e <2011/06/27>
 Babel <v3.8m> and hyphenation patterns for english, afrikaans, ancientgreek, ar
 abic, armenian, assamese, basque, bengali, bokmal, bulgarian, catalan, coptic, 
 croatian, czech, danish, dutch, esperanto, estonian, farsi, finnish, french, ga
-lician, german, german-x-2013-05-26, greek, gujarati, hindi, hungarian, iceland
+lician, german, german-x-2012-05-30, greek, gujarati, hindi, hungarian, iceland
 ic, indonesian, interlingua, irish, italian, kannada, kurmanji, latin, latvian,
  lithuanian, malayalam, marathi, mongolian, mongolianlmc, monogreek, ngerman, n
-german-x-2013-05-26, nynorsk, oriya, panjabi, pinyin, polish, portuguese, roman
+german-x-2012-05-30, nynorsk, oriya, panjabi, pinyin, polish, portuguese, roman
 ian, russian, sanskrit, serbian, slovak, slovenian, spanish, swedish, swissgerm
 an, tamil, telugu, turkish, turkmen, ukenglish, ukrainian, uppersorbian, usengl
 ishmax, welsh, loaded.
-("E:\University of Toronto\masters\thesis\ut-thesis.cls"
+(D:\github\di-thesis\ut-thesis.cls
 Document Class: ut-thesis 2012/06/01 v2.0 graduate theses at the University of 
 Toronto
 \@thesisfootnotesep=\skip41
 \@thesismarginparpush=\skip42
-("D:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\report.cls"
+("d:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\report.cls"
 Document Class: report 2007/10/19 v1.4h Standard LaTeX document class
-("D:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\size10.clo"
+("d:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\size10.clo"
 File: size10.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
 )
 \c@part=\count79
@@ -36,7 +36,7 @@ File: size10.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
 \belowcaptionskip=\skip44
 \bibindent=\dimen102
 )
-("D:\Program Files (x86)\MiKTeX 2.9\tex\latex\tools\calc.sty"
+("d:\Program Files (x86)\MiKTeX 2.9\tex\latex\tools\calc.sty"
 Package: calc 2007/08/22 v4.3 Infix arithmetic (KKT,FJ)
 \calc@Acount=\count88
 \calc@Bcount=\count89
@@ -49,22 +49,22 @@ LaTeX Info: Redefining \addtolength on input line 77.
 \calc@Ccount=\count90
 \calc@Cskip=\skip47
 )
-("D:\Program Files (x86)\MiKTeX 2.9\tex\latex\geometry\geometry.sty"
+("d:\Program Files (x86)\MiKTeX 2.9\tex\latex\geometry\geometry.sty"
 Package: geometry 2010/09/12 v5.6 Page Geometry
 
-("D:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\keyval.sty"
+("d:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\keyval.sty"
 Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
 \KV@toks@=\toks14
 )
-("D:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\ifpdf.sty"
+("d:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\ifpdf.sty"
 Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
 Package ifpdf Info: pdfTeX in PDF mode is detected.
 )
-("D:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\ifvtex.sty"
+("d:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\ifvtex.sty"
 Package: ifvtex 2010/03/01 v1.5 Detect VTeX and its facilities (HO)
 Package ifvtex Info: VTeX not detected.
 )
-("D:\Program Files (x86)\MiKTeX 2.9\tex\generic\ifxetex\ifxetex.sty"
+("d:\Program Files (x86)\MiKTeX 2.9\tex\generic\ifxetex\ifxetex.sty"
 Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 )
 \Gm@cnth=\count91
@@ -80,31 +80,31 @@ Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 \Gm@layoutvoffset=\dimen112
 \Gm@dimlist=\toks15
 
-("D:\Program Files (x86)\MiKTeX 2.9\tex\latex\geometry\geometry.cfg"))
-("D:\Program Files (x86)\MiKTeX 2.9\tex\latex\setspace\setspace.sty"
+("d:\Program Files (x86)\MiKTeX 2.9\tex\latex\geometry\geometry.cfg"))
+("d:\Program Files (x86)\MiKTeX 2.9\tex\latex\setspace\setspace.sty"
 Package: setspace 2011/12/19 v6.7a set line spacing
 ))
-("D:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\graphicx.sty"
+("d:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\graphicx.sty"
 Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
 
-("D:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\graphics.sty"
+("d:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\graphics.sty"
 Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
 
-("D:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\trig.sty"
+("d:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\trig.sty"
 Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
 )
-("D:\Program Files (x86)\MiKTeX 2.9\tex\latex\00miktex\graphics.cfg"
+("d:\Program Files (x86)\MiKTeX 2.9\tex\latex\00miktex\graphics.cfg"
 File: graphics.cfg 2007/01/18 v1.5 graphics configuration of teTeX/TeXLive
 )
 Package graphics Info: Driver file: pdftex.def on input line 91.
 
-("D:\Program Files (x86)\MiKTeX 2.9\tex\latex\pdftex-def\pdftex.def"
+("d:\Program Files (x86)\MiKTeX 2.9\tex\latex\pdftex-def\pdftex.def"
 File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
 
-("D:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\infwarerr.sty"
+("d:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\infwarerr.sty"
 Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
 )
-("D:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\ltxcmds.sty"
+("d:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\ltxcmds.sty"
 Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 )
 \Gread@gobject=\count94
@@ -112,14 +112,14 @@ Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 \Gin@req@height=\dimen113
 \Gin@req@width=\dimen114
 )
-("D:\Program Files (x86)\MiKTeX 2.9\tex\latex\hyperref\hyperref.sty"
+("d:\Program Files (x86)\MiKTeX 2.9\tex\latex\hyperref\hyperref.sty"
 Package: hyperref 2012/11/06 v6.83m Hypertext links for LaTeX
 
-("D:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\hobsub-hyperref.sty"
+("d:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\hobsub-hyperref.sty"
 Package: hobsub-hyperref 2012/04/25 v1.12 Bundle oberdiek, subset hyperref (HO)
 
 
-("D:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\hobsub-generic.sty"
+("d:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\hobsub-generic.sty"
 Package: hobsub-generic 2012/04/25 v1.12 Bundle oberdiek, subset generic (HO)
 Package: hobsub 2012/04/25 v1.12 Construct package bundles (HO)
 Package hobsub Info: Skipping package `infwarerr' (already loaded).
@@ -158,22 +158,22 @@ Package: atbegshi 2011/10/05 v1.16 At begin shipout hook (HO)
 Package: refcount 2011/10/16 v3.4 Data extraction from label references (HO)
 Package: hycolor 2011/01/30 v1.7 Color options for hyperref/bookmark (HO)
 )
-("D:\Program Files (x86)\MiKTeX 2.9\tex\latex\oberdiek\auxhook.sty"
+("d:\Program Files (x86)\MiKTeX 2.9\tex\latex\oberdiek\auxhook.sty"
 Package: auxhook 2011/03/04 v1.3 Hooks for auxiliary files (HO)
 )
-("D:\Program Files (x86)\MiKTeX 2.9\tex\latex\oberdiek\kvoptions.sty"
+("d:\Program Files (x86)\MiKTeX 2.9\tex\latex\oberdiek\kvoptions.sty"
 Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
 )
 \@linkdim=\dimen115
 \Hy@linkcounter=\count95
 \Hy@pagecounter=\count96
 
-("D:\Program Files (x86)\MiKTeX 2.9\tex\latex\hyperref\pd1enc.def"
+("d:\Program Files (x86)\MiKTeX 2.9\tex\latex\hyperref\pd1enc.def"
 File: pd1enc.def 2012/11/06 v6.83m Hyperref: PDFDocEncoding definition (HO)
 )
 \Hy@SavedSpaceFactor=\count97
 
-("D:\Program Files (x86)\MiKTeX 2.9\tex\latex\00miktex\hyperref.cfg"
+("d:\Program Files (x86)\MiKTeX 2.9\tex\latex\00miktex\hyperref.cfg"
 File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
 )
 Package hyperref Info: Hyper figures OFF on input line 4443.
@@ -185,9 +185,9 @@ Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4688.
 \c@Hy@tempcnt=\count98
 
-("D:\Program Files (x86)\MiKTeX 2.9\tex\latex\url\url.sty"
+("d:\Program Files (x86)\MiKTeX 2.9\tex\latex\ltxmisc\url.sty"
 \Urlmuskip=\muskip10
-Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+Package: url 2006/04/12  ver 3.3  Verb mode for urls, etc.
 )
 LaTeX Info: Redefining \url on input line 5041.
 \XeTeXLinkMargin=\dimen116
@@ -210,12 +210,12 @@ LaTeX Info: Redefining \pageref on input line 6369.
 
 Package hyperref Message: Driver (autodetected): hpdftex.
 
-("D:\Program Files (x86)\MiKTeX 2.9\tex\latex\hyperref\hpdftex.def"
+("d:\Program Files (x86)\MiKTeX 2.9\tex\latex\hyperref\hpdftex.def"
 File: hpdftex.def 2012/11/06 v6.83m Hyperref driver for pdfTeX
 \Fld@listcount=\count103
 \c@bookmark@seq@number=\count104
 
-("D:\Program Files (x86)\MiKTeX 2.9\tex\latex\oberdiek\rerunfilecheck.sty"
+("d:\Program Files (x86)\MiKTeX 2.9\tex\latex\oberdiek\rerunfilecheck.sty"
 Package: rerunfilecheck 2011/04/15 v1.7 Rerun checks for auxiliary files (HO)
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 82.
@@ -224,12 +224,9 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 Package hyperref Info: Option `colorlinks' set `true' on input line 51.
 
-("E:\University of Toronto\masters\thesis\di-thesis.aux"
-("E:\University of Toronto\masters\thesis\introduction.aux")
-("E:\University of Toronto\masters\thesis\background.aux")
-("E:\University of Toronto\masters\thesis\minimal.aux")
-("E:\University of Toronto\masters\thesis\evaluation.aux")
-("E:\University of Toronto\masters\thesis\conclusion.aux"))
+(D:\github\di-thesis\di-thesis.aux (D:\github\di-thesis\introduction.aux)
+(D:\github\di-thesis\background.aux) (D:\github\di-thesis\minimal.aux)
+(D:\github\di-thesis\evaluation.aux) (D:\github\di-thesis\conclusion.aux))
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 116.
 LaTeX Font Info:    ... okay on input line 116.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 116.
@@ -279,7 +276,7 @@ LaTeX Font Info:    ... okay on input line 116.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-("D:\Program Files (x86)\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
+("d:\Program Files (x86)\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count105
 \scratchdimen=\dimen119
@@ -294,20 +291,20 @@ LaTeX Font Info:    ... okay on input line 116.
 \everyMPtoPDFconversion=\toks17
 )
 \AtBeginShipoutBox=\box27
- ("D:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\color.sty"
+ ("d:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\color.sty"
 Package: color 2005/11/14 v1.0j Standard LaTeX Color (DPC)
 
-("D:\Program Files (x86)\MiKTeX 2.9\tex\latex\00miktex\color.cfg"
+("d:\Program Files (x86)\MiKTeX 2.9\tex\latex\00miktex\color.cfg"
 File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
 )
 Package color Info: Driver file: pdftex.def on input line 130.
 )
 Package hyperref Info: Link coloring ON on input line 116.
 
-("D:\Program Files (x86)\MiKTeX 2.9\tex\latex\hyperref\nameref.sty"
+("d:\Program Files (x86)\MiKTeX 2.9\tex\latex\hyperref\nameref.sty"
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 
-("D:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\gettitlestring.sty"
+("d:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\gettitlestring.sty"
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
 \c@section@level=\count111
@@ -316,13 +313,12 @@ LaTeX Info: Redefining \ref on input line 116.
 LaTeX Info: Redefining \pageref on input line 116.
 LaTeX Info: Redefining \nameref on input line 116.
 
-("E:\University of Toronto\masters\thesis\di-thesis.out")
-("E:\University of Toronto\masters\thesis\di-thesis.out")
+(D:\github\di-thesis\di-thesis.out) (D:\github\di-thesis\di-thesis.out)
 \@outlinefile=\write3
 LaTeX Font Info:    Try loading font information for OMS+cmr on input line 124.
 
 
-("D:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\omscmr.fd"
+("d:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\omscmr.fd"
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
@@ -330,7 +326,7 @@ LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
  [1
 
 {C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}] [2] [3]
-("E:\University of Toronto\masters\thesis\di-thesis.toc"
+(D:\github\di-thesis\di-thesis.toc
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <7> on input line 3.
 LaTeX Font Info:    External font `cmex10' loaded for size
@@ -339,18 +335,16 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 
 ])
 \tf@toc=\write4
- [5]
-("E:\University of Toronto\masters\thesis\di-thesis.lot")
+ [5] (D:\github\di-thesis\di-thesis.lot)
 \tf@lot=\write5
- [6
+[6
 
-]
-("E:\University of Toronto\masters\thesis\di-thesis.lof")
+] (D:\github\di-thesis\di-thesis.lof)
 \tf@lof=\write6
  [7
 
 ]
-("E:\University of Toronto\masters\thesis\introduction.tex"
+(D:\github\di-thesis\introduction.tex
 Chapter 1.
 
 Overfull \hbox (44.52625pt too wide) in paragraph at lines 11--12
@@ -362,9 +356,9 @@ Overfull \hbox (44.52625pt too wide) in paragraph at lines 11--12
 
 
 
-]) [2] ("E:\University of Toronto\masters\thesis\background.tex"
+]) [2] (D:\github\di-thesis\background.tex
 Chapter 2.
-<Figures/bpcanonical.pdf, id=241, 794.97pt x 614.295pt>
+<Figures/bpcanonical.pdf, id=243, 794.97pt x 614.295pt>
 File: Figures/bpcanonical.pdf Graphic file (type pdf)
 
 <use Figures/bpcanonical.pdf>
@@ -377,148 +371,137 @@ Package pdftex.def Info: Figures/bpcanonical.pdf used on input line 19.
 ]
 Underfull \vbox (badness 2582) has occurred while \output is active []
 
- [4 <E:/University of Toronto/masters/thesis/Figures/bpcanonical.pdf>]
-<Figures/simpleDIR.pdf, id=307, 722.7pt x 542.025pt>
+ [4 <D:/github/di-thesis/Figures/bpcanonical.pdf>]
+<Figures/simpleDIR.pdf, id=309, 722.7pt x 542.025pt>
 File: Figures/simpleDIR.pdf Graphic file (type pdf)
 
 <use Figures/simpleDIR.pdf>
 Package pdftex.def Info: Figures/simpleDIR.pdf used on input line 36.
-(pdftex.def)             Requested size: 650.42845pt x 411.9378pt.
+(pdftex.def)             Requested size: 635.9747pt x 368.57544pt.
 
-<Figures/perceptron.pdf, id=311, 722.7pt x 542.025pt>
+<Figures/perceptron.pdf, id=313, 722.7pt x 542.025pt>
 File: Figures/perceptron.pdf Graphic file (type pdf)
 
 <use Figures/perceptron.pdf>
 Package pdftex.def Info: Figures/perceptron.pdf used on input line 44.
 (pdftex.def)             Requested size: 505.88881pt x 180.67458pt.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [5 <E:/University of Toronto/masters/thesis/Figures/simpleDIR.pdf>]) [6 <E:/Un
-iversity of Toronto/masters/thesis/Figures/perceptron.pdf>]
-("E:\University of Toronto\masters\thesis\minimal.tex"
+Missing character: There is no â in font cmr7!
+Missing character: There is no ˆ in font cmr7!
+Missing character: There is no ’ in font cmr7!
+ [5 <D:/github/di-thesis/Figures/simpleDIR.pdf>]
+<Figures/tage.pdf, id=342, 722.7pt x 542.025pt>
+File: Figures/tage.pdf Graphic file (type pdf)
+ <use Figures/tage.pdf>
+Package pdftex.def Info: Figures/tage.pdf used on input line 52.
+(pdftex.def)             Requested size: 505.88881pt x 180.67458pt.
+ [6 <D:/github/di-thesis/Figures/perceptron.pdf> <D:/github/di-thesis/Figures/t
+age.pdf>]) [7] (D:\github\di-thesis\minimal.tex
 Chapter 3.
-
-LaTeX Warning: Reference `sec:evaluation' on page 7 undefined on input line 9.
-
-
-LaTeX Warning: Reference `sec:evaluation' on page 7 undefined on input line 9.
-
-[7
+[8
 
 
 
-] <Figures/bimodalCP.pdf, id=409, 722.7pt x 542.025pt>
+] <Figures/bimodalCP.pdf, id=490, 722.7pt x 542.025pt>
 File: Figures/bimodalCP.pdf Graphic file (type pdf)
 
 <use Figures/bimodalCP.pdf>
 Package pdftex.def Info: Figures/bimodalCP.pdf used on input line 18.
 (pdftex.def)             Requested size: 722.69823pt x 455.30014pt.
 
-<Figures/histogram.pdf, id=413, 597.55246pt x 845.07718pt>
+<Figures/histogram.pdf, id=494, 597.55246pt x 845.07718pt>
 File: Figures/histogram.pdf Graphic file (type pdf)
 
 <use Figures/histogram.pdf>
 Package pdftex.def Info: Figures/histogram.pdf used on input line 22.
 (pdftex.def)             Requested size: 489.1463pt x 303.05148pt.
 
-<Figures/histogram_ind_jmp.pdf, id=415, 597.55246pt x 845.07718pt>
+<Figures/histogram_ind_jmp.pdf, id=496, 597.55246pt x 845.07718pt>
 File: Figures/histogram_ind_jmp.pdf Graphic file (type pdf)
 
 <use Figures/histogram_ind_jmp.pdf>
 Package pdftex.def Info: Figures/histogram_ind_jmp.pdf used on input line 31.
 (pdftex.def)             Requested size: 496.37262pt x 288.59663pt.
 
-
-LaTeX Warning: Reference `sec:evaluation' on page 8 undefined on input line 35.
-
-
-
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [8 <E:/University of Toronto/masters/thesis/Figures/bimodalCP.pdf>] [9 <E:/Uni
-versity of Toronto/masters/thesis/Figures/histogram.pdf> <E:/University of Toro
-nto/masters/thesis/Figures/histogram_ind_jmp.pdf>]
-
-LaTeX Warning: Reference `sec:evaluation' on page 10 undefined on input line 42
-.
-
-
-LaTeX Warning: Reference `sec:min:goal' on page 10 undefined on input line 53.
-
-[10] <Figures/GSelectCP.pdf, id=513, 1084.05pt x 939.51pt>
+ [9 <D:/github/di-thesis/Figures/bimodalCP.pdf>] [10 <D:/github/di-thesis/Figur
+es/histogram.pdf> <D:/github/di-thesis/Figures/histogram_ind_jmp.pdf>] [11]
+<Figures/GSelectCP.pdf, id=597, 1084.05pt x 939.51pt>
 File: Figures/GSelectCP.pdf Graphic file (type pdf)
 
 <use Figures/GSelectCP.pdf>
 Package pdftex.def Info: Figures/GSelectCP.pdf used on input line 63.
 (pdftex.def)             Requested size: 316.17987pt x 166.69356pt.
-) [11 <E:/University of Toronto/masters/thesis/Figures/GSelectCP.pdf>] ("E:\Uni
-versity of Toronto\masters\thesis\evaluation.tex"
+) [12 <D:/github/di-thesis/Figures/GSelectCP.pdf>]
+(D:\github\di-thesis\evaluation.tex
 Chapter 4.
-[12
+
+LaTeX Warning: Reference `sec:fpga:nobtb' on page 13 undefined on input line 13
+.
+
+[13
 
 
 
-] <Figures/target_mpki.pdf, id=619, 845.07718pt x 597.55246pt>
+] <Figures/target_mpki.pdf, id=702, 845.07718pt x 597.55246pt>
 File: Figures/target_mpki.pdf Graphic file (type pdf)
 
 <use Figures/target_mpki.pdf>
 Package pdftex.def Info: Figures/target_mpki.pdf used on input line 25.
 (pdftex.def)             Requested size: 198.7436pt x 90.48145pt.
 
-<Figures/direction_mpki.pdf, id=622, 597.55246pt x 845.07718pt>
+<Figures/direction_mpki.pdf, id=705, 597.55246pt x 845.07718pt>
 File: Figures/direction_mpki.pdf Graphic file (type pdf)
 
 <use Figures/direction_mpki.pdf>
 Package pdftex.def Info: Figures/direction_mpki.pdf used on input line 38.
 (pdftex.def)             Requested size: 203.258pt x 112.57692pt.
- [13 <E:/University of Toronto/masters/thesis/Figures/target_mpki.pdf> <E:/Univ
-ersity of Toronto/masters/thesis/Figures/direction_mpki.pdf>] <Figures/Fmax.pdf
-, id=646, 597.55246pt x 845.07718pt>
+
+
+LaTeX Warning: Reference `sec:fpga' on page 14 undefined on input line 40.
+
+[14 <D:/github/di-thesis/Figures/target_mpki.pdf> <D:/github/di-thesis/Figures/
+direction_mpki.pdf>] <Figures/Fmax.pdf, id=728, 597.55246pt x 845.07718pt>
 File: Figures/Fmax.pdf Graphic file (type pdf)
 
 <use Figures/Fmax.pdf>
 Package pdftex.def Info: Figures/Fmax.pdf used on input line 56.
 (pdftex.def)             Requested size: 203.258pt x 127.0545pt.
- <Figures/ipc.pdf, id=649, 845.07718pt x 597.55246pt>
+ <Figures/ipc.pdf, id=731, 845.07718pt x 597.55246pt>
 File: Figures/ipc.pdf Graphic file (type pdf)
 
 <use Figures/ipc.pdf>
 Package pdftex.def Info: Figures/ipc.pdf used on input line 63.
 (pdftex.def)             Requested size: 203.258pt x 88.73604pt.
- <Figures/ips.pdf, id=653, 597.55246pt x 845.07718pt>
+ <Figures/ips.pdf, id=735, 597.55246pt x 845.07718pt>
 File: Figures/ips.pdf Graphic file (type pdf)
 
 <use Figures/ips.pdf>
 Package pdftex.def Info: Figures/ips.pdf used on input line 67.
 (pdftex.def)             Requested size: 203.258pt x 106.48079pt.
-) [14 <E:/University of Toronto/masters/thesis/Figures/Fmax.pdf> <E:/University
- of Toronto/masters/thesis/Figures/ipc.pdf>] [15 <E:/University of Toronto/mast
-ers/thesis/Figures/ips.pdf>]
-("E:\University of Toronto\masters\thesis\conclusion.tex"
+) [15 <D:/github/di-thesis/Figures/Fmax.pdf> <D:/github/di-thesis/Figures/ipc.p
+df>] [16 <D:/github/di-thesis/Figures/ips.pdf>]
+(D:\github\di-thesis\conclusion.tex
 Chapter 5.
-) [16
+) [17
 
 
 
-] ("E:\University of Toronto\masters\thesis\di-thesis.bbl")
+] (D:\github\di-thesis\di-thesis.bbl)
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 218.
- [17
+ [18
 
 
 ]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 218.
 
-("E:\University of Toronto\masters\thesis\di-thesis.aux"
-("E:\University of Toronto\masters\thesis\introduction.aux")
-("E:\University of Toronto\masters\thesis\background.aux")
-("E:\University of Toronto\masters\thesis\minimal.aux")
-("E:\University of Toronto\masters\thesis\evaluation.aux")
-("E:\University of Toronto\masters\thesis\conclusion.aux"))
+(D:\github\di-thesis\di-thesis.aux (D:\github\di-thesis\introduction.aux)
+(D:\github\di-thesis\background.aux) (D:\github\di-thesis\minimal.aux)
+(D:\github\di-thesis\evaluation.aux) (D:\github\di-thesis\conclusion.aux))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 218.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 218.
 Package rerunfilecheck Info: File `di-thesis.out' has not changed.
-(rerunfilecheck)             Checksum: 7BD9A161C07849268B242A4657B0F621;2238.
+(rerunfilecheck)             Checksum: BF61B9FEC815F264C7F86AD8E4EE47FF;2258.
 
 
 LaTeX Warning: There were undefined references.
@@ -526,24 +509,27 @@ LaTeX Warning: There were undefined references.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 218.
  ) 
 Here is how much of TeX's memory you used:
- 5900 strings out of 493921
- 89924 string characters out of 3144876
- 176822 words of memory out of 3000000
- 9022 multiletter control sequences out of 15000+200000
+ 5915 strings out of 493921
+ 89162 string characters out of 3144885
+ 177018 words of memory out of 3000000
+ 9031 multiletter control sequences out of 15000+200000
  8096 words of font info for 29 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 30i,9n,34p,1220b,411s stack positions out of 5000i,500n,10000p,200000b,50000s
-<D:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb>
-<D:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><D
-:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><D:
-/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><D:/Pr
-ogram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><D:/Progr
-am Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><D:/Program
- Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb><D:/Program F
-iles (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on di-thesis.pdf (24 pages, 1356444 bytes).
+ 30i,9n,34p,1200b,411s stack positions out of 5000i,500n,10000p,200000b,50000s
+<d:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb>
+<d:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><d
+:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><d:
+/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><d:/P
+rogram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi7.pfb><d:/Prog
+ram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><d:/Program
+ Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><d:/Program Fi
+les (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><d:/Program Files 
+(x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><d:/Program Files (x
+86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb><d:/Program Files (x86
+)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
+Output written on di-thesis.pdf (25 pages, 1487663 bytes).
 PDF statistics:
- 756 PDF objects out of 1000 (max. 8388607)
- 82 named destinations out of 1000 (max. 500000)
- 381 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 850 PDF objects out of 1000 (max. 8388607)
+ 87 named destinations out of 1000 (max. 500000)
+ 392 words of extra memory for PDF output out of 10000 (max. 10000000)
 
