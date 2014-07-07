@@ -1,0 +1,45 @@
+\chapter{The Advanced FPGA-Friendly Branch Predictor}
+\label{chap:advanced}
+
+Chapter~\ref{chap:minimal} proposes gRselect as the best performing minimalistic design that has a hardware budget limited to 1 M9K BRAM. In this chapter, we loose the constraint on hardware budget and consider more advanced and accurate branch prediction technologies to achieve better performance.
+
+\section{Perceptron Predictor}
+\label{sec:advanced:perceptron}
+Section~\ref{sec:background:dirpred:perceptron} introduced that perceptron predictor maintains vectors of weights in a table. It produces a prediction through the following steps: (1)~a vector of weight (i.e., a perceptron) is loaded from the table. (2)~multiply the weights with their corresponding global history (1 for taken and -1 for not-taken). (3)~sum up all the products, predict taken if the sum is positive, and not-taken otherwise. Each of these steps poses difficulties to map to the FPGA platform. The rest of this section addresses these problems.
+
+\subsection{Perceptron Table Organization}
+\label{sec:advanced:perceptron:table}
+Each weight in a perceptron is typically 8-bit wide, and perceptron predictors usually use at least 12-bit global history~\cite{perceptron}. The depth of the table, on the other hand, tends to be relatively shallower (e.g. 64 entries for 1KB hardware budget). This requires a very wide but shallow memory, which does not map well to BRAMs on FPGAs. For example, the widest configuration that a M9K BRAM on Altera Stratix IV chip is 36-bit wide times 1k entries. If we implement the 1KB perceptron from~\cite{perceptron}, which uses 96-bit wide perceptrons 12-bit global history
+
+As Fig.~\ref{perceptronBRAM} shows,
+64-entry
+
+
+
+
+\subsection{Multiplication}
+\label{sec:advanced:perceptron:mult}
+
+
+
+\subsection{Adder Tree}
+\label{sec:advanced:perceptron:adder}
+
+
+
+
+
+
+
+
+
+
+
+\section{TAgged GEometric history length Branch Predictor (TAGE)}
+\label{sec:advanced:tage}
+
+
+
+
+
+

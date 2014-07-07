@@ -10,9 +10,10 @@
 \contentsline {figure}{\numberline {3.3}{\ignorespaces Indirect Branch Instruction Type Distribution.}}{11}{figure.3.3}
 \contentsline {figure}{\numberline {3.4}{\ignorespaces FAC with gRselect.}}{13}{figure.3.4}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Target Address Prediction Schemes: Reduction in target address misprediction over \textsc {Base}.}}{15}{figure.4.1}
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Direction Predictors: MPKI improvement over \textsc {Base}.}}{15}{figure.4.2}
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Maximum frequency and area utilisation. (PD = pre-decoding)}}{16}{figure.4.3}
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Improvement in IPC over \textsc {Base}.}}{16}{figure.4.4}
-\contentsline {figure}{\numberline {4.5}{\ignorespaces IPS comparison of processors with various predictors.}}{17}{figure.4.5}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Target Address Prediction Schemes: Reduction in target address misprediction over \textsc {Base}.}}{16}{figure.5.1}
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Direction Predictors: MPKI improvement over \textsc {Base}.}}{16}{figure.5.2}
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Maximum frequency and area utilisation. (PD = pre-decoding)}}{17}{figure.5.3}
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Improvement in IPC over \textsc {Base}.}}{17}{figure.5.4}
+\contentsline {figure}{\numberline {5.5}{\ignorespaces IPS comparison of processors with various predictors.}}{18}{figure.5.5}
 \addvspace {10\p@ }
