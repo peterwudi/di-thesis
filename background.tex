@@ -48,7 +48,7 @@ Gshare and gselect utilize a structure called a \textit{Global History Register}
 \label{sec:background:dirpred:perceptron}
 The perceptron predictor use vectors of weights (i.e., perceptrons) to represent correlations among branch instructions~\cite{perceptron}. Fig.~\ref{fig:perceptron} shows the structure of a perceptron predictor.
 
-Perceptron uses a table to store vectors of weights. When making a prediction, a weight vector is loaded from the table, and each weight is multiplied by the corresponding global branch history (i.e. 1 if taken and -1 if not-taken) from the GHR. Finally, the multiplication results are summed up, and perceptron predicts taken if the sum is positive, and not taken otherwise.
+When making a prediction, a weight vector is loaded from the table, and each weight is multiplied by the corresponding global branch history (i.e. 1 if taken and -1 if not-taken) from the GHR. Finally, the multiplication results are summed up, and perceptron predicts taken if the sum is positive, and not taken otherwise.
 \kfig{perceptron.pdf}{fig:perceptron}{The preceptron branch predictor.}{angle = 0, trim = 1in 3.5in 2in 1.5in, clip, width=0.6\textwidth}
 
 
