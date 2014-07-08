@@ -52,7 +52,7 @@ When making a prediction, a weight vector is loaded from the table, and each wei
 \kfig{perceptron.pdf}{fig:perceptron}{The preceptron branch predictor.}{angle = 0, trim = 1in 3.5in 2in 1.5in, clip, width=0.6\textwidth}
 
 
-\subsection{TAgged GEometric history length Branch Predictor (TAGE)}
+\subsection{Tagged Geometric History Length Branch Predictor (TAGE)}
 \label{sec:background:dirpred:tage}
 The TAGE predictor features a bimodal predictor as base predictor $T_0$ to provide a basic prediction and a set of $M$ tagged predictor components $T_i$~\cite{tage}. These tagged predictor components $T_i$, where $1\leq i\leq M$, are indexed with hash functions of the branch address and the global branch/path history with various length. The global history lengths used for computing the indexing functions for tables $T_i$ form a geometric series, i.e., $L(i) = (int)(\alpha^{i{}^{\_}1}\times L(1)+0.5)$. TAGE achieves its high accuracy by utilizing very long history lengths.
 
