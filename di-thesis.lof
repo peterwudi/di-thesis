@@ -12,8 +12,8 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {5.1}{\ignorespaces Target Address Prediction Schemes: Reduction in target address misprediction over \textsc {Base}.}}{16}{figure.5.1}
-\contentsline {figure}{\numberline {5.2}{\ignorespaces Direction Predictors: MPKI improvement over \textsc {Base}.}}{16}{figure.5.2}
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Direction Predictors: MPKI improvement over \textsc {Base}.}}{17}{figure.5.2}
 \contentsline {figure}{\numberline {5.3}{\ignorespaces Maximum frequency and area utilisation. (PD = pre-decoding)}}{17}{figure.5.3}
-\contentsline {figure}{\numberline {5.4}{\ignorespaces Improvement in IPC over \textsc {Base}.}}{17}{figure.5.4}
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Improvement in IPC over \textsc {Base}.}}{18}{figure.5.4}
 \contentsline {figure}{\numberline {5.5}{\ignorespaces IPS comparison of processors with various predictors.}}{18}{figure.5.5}
 \addvspace {10\p@ }

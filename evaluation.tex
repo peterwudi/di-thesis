@@ -2,68 +2,69 @@
 \label{chap:eval}
 
 This section presents the experimental evaluation of the proposed branch predictors.
-Section~\ref{sec:eval:methodology} details the experimental methodology. Section~\ref{sec:eval:target} evaluates the accuracy of  target address schemes showing that using a RAS with FAC\  is best. Section~\ref{sec:eval:direction} compares the accuracy of various direction predictions, showing that a single BRAM\ gRselect is among the best performers. Section~\ref{sec:eval:fpga} reports  resource usage and maximum operating frequency. Finally,  Section~\ref{sec:eval:performance} reports the overall performance showing that the predictor that combines FAC, RAS, gRselect and pre-decoding is best. 
+Section~\ref{sec:eval:methodology} details the experimental methodology. Section~\ref{sec:eval:target} evaluates the accuracy of  target address schemes showing that using a RAS with FAC is best. Section~\ref{sec:eval:direction} compares the accuracy of various direction predictions. Section~\ref{sec:eval:fpga} reports resource usage and maximum operating frequency. Finally,  Section~\ref{sec:eval:performance} reports the overall performance showing that the predictor that combines FAC, RAS, gRselect and pre-decoding is best. 
 
 
 \section{Methodology}
 \label{sec:eval:methodology}
 
-To compare the predictors this work measures: (1)~Accuracy as misses per kilo instructions (MPKI) which has been shown to correlate better with performance compared to  prediction accuracy alone. Processor performance in (2)~instructions per cycle (IPC), a frequency agnostic metric, that isolates the effects of implementation, and  in (3)~instructions per second (IPS), a true measure of performance. (4)~Operating frequency, and (5)~resource usage.
+To compare the predictors this work measures: (1)~Accuracy as misses per kilo instructions (MPKI) which has been shown to correlate better with performance compared to prediction accuracy alone. Processor performance in (2)~instructions per cycle (IPC), a frequency agnostic metric, that isolates the effects of implementation, and  in (3)~instructions per second (IPS), a true measure of performance. (4)~Operating frequency, and (5)~resource usage.
 
 Simulation measures MPKI\ and IPC using a custom, cycle-accurate, full-system Nios~II simulator. The simulator boots ucLinux~\cite{uclinux}, and runs a subset of SPEC CPU2006 integer benchmarks with reference inputs~\cite{spec2k6}.
-The evaluation uses a baseline predictor (\textsc{Base}) with a fused BTB and bimodal, as discussed in Section~\ref{sec:fpga:nobtb} both with 256 entries. \textsc{Base} does not decode instructions and thus uses the BTB and the bimodal for all instructions. 
 
-All designs were implemented in Verilog and synthesized using Quartus II 12.1 on a Stratix IV chip in order to measure their maximum clock frequency and area cost. The maximum frequency is reported as the average maximum clock frequency of five placement and routing passes with different random seeds. Area usage is reported in terms of ALUTs and BRAMs used.
+The evaluation of the minimalistic predictor uses a baseline predictor (\textsc{Base}) with a fused BTB and bimodal, as discussed in Section~\ref{sec:min:fpga:nobtb} both with 256 entries. \textsc{Base} does not decode instructions and thus uses the BTB and the bimodal for all instructions. 
+
+All designs were implemented in Verilog and synthesized using Quartus II 13.0 on a Stratix IV chip in order to measure their maximum clock frequency and area cost. The maximum frequency is reported as the average maximum clock frequency of five placement and routing passes with different random seeds. Area usage is reported in terms of ALUTs and BRAMs used.
 
 
 \section{Target Prediction}
 \label{sec:eval:target}
 
-This section measures the accuracy of target predictors. by using the baseline direction predictor while considering  combinations of BTB, PAC, FAC, RAS, and larger BTBs. Fig.~\ref{fig:target:mpki} reports the reduction in target address mispredictions when using various target prediction mechanisms compared to \textsc{Base}. Using a decode logic to filter non-branches from the BTB (BTB-256) reduces mispredictions by 30\%. However, increasing the BTB size to 512 (BTB-512) or 1024 (BTB-1024) entries does not improve accuracy noticeably. In the rest of this section, all BTB configurations except for BASE use instruction filtering.
+This section measures the accuracy of target predictors. by using the baseline direction predictor while considering combinations of BTB, PAC, FAC, RAS, and larger BTBs. Fig.~\ref{fig:target:mpki} reports the reduction in target address mispredictions when using various target prediction mechanisms compared to \textsc{Base}. Using a decode logic to filter non-branches from the BTB (BTB-256) reduces mispredictions by 30\%. However, increasing the BTB size to 512 (BTB-512) or 1024 (BTB-1024) entries does not improve accuracy noticeably. In the rest of this section, all BTB configurations except for BASE use instruction filtering.
 
 Using PAC or FAC with a 256-entry BTB reduces mispredictions by 81\% and 90\% respectively, whereas using just FAC reduces mispredictions by 84\%. Finally, using FAC with a RAS (FAC+RAS) proves best. In conclusion, eliminating the BTB and relying instead on a RAS+FAC is best in terms of accuracy. An added benefit of RAS+FAC is that it allows for a standalone, thus larger and more flexible direction predictor. 
-
-\kfig{target_mpki.pdf}{fig:target:mpki}{Target Address Prediction Schemes: Reduction in target address misprediction over \textsc{Base}.}{trim = 0.5in 1.6in 0.5in 1.8in, clip, width=0.44\textwidth}
-
-
-
-\section{Direction Prediction}
-\label{sec:eval:direction}
+\kfig{target_mpki.pdf}{fig:target:mpki}{Target Address Prediction Schemes: Reduction in target address misprediction over \textsc{Base}.}{trim = 0.5in 1.6in 0.5in 1.8in, clip, width=0.8\textwidth}
 
 
 \subsection{The Minimalistic FPGA-Friendly Branch predictor}
-\label{sec:eval:direction:min}
+\label{sec:eval:min}
 
+\section{Direction Prediction}
+\label{sec:eval:min:direction}
 Fig.~\ref{fig:direction:mpki} reports the improvement in MPKI for various direction predictors relative to \textsc{Base}. Decoding the instructions and performing prediction only for branches improves MPKI by 17\% (bimodal-256). Using a larger bimodal with 4K entries further improves MPKI by only 8\% suggesting that bimodal is fundamentally limited in the branch sequences it can predict. However, using a 256- or a 4K-entry gshare improves MPKI by 79\% and 82\% respectively. 
 
-\kfig{direction_mpki.pdf}{fig:direction:mpki}{Direction Predictors: MPKI improvement over \textsc{Base}.}{trim = 0.8in 3.8in 0.8in 4.2in, clip, width=0.45\textwidth}
+\kfig{direction_mpki.pdf}{fig:direction:mpki}{Direction Predictors: MPKI improvement over \textsc{Base}.}{trim = 0.8in 3.8in 0.8in 4.2in, clip, width=0.7\textwidth}
 
 Section~\ref{sec:fpga} explained why gselect may be better to implement on an FPGA. Fig.~\ref{fig:direction:mpki} show that a conventionally indexed 4K-entry gselect results in competitive accuracy, improving \textsc{Base} by 80\%. Section~\ref{sec:eval:fpga} explained that the desired number of entries for the direction predictor is either 768  or 4K when  fused with a  BTB or not respectively. The figure shows that a conventionally indexed 4K-entry gselect improves MPKI by 80\%, while the proposed FPGA-friendly organization, gRselect, improves MPKI by 79\%.
 In conclusion, gshare achieves the best accuracy with gselect and gRselect offering competitive accuracies.
 
-\subsection{The Overriding Branch predictor}
-\label{sec:eval:direction:override}
-
-adfasdfasdf
-
-
-
-
 \section{Area and Frequency}
-\label{sec:eval:fpga}
+\label{sec:eval:min:fmax}
 
 Fig.~\ref{fig:Fmax} shows the maximum frequency and area utilisation for each predictor design. All configurations use one BRAM. As expected, BASE is the fastest and least expensive. Adding instruction filtering reduces fmax from 353 MHz to 287 MHz, a 18\% drop. By adding address calculation, frequency drops even further. However, removing the BTB partially recovers from this frequency drop. Finally, adding a RAS to a gRselect with pre-decoding, results in a predictor that operates at 259 MHz and that uses only 147 ALUTs.
-
-\kfig{Fmax.pdf}{fig:Fmax}{Maximum frequency and area utilisation. (PD = pre-decoding)}{trim = 0.7in 3.5in 0.7in 3.9in, clip, width=0.45\textwidth}
+\kfig{Fmax.pdf}{fig:Fmax}{Maximum frequency and area utilisation. (PD = pre-decoding)}{trim = 0.7in 3.5in 0.7in 3.9in, clip, width=0.9\textwidth}
 
 \subsection{Performance}
 \label{sec:eval:performance}
 
 Fig.~\ref{fig:ipc} reports  average IPC gain compared to \textsc{Base}. The bimodal predictor results in the lowest IPC  while gselect performs almost as well as gshare.
+\kfig{ipc.pdf}{fig:ipc}{Improvement in IPC over \textsc{Base}.}{trim = 0.5in 1.8in 0.5in 1.8in, clip, width=0.7\textwidth}
 
-\kfig{ipc.pdf}{fig:ipc}{Improvement in IPC over \textsc{Base}.}{trim = 0.5in 1.8in 0.5in 1.8in, clip, width=0.45\textwidth}
 
 IPC is proportional to performance only when the clock frequency remains the same. Actual performance depends  on IPS, the product of IPC and clock frequency. Fig.~\ref{fig:ips} reports overall performance in IPS. This experiment assumes a 250MHz maximum clock speed for the processor, the maximum clock frequency of Nios-II-f on the Stratix~IV~\cite{niosfmax}. The best performing predictor is a 4K-entry gRselect with FAC+RAS, no BTB, and that uses pre-decoded instructions.
+\kfig{ips.pdf}{fig:ips}{IPS comparison of processors with various predictors.}{trim = 0.8in 4in 0.8in 4.2in, clip, width=0.7\textwidth}
 
-\kfig{ips.pdf}{fig:ips}{IPS comparison of processors with various predictors.}{trim = 0.8in 4in 0.8in 4.2in, clip, width=0.45\textwidth}
+
+
+\subsection{Advanced Branch predictors}
+\label{sec:eval:advanced}
+
+
+
+
+
+
+
+
+
 
