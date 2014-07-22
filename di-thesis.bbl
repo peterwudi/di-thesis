@@ -10,6 +10,17 @@
 \newblock In {\em Journal of Instruction Level Parallelism
   (http://www.jilp.org/vol7)}, April 2006.
 
+\bibitem{lob}
+Kaveh Aasaraai and Amirali Baniasadi.
+\newblock A power-aware alternative for the perceptron branch predictor.
+\newblock In Lynn Choi, Yunheung Paek, and Sangyeun Cho, editors, {\em Advances
+  in Computer Systems Architecture}, volume 4697, pages 198--208. 2007.
+
+\bibitem{niosii}
+{Altera Corp.}
+\newblock {Nios II Processor Reference Handbook v9.0}.
+\newblock 2009.
+
 \bibitem{StratixIV}
 Altera Corp.
 \newblock {\em Stratix IV Device Handbook}, Feb. 2011.
@@ -21,11 +32,18 @@ Altera Corp.
 
 \bibitem{niosfmax}
 Altera Corp.
-\newblock {\em {Nios II Performance Benchmarks}}, Dec. 2012.
+\newblock {\em {Nios II Performance Benchmarks}}, Nov. 2013.
 
 \bibitem{niosiif}
 Altera Corporation.
 \newblock {\em {Nios II Processor Reference}}, May 2011.
+
+\bibitem{perceptronRearrange}
+O.~Cadenas, G.~Megson, and D.~Jones.
+\newblock A new organization for a perceptron-based branch predictor and its
+  fpga implementation.
+\newblock In {\em Proc. IEEE Computer Society Annual Symposium on VLSI.}, pages
+  305--306, May 2005.
 
 \bibitem{perceptron}
 {D. A. Jimenez and C. Lin}.
@@ -38,15 +56,44 @@ Altera Corporation.
 \newblock {A study of branch prediction strategies}.
 \newblock In {\em Annual Symposium on Computer Architecture}, June 1981.
 
+\bibitem{override}
+Daniel~A Jim{\'e}nez, Stephen~W Keckler, and Calvin Lin.
+\newblock The impact of delay on the design of branch predictors.
+\newblock In {\em Proceedings of the 33rd annual ACM/IEEE international
+  symposium on Microarchitecture}, pages 67--76. ACM, 2000.
+
 \bibitem{McFarling}
 S.~McFarling.
 \newblock {Combining Branch Predictors}.
 \newblock {TN-36}, {Digital Western Research Laboratory}, June 1993.
 
+\bibitem{isltage}
+Andr{\'e} Seznec.
+\newblock A 64 kbytes isl-tage branch predictor.
+\newblock In {\em JWAC-2: Championship Branch Prediction}, 2011.
+
+\bibitem{alphaEV8}
+Andr{\'e} Seznec, Stephen Felix, Venkata Krishnan, and Yiannakis Sazeides.
+\newblock Design tradeoffs for the alpha ev8 conditional branch predictor.
+\newblock In {\em Proc. 29th Annual International Symposium on Computer
+  Architecture.}, pages 295--306. IEEE, 2002.
+
 \bibitem{spec2k6}
 {Standard Performance Evaluation Corporation}.
 \newblock {SPEC CPU 2006}.
 \newblock \url{http://www.spec.org/cpu2006/}.
+
+\bibitem{wallacetree}
+C.~S. Wallace.
+\newblock A suggestion for a fast multiplier.
+\newblock {\em Electronic Computers, IEEE Transactions on}, EC-13(1):14--17,
+  Feb 1964.
+
+\bibitem{grselect}
+Di~Wu, K.~Aasaraai, and A.~Moshovos.
+\newblock Low-cost, high-performance branch predictors for soft processors.
+\newblock In {\em Field Programmable Logic and Applications (FPL), 2013 23rd
+  International Conference on}, Sept 2013.
 
 \bibitem{microblaze}
 Xilinx Inc.

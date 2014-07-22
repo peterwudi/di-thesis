@@ -10,7 +10,7 @@
 \contentsline {subsection}{\numberline {2.5.3}Tagged Geometric History Length Branch Predictor (TAGE)}{6}{subsection.2.5.3}
 \contentsline {section}{\numberline {2.6}Field Programmable Gate Arrays (FPGAs) and Soft Processors}{6}{section.2.6}
 \contentsline {section}{\numberline {2.7}Design Goals}{7}{section.2.7}
-\contentsline {chapter}{\numberline {3}The Minimalistic FPGA-Friendly Branch Predictor}{9}{chapter.3}
+\contentsline {chapter}{\numberline {3}The Minimalistic FPGA-Friendly Branch Predictors}{9}{chapter.3}
 \contentsline {section}{\numberline {3.1}Target Prediction}{9}{section.3.1}
 \contentsline {subsection}{\numberline {3.1.1}Target Address Pre-calculation}{9}{subsection.3.1.1}
 \contentsline {subsection}{\numberline {3.1.2}Return Address Stack}{10}{subsection.3.1.2}
@@ -20,19 +20,26 @@
 \contentsline {subsection}{\numberline {3.3.1}Eliminating the BTB}{12}{subsection.3.3.1}
 \contentsline {subsection}{\numberline {3.3.2}FPGA-Friendly Direction Predictor Indexing}{12}{subsection.3.3.2}
 \contentsline {subsection}{\numberline {3.3.3}Instruction Decoding}{13}{subsection.3.3.3}
-\contentsline {chapter}{\numberline {4}The Advanced FPGA-Friendly Branch Predictor}{14}{chapter.4}
-\contentsline {section}{\numberline {4.1}Perceptron Predictor}{14}{section.4.1}
-\contentsline {subsection}{\numberline {4.1.1}Perceptron Table Organization}{14}{subsection.4.1.1}
-\contentsline {subsection}{\numberline {4.1.2}Multiplication}{14}{subsection.4.1.2}
-\contentsline {subsection}{\numberline {4.1.3}Adder Tree}{14}{subsection.4.1.3}
-\contentsline {section}{\numberline {4.2}TAgged GEometric history length Branch Predictor (TAGE)}{14}{section.4.2}
-\contentsline {chapter}{\numberline {5}Evaluation}{15}{chapter.5}
-\contentsline {section}{\numberline {5.1}Methodology}{15}{section.5.1}
-\contentsline {section}{\numberline {5.2}Target Prediction}{15}{section.5.2}
-\contentsline {subsection}{\numberline {5.2.1}The Minimalistic FPGA-Friendly Branch predictor}{16}{subsection.5.2.1}
-\contentsline {section}{\numberline {5.3}Direction Prediction}{16}{section.5.3}
-\contentsline {section}{\numberline {5.4}Area and Frequency}{17}{section.5.4}
-\contentsline {subsection}{\numberline {5.4.1}Performance}{18}{subsection.5.4.1}
-\contentsline {subsection}{\numberline {5.4.2}Advanced Branch predictors}{18}{subsection.5.4.2}
-\contentsline {chapter}{\numberline {6}Conclusion}{19}{chapter.6}
-\contentsline {chapter}{Bibliography}{20}{chapter.6}
+\contentsline {chapter}{\numberline {4}The Advanced FPGA-Friendly Branch Predictors}{14}{chapter.4}
+\contentsline {section}{\numberline {4.1}Perceptron Implementation}{14}{section.4.1}
+\contentsline {subsubsection}{Perceptron Table Organization}{14}{section*.6}
+\contentsline {subsubsection}{Multiplication}{15}{section*.7}
+\contentsline {subsubsection}{Adder Tree}{15}{section*.8}
+\contentsline {section}{\numberline {4.2}TAGE Implementation}{16}{section.4.2}
+\contentsline {section}{\numberline {4.3}Branch Target Predictor}{17}{section.4.3}
+\contentsline {chapter}{\numberline {5}Evaluation}{18}{chapter.5}
+\contentsline {section}{\numberline {5.1}Methodology}{18}{section.5.1}
+\contentsline {section}{\numberline {5.2}Target Prediction}{19}{section.5.2}
+\contentsline {section}{\numberline {5.3}The Minimalistic FPGA-Friendly Branch predictor}{19}{section.5.3}
+\contentsline {subsection}{\numberline {5.3.1}Direction Prediction}{19}{subsection.5.3.1}
+\contentsline {section}{\numberline {5.4}Area and Frequency}{20}{section.5.4}
+\contentsline {subsection}{\numberline {5.4.1}Performance}{21}{subsection.5.4.1}
+\contentsline {section}{\numberline {5.5}Advanced Branch predictors}{21}{section.5.5}
+\contentsline {subsection}{\numberline {5.5.1}Branch Prediction Accuracy}{21}{subsection.5.5.1}
+\contentsline {subsubsection}{Perceptron}{21}{section*.9}
+\contentsline {subsubsection}{TAGE}{22}{section*.10}
+\contentsline {subsubsection}{Accuracy Comparison}{23}{section*.11}
+\contentsline {subsection}{\numberline {5.5.2}Frequency}{23}{subsection.5.5.2}
+\contentsline {subsection}{\numberline {5.5.3}Performance and Resource Cost}{24}{subsection.5.5.3}
+\contentsline {chapter}{\numberline {6}Conclusion}{26}{chapter.6}
+\contentsline {chapter}{Bibliography}{27}{chapter.6}

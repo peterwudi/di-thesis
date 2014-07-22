@@ -1,45 +1,51 @@
-\chapter{The Advanced FPGA-Friendly Branch Predictor}
+\chapter{The Advanced FPGA-Friendly Branch Predictors}
 \label{chap:advanced}
 
-Chapter~\ref{chap:minimal} proposes gRselect as the best performing minimalistic design that has a hardware budget limited to 1 M9K BRAM. In this chapter, we loose the constraint on hardware budget and consider more advanced and accurate branch prediction technologies to achieve better performance.
+Chapter~\ref{chap:minimal} proposes gRselect as the best performing minimalistic design that has a hardware budget limited to one M9K BRAM. In this chapter, we relax the constraint on hardware budget and consider more advanced and accurate branch prediction technologies to achieve better performance.
 
-\section{Perceptron Predictor}
+\section{Perceptron Implementation}
 \label{sec:advanced:perceptron}
-Section~\ref{sec:background:dirpred:perceptron} introduced that perceptron predictor maintains vectors of weights in a table. It produces a prediction through the following steps: (1)~a vector of weight (i.e., a perceptron) is loaded from the table. (2)~multiply the weights with their corresponding global history (1 for taken and -1 for not-taken). (3)~sum up all the products, predict taken if the sum is positive, and not-taken otherwise. Each of these steps poses difficulties to map to the FPGA platform. The rest of this section addresses these problems.
+Section~\ref{sec:background:dirpred:perceptron} explained that the Perceptron predictor maintains vectors of weights in a table and produces a prediction through three steps. Each of these steps poses difficulties to map to an FPGA substrate. The rest of this section addresses these problems.
 
-\subsection{Perceptron Table Organization}
+\subsubsection{Perceptron Table Organization}
 \label{sec:advanced:perceptron:table}
-Each weight in a perceptron is typically 8-bit wide, and perceptron predictors usually use at least 12-bit global history~\cite{perceptron}. The depth of the table, on the other hand, tends to be relatively shallower (e.g. 64 entries for 1KB hardware budget). This requires a very wide but shallow memory, which does not map well to BRAMs on FPGAs. For example, the widest configuration that a M9K BRAM on Altera Stratix IV chip is 36-bit wide times 1k entries. If we implement the 1KB perceptron from~\cite{perceptron}, which uses 96-bit wide perceptrons 12-bit global history
+Each weight in a perceptron is typically 8-bit wide, and Perceptron predictors usually use at least a 12-bit global history~\cite{perceptron}. The depth of the table, on the other hand, tends to be relatively shallow (e.g., 64 entries for 1KB hardware budget). This requires a very wide but shallow memory, which does not map well to BRAMs on FPGAs. For example, the widest configuration of a M9K BRAM on Altera Stratix IV is 36-bit wide times 1K entries~\cite{StratixIVM9K}. If we implement the 1KB Perceptron as proposed by Jim\'enez et al.~\cite{perceptron}, which uses 96-bit wide perceptrons with 12-bit global history, it will result in a huge resource inefficiency as shown in Fig~\ref{fig:perceptronTable}. Stratix IV chips have another larger but slower and fewer M144K BRAM on Stratix IV chips~\cite{StratixIVM9K}, which can be configured as wide as 72-bit times 2K entries, clearly the inefficiency problem persists and it would impact maximum operating frequency.
 
-As Fig.~\ref{perceptronBRAM} shows,
-64-entry
-
-
+Since typically the Perceptron table does not require large storage space, the proposed Perceptron implementation uses MLABs as storage, which are fast fine-grain distributed memory resources. Since 50\% of all LABs can be configured as MLAB on Altera Stratix IV devices, using MLABs does not introduce routing difficulty.
+\kfig{perceptronTable.pdf}{fig:perceptronTable}{Inefficient use of M9K BRAMs to implement wide but shallow perceptron tables.}{angle = 0, trim = 1in 2in 3.4in 0.6in, clip, width=0.5\textwidth}
 
 
-\subsection{Multiplication}
+\subsubsection{Multiplication}
 \label{sec:advanced:perceptron:mult}
+The multiplication stage calculates the products of weights in a perceptron and their global direction histories. Since the value of the global direction history can only be either 1 or -1, the ``multiplication'' degenerates to two cases, i.e., each product can either be the true form or the 2's complement (i.e., negative) form of each weight. A straightforward implementation calculates the negative of each weight and uses a mux to select, using the corresponding global history bit, the appropriate result, as Fig.~\ref{fig:perceptronMult}(a) shows. To improve operating frequency, when updating the perceptron in the execution stage where the branch is resolved, both positive and negative forms of the updated weight can be pre-calculated, and the negatives can be stored on a complement perceptron table. This way, the multiplication stage at prediction time requires only a 2-to-1 mux, as Fig.~\ref{fig:perceptronMult}(b) shows. This optimization trade offs increased resources (it requires extra storage for the negative weights) for improved speed.
+\kfig{perceptronMult.pdf}{fig:perceptronMult}{Perceptron multiplication implementation.}{angle = 0, trim = 0.3in 2.2in 3in 0.6in, clip, width=0.7\textwidth}
 
-
-
-\subsection{Adder Tree}
+\subsubsection{Adder Tree}
 \label{sec:advanced:perceptron:adder}
+The adder tree sums the products from the multiplication stage. As Section~\ref{sec:eval:advanced:accuracy} will show, a global history of at least 16 bits has to be used to achieve sufficient accuracy. Implementing a 16-to-1 adder tree for 8-bit integers na\"ively degrades maximum frequency severely. The maximum frequency has to be improved for Perceptron to be practical.
+
+This work employs \textit{Low Order Bit (LOB) Elimination} that was proposed by Aasaraai et al.~\cite{lob}. LOB\ elimination ignores the Low Order Bits (LOBs) of each weight and only use the High Order Bits (HOBs) during prediction, while still using all the bits for updates. Section~\ref{sec:eval:advanced:accuracy} shows that eliminating five LOB bits reduces accuracy by less than 1\% compared to using all eight bits, but summing fewer bits results in 14.6\% higher maximum frequency. Section~\ref{sec:eval:advanced:perf} will show that using three HOB for prediction achieves the best overall performance.
+
+Cadenas et al.~\cite{perceptronRearrange} proposed a method to rearrange the weights stored in the table in order to reduce the number of layers of the adder tree. Assuming a Perceptron predictor uses $h$ history bits, instead of storing $h$ weights $w_i$ where $i = 1 ... h$, a new form of weights $\widetilde{w}_i$: $\widetilde{w}_i = - w_i + w_{i+1}; \widetilde{w}_{i+1} = - w_i - w_{i+1},$ for $i = 1, 3, ..., h-1$ is used. The perceptron prediction can now be computed by $y = w_0 + \sum_{i=1}^{h/2}(-G_{2i-1})\widetilde{w}_{2i+G_{2i-1}G_{2i}}$. This work applies this new arrangement because it pushes part of the calculation to the less time critical update logic of the Perceptron predictor so that only $h/2$ additions have to be performed, hence reduces the number of adders required by 50\%.
+
+Using fast adders such as carry-lookahead adders does not help to reduce the adder tree latency. This is because that the problem is not summing a few very wide numbers, but many narrow numbers. Most of the latency comes from going through layers of adders rather than propagating the carry bits. To further improve maximum frequency, this work adapts the implementation of a Wallace Tree~\cite{wallacetree}. A Wallace tree is a hardware implementation of a digital circuit that efficiently sums the partial products when multiplying two integers, which is similar to the situation that a Perceptron predictor is facing. The Wallace tree implementation proves to be 10.5\% faster than a na\"ive binary reduction tree implementation. 
 
 
-
-
-
-
-
-
-
-
-
-\section{TAgged GEometric history length Branch Predictor (TAGE)}
+\section{TAGE Implementation}
 \label{sec:advanced:tage}
+Section~\ref{sec:eval:advanced:accuracy} shows that TAGE is the most accurate amongst all the direction predictors considered in this work when they use the same hardware budget. However, TAGE uses multiple tables with tagged entries that require comparator driven logic which does not map well onto FPGAs. Section~\ref{sec:eval:advanced:perf} shows that the maximum frequency slowdown of TAGE is not amortized by the resulting accuracy gains. Accordingly, TAGE is best used as an overriding predictor.
 
+The critical path of TAGE is as follows: (1)~It performs an elaborate PC-based hashing to generate multiple table indices one per table. (2)~It accesses the tables and in parallel compares the tags of the read entries to determine whether they match. (3)~Finally each decision has to pass through cascaded layers of multiplexers to select the longest matching prediction. Although the latency of these operations is high, the path can be easily pipelined to achieve much higher operating frequency. Based on this observation, this work explores an overriding branch predictor implementation using TAGE.
 
+Overriding branch prediction is a technique to leverage the benefits of both fast but less accurate, and slow but more accurate predictors. This technique has been used commercially, e.g., in the Alpha EV8 microprocessors~\cite{alphaEV8}. In an overriding predictor, a faster but less accurate base predictor makes a base prediction quickly, and then a slower but more accurate predictor overrides that decision if it disagrees with the base prediction. 
 
+In this work, the base predictor is the simple bimodal predictor included in TAGE itself, i.e., $T_0$ in Fig.~\ref{fig:tage}. The bimodal predictor provides a base prediction in the first cycle, and TAGE provides a prediction at the second cycle. Section~\ref{sec:eval:advanced:accuracy} and~\ref{sec:eval:advanced:fmax} show that the overriding TAGE outperforms all the other branch prediction schemes in terms of both accuracy and maximum frequency.
+
+\section{Branch Target Predictor}
+\label{sec:advanced:target}
+Chapter~\ref{chap:minimal} has shown that when using one M9K BRAM -- a hardware budget on par with that of Nios~II-f -- eliminating the BTB and using \textit{Full Address Calculation} (FAC) together with a RAS results in better performance~\cite{grselect}. It has also shown that direct branches and returns comprise over 99.8\% of all branches. Implementing FAC with RAS can cover these branches with 100\% accuracy, therefore having a BTB to cover all branches results in negligible improvement in target prediction accuracy.
+
+Since, this chapter investigates how branch prediction accuracy can improve when additional hardware resources are used, adding a BTB for better target prediction coverage could improve target prediction accuracy. Accordingly, we consider reintroducing a BTB. However, simulations show that accuracy is still better without a BTB. This is because when the target predictor only has FAC and RAS, it never predicts indirect branches that are not returns because it is not capable to do so. As a result, the destructive aliasing in the \textit{direction} predictor is alleviated because fewer branches are being predicted. Based on this observation, the Perceptron and TAGE predictors in this chapter also uses FAC with a 16-entry RAS as the branch target predictor.
 
 
 

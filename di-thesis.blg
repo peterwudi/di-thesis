@@ -2,9 +2,12 @@ This is BibTeX, Version 0.99dThe top-level auxiliary file: di-thesis.aux
 A level-1 auxiliary file: introduction.aux
 A level-1 auxiliary file: background.aux
 A level-1 auxiliary file: minimal.aux
+A level-1 auxiliary file: advanced.aux
 A level-1 auxiliary file: evaluation.aux
 A level-1 auxiliary file: conclusion.aux
 The style file: plain.bst
 Database file #1: thesis.bib
 Warning--to sort, need author or key in uclinux
-(There was 1 warning)
+Warning--empty publisher in lob
+Warning--empty journal in niosii
+(There were 3 warnings)
