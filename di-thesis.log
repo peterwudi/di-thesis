@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2014.6.26)  22 JUL 2014 16:07
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2014.6.26)  22 JUL 2014 23:37
 entering extended mode
 **E:/University*of*Toronto/masters/thesis/di-thesis.tex
 ("E:/University of Toronto/masters/thesis/di-thesis.tex"
@@ -222,7 +222,7 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 \Hy@SectionHShift=\skip48
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 51.
+Package hyperref Info: Option `colorlinks' set `true' on input line 52.
 
 ("E:\University of Toronto\masters\thesis\di-thesis.aux"
 ("E:\University of Toronto\masters\thesis\introduction.aux")
@@ -231,20 +231,20 @@ Package hyperref Info: Option `colorlinks' set `true' on input line 51.
 ("E:\University of Toronto\masters\thesis\advanced.aux")
 ("E:\University of Toronto\masters\thesis\evaluation.aux")
 ("E:\University of Toronto\masters\thesis\conclusion.aux"))
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 117.
-LaTeX Font Info:    ... okay on input line 117.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 117.
-LaTeX Font Info:    ... okay on input line 117.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 117.
-LaTeX Font Info:    ... okay on input line 117.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 117.
-LaTeX Font Info:    ... okay on input line 117.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 117.
-LaTeX Font Info:    ... okay on input line 117.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 117.
-LaTeX Font Info:    ... okay on input line 117.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 117.
-LaTeX Font Info:    ... okay on input line 117.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 118.
+LaTeX Font Info:    ... okay on input line 118.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 118.
+LaTeX Font Info:    ... okay on input line 118.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 118.
+LaTeX Font Info:    ... okay on input line 118.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 118.
+LaTeX Font Info:    ... okay on input line 118.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 118.
+LaTeX Font Info:    ... okay on input line 118.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 118.
+LaTeX Font Info:    ... okay on input line 118.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 118.
+LaTeX Font Info:    ... okay on input line 118.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -303,7 +303,7 @@ File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
 )
 Package color Info: Driver file: pdftex.def on input line 130.
 )
-Package hyperref Info: Link coloring ON on input line 117.
+Package hyperref Info: Link coloring ON on input line 118.
 
 ("D:\Program Files (x86)\MiKTeX 2.9\tex\latex\hyperref\nameref.sty"
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
@@ -313,21 +313,21 @@ Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
 \c@section@level=\count111
 )
-LaTeX Info: Redefining \ref on input line 117.
-LaTeX Info: Redefining \pageref on input line 117.
-LaTeX Info: Redefining \nameref on input line 117.
+LaTeX Info: Redefining \ref on input line 118.
+LaTeX Info: Redefining \pageref on input line 118.
+LaTeX Info: Redefining \nameref on input line 118.
 
 ("E:\University of Toronto\masters\thesis\di-thesis.out")
 ("E:\University of Toronto\masters\thesis\di-thesis.out")
 \@outlinefile=\write3
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 125.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 126.
 
 
 ("D:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\omscmr.fd"
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 125.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 126.
  [1
 
 {C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}] [2] [3]
@@ -346,176 +346,180 @@ LaTeX Font Info:    External font `cmex10' loaded for size
  [6
 
 ]
-("E:\University of Toronto\masters\thesis\di-thesis.lof")
-\tf@lof=\write6
- [7
+("E:\University of Toronto\masters\thesis\di-thesis.lof" [7
 
-]
+])
+\tf@lof=\write6
+ [8]
 ("E:\University of Toronto\masters\thesis\introduction.tex"
 Chapter 1.
-[1
+
+Underfull \vbox (badness 5189) has occurred while \output is active []
+
+ [1
 
 
 
-]) [2] ("E:\University of Toronto\masters\thesis\background.tex"
+])
+[2] ("E:\University of Toronto\masters\thesis\background.tex"
 Chapter 2.
-<Figures/bpcanonical.pdf, id=316, 794.97pt x 614.295pt>
+[3
+
+
+
+] <Figures/bpcanonical.pdf, id=330, 794.97pt x 614.295pt>
 File: Figures/bpcanonical.pdf Graphic file (type pdf)
 
 <use Figures/bpcanonical.pdf>
 Package pdftex.def Info: Figures/bpcanonical.pdf used on input line 18.
 (pdftex.def)             Requested size: 686.56339pt x 484.20763pt.
- [3
+ [4] [5 <E:/University of Toronto/masters/thesis/Figures/bpcanonical.pdf>] <Fig
+ures/simpleDIR.pdf, id=402, 722.7pt x 542.025pt>
+File: Figures/simpleDIR.pdf Graphic file (type pdf)
+
+<use Figures/simpleDIR.pdf>
+Package pdftex.def Info: Figures/simpleDIR.pdf used on input line 44.
+(pdftex.def)             Requested size: 643.20103pt x 368.57544pt.
+
+<Figures/perceptron.pdf, id=406, 722.7pt x 542.025pt>
+File: Figures/perceptron.pdf Graphic file (type pdf)
+
+<use Figures/perceptron.pdf>
+Package pdftex.def Info: Figures/perceptron.pdf used on input line 50.
+(pdftex.def)             Requested size: 505.88881pt x 216.8095pt.
+ [6 <E:/University of Toronto/masters/thesis/Figures/simpleDIR.pdf>] <Figures/t
+age.pdf, id=432, 722.7pt x 542.025pt>
+File: Figures/tage.pdf Graphic file (type pdf)
+
+<use Figures/tage.pdf>
+Package pdftex.def Info: Figures/tage.pdf used on input line 75.
+(pdftex.def)             Requested size: 650.42847pt x 484.20764pt.
+ [7 <E:/University of Toronto/masters/thesis/Figures/perceptron.pdf>] [8 <E:/Un
+iversity of Toronto/masters/thesis/Figures/tage.pdf>]
+[9]) [10] ("E:\University of Toronto\masters\thesis\minimal.tex"
+Chapter 3.
+
+LaTeX Warning: Reference `sec:eval:fpga' on page 11 undefined on input line 9.
+
+
+Underfull \vbox (badness 2744) has occurred while \output is active []
+
+ [11
 
 
 
 ]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [4 <E:/University of Toronto/masters/thesis/Figures/bpcanonical.pdf>]
-<Figures/simpleDIR.pdf, id=382, 722.7pt x 542.025pt>
-File: Figures/simpleDIR.pdf Graphic file (type pdf)
-
-<use Figures/simpleDIR.pdf>
-Package pdftex.def Info: Figures/simpleDIR.pdf used on input line 42.
-(pdftex.def)             Requested size: 643.20103pt x 368.57544pt.
-
-<Figures/perceptron.pdf, id=386, 722.7pt x 542.025pt>
-File: Figures/perceptron.pdf Graphic file (type pdf)
-
-<use Figures/perceptron.pdf>
-Package pdftex.def Info: Figures/perceptron.pdf used on input line 48.
-(pdftex.def)             Requested size: 505.88881pt x 216.8095pt.
- [5 <E:/University of Toronto/masters/thesis/Figures/simpleDIR.pdf>] <Figures/t
-age.pdf, id=412, 722.7pt x 542.025pt>
-File: Figures/tage.pdf Graphic file (type pdf)
-
-<use Figures/tage.pdf>
-Package pdftex.def Info: Figures/tage.pdf used on input line 56.
-(pdftex.def)             Requested size: 650.42847pt x 484.20764pt.
- [6 <E:/University of Toronto/masters/thesis/Figures/perceptron.pdf>] [7 <E:/Un
-iversity of Toronto/masters/thesis/Figures/tage.pdf>])
-[8] ("E:\University of Toronto\masters\thesis\minimal.tex"
-Chapter 3.
-
-LaTeX Warning: Reference `sec:eval:fpga' on page 9 undefined on input line 9.
-
-[9
-
-
-
-] <Figures/bimodalCP.pdf, id=637, 722.7pt x 542.025pt>
+<Figures/bimodalCP.pdf, id=663, 722.7pt x 542.025pt>
 File: Figures/bimodalCP.pdf Graphic file (type pdf)
 
 <use Figures/bimodalCP.pdf>
 Package pdftex.def Info: Figures/bimodalCP.pdf used on input line 18.
 (pdftex.def)             Requested size: 722.69823pt x 455.30014pt.
 
-<Figures/histogram.pdf, id=641, 597.55246pt x 845.07718pt>
+<Figures/histogram.pdf, id=667, 597.55246pt x 845.07718pt>
 File: Figures/histogram.pdf Graphic file (type pdf)
 
 <use Figures/histogram.pdf>
 Package pdftex.def Info: Figures/histogram.pdf used on input line 22.
 (pdftex.def)             Requested size: 489.1463pt x 303.05148pt.
-
-<Figures/histogram_ind_jmp.pdf, id=643, 597.55246pt x 845.07718pt>
+ [12 <E:/University of Toronto/masters/thesis/Figures/bimodalCP.pdf>]
+<Figures/histogram_ind_jmp.pdf, id=712, 597.55246pt x 845.07718pt>
 File: Figures/histogram_ind_jmp.pdf Graphic file (type pdf)
 
 <use Figures/histogram_ind_jmp.pdf>
 Package pdftex.def Info: Figures/histogram_ind_jmp.pdf used on input line 31.
 (pdftex.def)             Requested size: 496.37262pt x 288.59663pt.
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [10 <E:/University of Toronto/masters/thesis/Figures/bimodalCP.pdf>]
-
-LaTeX Warning: Reference `sec:eval:direction' on page 11 undefined on input lin
+LaTeX Warning: Reference `sec:eval:direction' on page 13 undefined on input lin
 e 40.
 
-[11 <E:/University of Toronto/masters/thesis/Figures/histogram.pdf> <E:/Univers
-ity of Toronto/masters/thesis/Figures/histogram_ind_jmp.pdf>]
+[13 <E:/University of Toronto/masters/thesis/Figures/histogram.pdf>]
 
-LaTeX Warning: Reference `sec:eval:direction' on page 12 undefined on input lin
+LaTeX Warning: Reference `sec:eval:direction' on page 14 undefined on input lin
 e 42.
 
-[12] <Figures/GSelectCP.pdf, id=741, 1084.05pt x 939.51pt>
+
+Underfull \vbox (badness 1635) has occurred while \output is active []
+
+ [14 <E:/University of Toronto/masters/thesis/Figures/histogram_ind_jmp.pdf>]
+<Figures/GSelectCP.pdf, id=765, 1084.05pt x 939.51pt>
 File: Figures/GSelectCP.pdf Graphic file (type pdf)
 
 <use Figures/GSelectCP.pdf>
 Package pdftex.def Info: Figures/GSelectCP.pdf used on input line 63.
 (pdftex.def)             Requested size: 316.17987pt x 166.69356pt.
-) [13 <E:/University of Toronto/masters/thesis/Figures/GSelectCP.pdf>] ("E:\Uni
-versity of Toronto\masters\thesis\advanced.tex"
+ [15]) [16 <E:/University of Toronto/masters/thesis/Figures/GSelectCP.pdf>] ("E
+:\University of Toronto\masters\thesis\advanced.tex"
 Chapter 4.
-<Figures/perceptronTable.pdf, id=838, 722.7pt x 542.025pt>
+[17
+
+
+
+] <Figures/perceptronTable.pdf, id=873, 722.7pt x 542.025pt>
 File: Figures/perceptronTable.pdf Graphic file (type pdf)
 
 <use Figures/perceptronTable.pdf>
 Package pdftex.def Info: Figures/perceptronTable.pdf used on input line 15.
 (pdftex.def)             Requested size: 404.71149pt x 354.12172pt.
 
-<Figures/perceptronMult.pdf, id=842, 722.7pt x 542.025pt>
+<Figures/perceptronMult.pdf, id=877, 722.7pt x 542.025pt>
 File: Figures/perceptronMult.pdf Graphic file (type pdf)
 
 <use Figures/perceptronMult.pdf>
 Package pdftex.def Info: Figures/perceptronMult.pdf used on input line 21.
 (pdftex.def)             Requested size: 484.20761pt x 339.66797pt.
 
-Underfull \vbox (badness 2884) has occurred while \output is active []
 
- [14
-
-
-
-]
-
-LaTeX Warning: Reference `sec:eval:advanced:accuracy' on page 15 undefined on i
+LaTeX Warning: Reference `sec:eval:advanced:accuracy' on page 18 undefined on i
 nput line 25.
 
+[18 <E:/University of Toronto/masters/thesis/Figures/perceptronTable.pdf>]
 
-LaTeX Warning: Reference `sec:eval:advanced:accuracy' on page 15 undefined on i
+LaTeX Warning: Reference `sec:eval:advanced:accuracy' on page 19 undefined on i
 nput line 27.
 
 
-LaTeX Warning: Reference `sec:eval:advanced:perf' on page 15 undefined on input
+LaTeX Warning: Reference `sec:eval:advanced:perf' on page 19 undefined on input
  line 27.
 
-[15 <E:/University of Toronto/masters/thesis/Figures/perceptronTable.pdf>]
 
-LaTeX Warning: Reference `sec:eval:advanced:accuracy' on page 16 undefined on i
+Underfull \vbox (badness 4242) has occurred while \output is active []
+
+ [19 <E:/University of Toronto/masters/thesis/Figures/perceptronMult.pdf>]
+
+LaTeX Warning: Reference `sec:eval:advanced:accuracy' on page 20 undefined on i
 nput line 36.
 
 
-LaTeX Warning: Reference `sec:eval:advanced:perf' on page 16 undefined on input
+LaTeX Warning: Reference `sec:eval:advanced:perf' on page 20 undefined on input
  line 36.
 
-[16 <E:/University of Toronto/masters/thesis/Figures/perceptronMult.pdf>]
 
-LaTeX Warning: Reference `sec:eval:advanced:accuracy' on page 17 undefined on i
+LaTeX Warning: Reference `sec:eval:advanced:accuracy' on page 20 undefined on i
 nput line 42.
 
 
-LaTeX Warning: Reference `sec:eval:advanced:fmax' on page 17 undefined on input
+LaTeX Warning: Reference `sec:eval:advanced:fmax' on page 20 undefined on input
  line 42.
 
-) [17] ("E:\University of Toronto\masters\thesis\evaluation.tex"
+[20]) [21] ("E:\University of Toronto\masters\thesis\evaluation.tex"
 Chapter 5.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [18
+[22
 
 
 
-]
-<Figures/target_mpki.pdf, id=1009, 845.07718pt x 597.55246pt>
+] <Figures/target_mpki.pdf, id=1042, 845.07718pt x 597.55246pt>
 File: Figures/target_mpki.pdf Graphic file (type pdf)
 
 <use Figures/target_mpki.pdf>
 Package pdftex.def Info: Figures/target_mpki.pdf used on input line 25.
 (pdftex.def)             Requested size: 361.35138pt x 164.51369pt.
 
-<Figures/direction_mpki.pdf, id=1012, 597.55246pt x 845.07718pt>
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [23 <E:/University of Toronto/masters/thesis/Figures/target_mpki.pdf>]
+<Figures/direction_mpki.pdf, id=1057, 597.55246pt x 845.07718pt>
 File: Figures/direction_mpki.pdf Graphic file (type pdf)
 
 <use Figures/direction_mpki.pdf>
@@ -523,114 +527,111 @@ Package pdftex.def Info: Figures/direction_mpki.pdf used on input line 35.
 (pdftex.def)             Requested size: 316.17987pt x 175.12328pt.
 
 
-LaTeX Warning: Reference `sec:fpga' on page 19 undefined on input line 37.
+LaTeX Warning: Reference `sec:fpga' on page 24 undefined on input line 37.
 
 
-LaTeX Warning: Reference `sec:eval:fpga' on page 19 undefined on input line 37.
+LaTeX Warning: Reference `sec:eval:fpga' on page 24 undefined on input line 37.
 
 
-[19 <E:/University of Toronto/masters/thesis/Figures/target_mpki.pdf>]
-<Figures/Fmax.pdf, id=1027, 597.55246pt x 845.07718pt>
+<Figures/Fmax.pdf, id=1061, 597.55246pt x 845.07718pt>
 File: Figures/Fmax.pdf Graphic file (type pdf)
  <use Figures/Fmax.pdf>
 Package pdftex.def Info: Figures/Fmax.pdf used on input line 44.
 (pdftex.def)             Requested size: 316.17987pt x 197.65033pt.
 
-<Figures/ipc.pdf, id=1030, 845.07718pt x 597.55246pt>
+[24 <E:/University of Toronto/masters/thesis/Figures/direction_mpki.pdf>]
+<Figures/ipc.pdf, id=1075, 845.07718pt x 597.55246pt>
 File: Figures/ipc.pdf Graphic file (type pdf)
  <use Figures/ipc.pdf>
 Package pdftex.def Info: Figures/ipc.pdf used on input line 50.
 (pdftex.def)             Requested size: 271.01526pt x 118.31645pt.
 
-Underfull \vbox (badness 3118) has occurred while \output is active []
-
- [20 <E:/University of Toronto/masters/thesis/Figures/direction_mpki.pdf> <E:/U
-niversity of Toronto/masters/thesis/Figures/Fmax.pdf>]
-<Figures/ips.pdf, id=1060, 597.55246pt x 845.07718pt>
+<Figures/ips.pdf, id=1079, 597.55246pt x 845.07718pt>
 File: Figures/ips.pdf Graphic file (type pdf)
  <use Figures/ips.pdf>
 Package pdftex.def Info: Figures/ips.pdf used on input line 54.
 (pdftex.def)             Requested size: 271.01526pt x 141.97952pt.
 
-<Figures/perceptronMPKI.pdf, id=1064, 845.07718pt x 597.55246pt>
+[25 <E:/University of Toronto/masters/thesis/Figures/Fmax.pdf> <E:/University o
+f Toronto/masters/thesis/Figures/ipc.pdf>]
+<Figures/perceptronMPKI.pdf, id=1110, 845.07718pt x 597.55246pt>
 File: Figures/perceptronMPKI.pdf Graphic file (type pdf)
 
 <use Figures/perceptronMPKI.pdf>
 Package pdftex.def Info: Figures/perceptronMPKI.pdf used on input line 68.
 (pdftex.def)             Requested size: 722.21666pt x 207.29442pt.
- [21 <E:/University of Toronto/masters/thesis/Figures/ipc.pdf> <E:/University o
-f Toronto/masters/thesis/Figures/ips.pdf>]
-<Figures/perceptronHOB.pdf, id=1092, 845.07718pt x 597.55246pt>
+
+<Figures/perceptronHOB.pdf, id=1113, 845.07718pt x 597.55246pt>
 File: Figures/perceptronHOB.pdf Graphic file (type pdf)
 
 <use Figures/perceptronHOB.pdf>
 Package pdftex.def Info: Figures/perceptronHOB.pdf used on input line 71.
 (pdftex.def)             Requested size: 700.53554pt x 221.74707pt.
+ [26 <E:/University of Toronto/masters/thesis/Figures/ips.pdf> <E:/University o
+f Toronto/masters/thesis/Figures/perceptronMPKI.pdf>]
 
-
-LaTeX Warning: Reference `sec:fpga:perceptron:adder' on page 22 undefined on in
+LaTeX Warning: Reference `sec:fpga:perceptron:adder' on page 27 undefined on in
 put line 73.
 
-[22 <E:/University of Toronto/masters/thesis/Figures/perceptronMPKI.pdf> <E:/Un
-iversity of Toronto/masters/thesis/Figures/perceptronHOB.pdf>]
-<Figures/tageMPKI.pdf, id=1120, 845.07718pt x 597.55246pt>
+[27 <E:/University of Toronto/masters/thesis/Figures/perceptronHOB.pdf>]
+<Figures/tageMPKI.pdf, id=1159, 845.07718pt x 597.55246pt>
 File: Figures/tageMPKI.pdf Graphic file (type pdf)
 
 <use Figures/tageMPKI.pdf>
 Package pdftex.def Info: Figures/tageMPKI.pdf used on input line 85.
 (pdftex.def)             Requested size: 722.21669pt x 214.52074pt.
 
-<Figures/admpki.pdf, id=1123, 845.07718pt x 597.55246pt>
+<Figures/admpki.pdf, id=1162, 845.07718pt x 597.55246pt>
 File: Figures/admpki.pdf Graphic file (type pdf)
 
 <use Figures/admpki.pdf>
 Package pdftex.def Info: Figures/admpki.pdf used on input line 93.
 (pdftex.def)             Requested size: 722.21666pt x 207.29442pt.
 
-<Figures/adfmax.pdf, id=1126, 597.55246pt x 845.07718pt>
+<Figures/adfmax.pdf, id=1165, 597.55246pt x 845.07718pt>
 File: Figures/adfmax.pdf Graphic file (type pdf)
 
 <use Figures/adfmax.pdf>
 Package pdftex.def Info: Figures/adfmax.pdf used on input line 98.
 (pdftex.def)             Requested size: 489.1463pt x 136.83066pt.
- [23 <E:/University of Toronto/masters/thesis/Figures/tageMPKI.pdf>] <Figures/a
-dipc.pdf, id=1145, 845.07718pt x 597.55246pt>
+ [28 <E:/University of Toronto/masters/thesis/Figures/tageMPKI.pdf>] <Figures/a
+dipc.pdf, id=1183, 845.07718pt x 597.55246pt>
 File: Figures/adipc.pdf Graphic file (type pdf)
 
 <use Figures/adipc.pdf>
 Package pdftex.def Info: Figures/adipc.pdf used on input line 105.
 (pdftex.def)             Requested size: 722.21666pt x 178.38693pt.
 
-<Figures/adips.pdf, id=1148, 845.07718pt x 597.55246pt>
+<Figures/adips.pdf, id=1186, 845.07718pt x 597.55246pt>
 File: Figures/adips.pdf Graphic file (type pdf)
 
 <use Figures/adips.pdf>
 Package pdftex.def Info: Figures/adips.pdf used on input line 108.
 (pdftex.def)             Requested size: 729.44409pt x 214.52075pt.
- [24 <E:/University of Toronto/masters/thesis/Figures/admpki.pdf> <E:/Universit
+ [29 <E:/University of Toronto/masters/thesis/Figures/admpki.pdf> <E:/Universit
 y of Toronto/masters/thesis/Figures/adfmax.pdf>]
-<Figures/adarea.pdf, id=1198, 845.07718pt x 597.55246pt>
+<Figures/adarea.pdf, id=1236, 845.07718pt x 597.55246pt>
 File: Figures/adarea.pdf Graphic file (type pdf)
 
 <use Figures/adarea.pdf>
 Package pdftex.def Info: Figures/adarea.pdf used on input line 113.
 (pdftex.def)             Requested size: 729.44409pt x 207.29442pt.
-) [25 <E:/University of Toronto/masters/thesis/Figures/adipc.pdf> <E:/Universit
+) [30 <E:/University of Toronto/masters/thesis/Figures/adipc.pdf> <E:/Universit
 y of Toronto/masters/thesis/Figures/adips.pdf> <E:/University of Toronto/master
 s/thesis/Figures/adarea.pdf>]
 ("E:\University of Toronto\masters\thesis\conclusion.tex"
 Chapter 6.
-) [26
+) [31
 
 
 
-] ("E:\University of Toronto\masters\thesis\di-thesis.bbl" [27
+] ("E:\University of Toronto\masters\thesis\di-thesis.bbl" [32
 
 
 ])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 221.
- [28]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 221.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 222.
+ [33]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 222.
 
 ("E:\University of Toronto\masters\thesis\di-thesis.aux"
 ("E:\University of Toronto\masters\thesis\introduction.aux")
@@ -639,24 +640,24 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 221.
 ("E:\University of Toronto\masters\thesis\advanced.aux")
 ("E:\University of Toronto\masters\thesis\evaluation.aux")
 ("E:\University of Toronto\masters\thesis\conclusion.aux"))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 221.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 221.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 222.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 222.
 Package rerunfilecheck Info: File `di-thesis.out' has not changed.
-(rerunfilecheck)             Checksum: 08D915887773C325B6F46CAA9FCCCDB4;2840.
+(rerunfilecheck)             Checksum: 937896E469B7BD961E8DB66F8DAA5F15;2857.
 
 
 LaTeX Warning: There were undefined references.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 221.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 222.
  ) 
 Here is how much of TeX's memory you used:
- 6067 strings out of 493921
- 93003 string characters out of 3144876
- 179414 words of memory out of 3000000
- 9124 multiletter control sequences out of 15000+200000
+ 6078 strings out of 493921
+ 93151 string characters out of 3144876
+ 178509 words of memory out of 3000000
+ 9128 multiletter control sequences out of 15000+200000
  8096 words of font info for 29 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 30i,9n,34p,1420b,432s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 30i,9n,34p,1420b,430s stack positions out of 5000i,500n,10000p,200000b,50000s
 <D:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb>
 <D:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><D
 :/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><D:
@@ -673,9 +674,9 @@ X 2.9/fonts/type1/public/amsfonts/cm/cmsy5.pfb><D:/Program Files (x86)/MiKTeX 2
 .9/fonts/type1/public/amsfonts/cm/cmsy7.pfb><D:/Program Files (x86)/MiKTeX 2.9/
 fonts/type1/public/amsfonts/cm/cmti10.pfb><D:/Program Files (x86)/MiKTeX 2.9/fo
 nts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on di-thesis.pdf (35 pages, 1988189 bytes).
+Output written on di-thesis.pdf (41 pages, 2001508 bytes).
 PDF statistics:
- 1355 PDF objects out of 1440 (max. 8388607)
- 129 named destinations out of 1000 (max. 500000)
+ 1395 PDF objects out of 1440 (max. 8388607)
+ 136 named destinations out of 1000 (max. 500000)
  566 words of extra memory for PDF output out of 10000 (max. 10000000)
 

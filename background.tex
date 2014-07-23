@@ -1,15 +1,15 @@
 \chapter{Background and Goals}
 \label{chap:background}
-This chapter covers the background of branch prediction and the goal of this thesis. 
+This chapter covers the background of branch prediction. Section~\ref{sec:background:whybp} introduces the importance of branch prediction. Section~\ref{sec:background:bpoverview} describes the structure of a canonical branch predictor, and Sections~\ref{sec:background:target} and~\ref{sec:background:dirpred} overviews the branch prediction schemes considered in this thesis. Section~\ref{sec:background:fpga} briefly introduces Field Programmable Gate Arrays (FPGAs) and soft processors. Finally, Section~\ref{sec:background:goal} presents the goal of this thesis. 
 
 \section{Why Branch Prediction?}
 \label{sec:background:whybp}
 In modern microprocessors, instruction pipelining is a key feature to improve performances. At each cycle, a new instruction is read from the memory at the location indicated by the program counter (PC). The pipeline works ideally when there is no transfer of control, i.e., PC is incremented by a constant at each cycle to fetch the next instruction. However, when there is a transfer of control (e.g. a taken branch instruction), the next instruction to fetch is unknown at this point. The processor has to stall the pipeline to wait until the branch is resolved to fetch the correct instruction, hence severely impacts performance.
 
-Branch prediction is a technique to improve performance by guessing the branch target (i.e. the next instruction) to allow the processor to run speculatively. The processor fetches the predicted target, and compares the prediction with the actual target when the branch is resolved several cycles later. If the prediction was correct, the processor fetched the correct instructions without stalling the pipeline, as if the instruction stream were not disrupted. On the other hand, if the prediction was incorrect, the processor fetched wrong instructions, and the intermediate results related to those wrong instructions has to be squashed, possibly with an extra maintenance penalty. Therefore, prediction accuracy is the key to high performance.
+Branch prediction is a technique to improve performance by guessing the branch target (i.e., the next instruction) to allow the processor to run speculatively. The processor fetches the predicted target, and compares the prediction with the actual target when the branch is resolved several cycles later. If the prediction was correct, the processor fetched the correct instructions without stalling the pipeline, as if the instruction stream were not disrupted. On the other hand, if the prediction was incorrect, the processor fetched wrong instructions, and the intermediate results related to those wrong instructions has to be squashed with an extra maintenance penalty. Therefore, prediction accuracy is the key to high performance.
 
-\section{Branch Prediction Scheme}
-\label{sec:background:bpscheme}
+\section{Branch Prediction Overview}
+\label{sec:background:bpoverview}
 Branch prediction has two aspects, i.e., direction prediction and target prediction. Branch direction prediction predicts whether a branch instruction will be taken or not, while branch target prediction predicts the target instruction address if the branch is taken.
 
 Fig.~\ref{fig:bpcanonical} shows the organization of a typical branch predictor comprising: (1)~a direction predictor (DIR), (2)~a Branch Target Buffer (BTB), and (3)~a Return Address Stack (RAS).  
@@ -17,20 +17,22 @@ Fig.~\ref{fig:bpcanonical} shows the organization of a typical branch predictor 
 The predictor operates in the fetch stage where it aims to predict the program counter (PC), i.e., the memory address, of the instruction to fetch in the next cycle using the current instruction's PC and other dynamically collected information. The DIR guesses whether the branch will be taken or not. The BTB and the RAS guess the address for ``predicted as taken" branches and function returns respectively. The multiplexer at the end selects based on the branch type and the direction prediction whether the target is the fall through address (PC+4 in Nios~II), the target predicted by the BTB, or the target provided by the RAS. Since, at this point in time, the actual instruction is not available in a typical ASIC implementation, it is not directly possible to determine whether the instruction is a return, a branch, or some other instruction. Accordingly, a Selection Logic block uses either pre-decode information or a PC-based, dynamically populated lookup table to guess which target is best to use. With the latter scheme, when no entry exists in the lookup table, some default action is taken until the first time a branch is encountered. Once the branch executes, its type is stored in the lookup table where it serves to identify the branch type on subsequent encounters. This scheme is not perfectly accurate due to aliasing.
 \kfig{bpcanonical.pdf}{fig:bpcanonical}{Canonical Branch Predictor.}{angle = 0, trim = 1in 1in 0.5in 0.8in, clip, width=0.6\textwidth}
 
-\section{Branch Target Predictors}
+\section{Branch Target Prediction}
 \label{sec:background:target}
 Branch Target Prediction usually requires a Branch Target Buffer (BTB), a cache-like structure that records the addresses of the branches and their target addresses. If a branch is predicted to be taken and there is also a BTB hit, then the next PC is set to be the predicted target. A BTB can be set-associative to reduce aliasing.
 
 Another common structure used for branch target prediction is the Return Address Stack (RAS),  a stack-like structure that predicts the target address of function returns. When a call instruction executes, the return address of that call is pushed onto the RAS. When the processor executes the corresponding return instruction, RAS pops the return address and provides a prediction. The prediction is accurate as long as the RAS' size is less than the current call depth. Most modern processors have a shallow RAS because typical programs generally do not have very deep call depths.
 
 
-\section{Branch Direction Predictors}
+\section{Branch Direction Prediction}
 \label{sec:background:dirpred}
-This section describes the branch direction predictors considered in this thesis.
+This section describes the branch direction predictors. This section first briefly introduces the \textit{static} prediction schemes. Then, more discussion will focus on \textit{dynamic} prediction schemes, starting with the simple schemes such as bimodal, gshare and gselect~\cite{McFarling}, to more complex schemes such as Perceptron~\cite{perceptron} and TAGE~\cite{tage} predictors.
 
-\section{Static Predictor}
+\subsection{Static Prediction Scheme}
 \label{sec:background:dirpred:static}
-Static branch direction predictors statically predicts a branch to be taken or non-taken. This strategy is based on the observation that most branches are taken. The main weakness of static branch predictors is its inability to adapt to various applications. There are some other variations of static branch predictors such as ``backward-taken forward-not-taken". However, the improvements in accuracy is not significant. As the pipeline in modern processors becomes deeper, the misprediction penalties increases, which necessitates more accurate \textit{dynamic} branch predictors.
+Static branch direction predictors statically predicts a branch to be taken or non-taken. This strategy is based on the observation that most branches are taken. However, prior work has shown that approximately 30\% of all branches are \textit{unconditional} branches (e.g., functions calls and returns)~\cite{histogram}, which are of course taken. The remaining 70\% branches are \textit{conditional} branches, their directions are not strongly biased towards one direction than the other.
+
+The main weakness of static branch predictors is its inability to adapt to various applications. A static prediction scheme variation called ``backward-taken forward-not-taken" takes advantage of the observation that most backward branches are taken (e.g., the end of loops), while forward branches are often not taken. However, the improvements in accuracy is not significant. As the pipeline in modern processors becomes deeper, the misprediction penalties increases, which necessitates more accurate \textit{dynamic} branch predictors.
 
 \subsection{Bimodal, Gshare and Gselect Predictor}
 \label{sec:background:dirpred:bimodal}
@@ -38,7 +40,7 @@ Bimodal, Gshare and Gselect~\cite{McFarling} are some of the simplest dynamic di
 
 The PHT in bimodal is indexed by selected bits of PC. Since not all bits of PC are used to index the PHT, multiple different branches can be assigned to the same 2-bit saturating counter. This \textit{aliasing} can be destructive to the direction records, hence degrades performance.
 
-Gshare and gselect utilize a structure called a \textit{Global History Register} (GHR). The GHR is a shift register that stores recently resolved branch directions. The only difference between bimodal, gshare and gselect is the indexing of the PHTs. Bimodal uses partial PC, gshare uses partial PC XORed with GHR, and gselect uses partial PC concatenated with GHR. Gshare and gselect has better accuracy over bimodal because it reduces aliasing by correlating local history (i.e. PC) and global history (i.e. GHR).
+Gshare and gselect utilize a structure called a \textit{Global History Register} (GHR). The GHR is a shift register that stores recently resolved branch directions. The only difference between bimodal, gshare and gselect is the indexing of the PHTs. Bimodal uses partial PC, gshare uses partial PC XORed with GHR, and gselect uses partial PC concatenated with GHR. Gshare and gselect has better accuracy over bimodal because it reduces aliasing by correlating local history (i.e. PC) with global history (i.e. GHR).
 \kfig{simpleDIR.pdf}{fig:simpleDIR}{Bimodal, Gshare and Gselect.}{angle = 0, trim = 0.6in 1.1in 0.5in 1.3in, clip, width=0.6\textwidth}
 
 
@@ -47,6 +49,23 @@ Gshare and gselect utilize a structure called a \textit{Global History Register}
 The Perceptron predictor uses vectors of weights (i.e., perceptrons) to represent correlations among branch instructions~\cite{perceptron}. Fig.~\ref{fig:perceptron} shows the structure of a Perceptron predictor. It produces a prediction through the following steps: (1)~A \textit{perceptron} is read from the table. (2)~The weights are multiplied with factors chosen based on the the corresponding global history bits. The weights are 1 for taken and -1 for not-taken. (3)~The resulting products are summed up and a prediction is made based on the sign of the result; predict taken if the sum is positive, and not-taken otherwise. Formally, for a Perceptron predictor using $h$ history bits $G_i$ where $i = 1...h$, each weight vector has $h$ weights $w_{0...h}$, where the bias constant $w_0 = 1$. The predictor has to calculate $y = w_0 + \sum_{i=1}^{h} G_iw_i$, and predict taken if $y$ is positive and not-taken otherwise.
 \kfig{perceptron.pdf}{fig:perceptron}{The preceptron branch predictor.}{angle = 0, trim = 1in 3.5in 2in 1in, clip, width=0.6\textwidth}
 
+When a branch is resolved, the corresponding perceptron is updated. Let $y$ be the computed results at prediction time, $t$ be the branch outcome, $x_i$ be the $i_{th}$ global history, and let $\theta$ be the \textit{threshold}, the following algorithm is used to train perceptron:\vspace{8 mm}
+
+\begin{spacing}{1} 
+\texttt{if sign(y) $\neq\ t$ or $\left| y \right| \leq \theta$}
+
+\texttt{\hspace{8mm} for i = 0 to n do}
+
+\texttt{\hspace{16mm} $w_i = w_i + tx_i$}
+
+\texttt{\hspace{8mm} end for}
+
+\texttt{end if}
+\end{spacing}
+\vspace{8 mm}
+
+In the above algorithm, $t$ and $x_i$ are bipolar, i.e., each of them is $1$ if the branch outcome is taken and $-1$ otherwise. The algorithm increments the $i_{th}$ weight when the outcome agrees with $x_i$, and decrements the weight otherwise. When there is a strong correlation, the absolute value of the weight will be large, which will have a large influence on the outcome. On the other hand, when there is a weak correlation, the absolute value of the weight will be close to zero, hence contributes little to the results.
+
 
 \subsection{Tagged Geometric History Length Branch Predictor (TAGE)}
 \label{sec:background:dirpred:tage}
@@ -54,6 +73,12 @@ The TAGE predictor features a bimodal predictor as a base predictor $T_0$ to pro
 Essentially, the base predictor captures the bulk of branches that tend to be biased, while the remaining components capture exceptions by recording specific history events that lead to exceptions that foil the base predictor.
 Fig.~\ref{fig:tage} shows a 5-component TAGE predictor. Each table entry has a 3-bit saturating counter \textit{ctr} for the prediction result, a \textit{tag}, and a 2-bit useful counter \textit{u}. The table indices are produced by hashing the PC and the global history using different lengths per table $L(i)$. All tables are accessed in parallel and each table provides a valid prediction only on a tag match and provided that the corresponding useful counter is saturated. The final prediction comes from the matching tagged predictor component that uses the longest history.
 \kfig{tage.pdf}{fig:tage}{A 5-component TAGE branch predictor.}{angle = 0, trim = 0.6in 0.6in 0.4in 0.2in, clip, width=0.9\textwidth}
+
+Seznec et al. defines the \textit{provider component} as the predictor component that provides the prediction, and the alternate prediction \textit{altpred} as the prediction that would have occurred without the provider component~\cite{tage}.
+
+When updating TAGE, the useful counter $u$ of the provider component is updated when the alternate prediction disagrees with the provider. $u$ is incremented if the provider is correct, and decremented otherwise.
+
+The prediction counter $ctr$ of the provider is incremented if the prediction is correct and decremented otherwise. If the prediction from the provider $T_i$, where $i < M$, is incorrect, a new entry will be allocated on a predictor component $T_k$ that uses a longer history, i.e., $i<k\leq M$.
 
 
 \section{Field Programmable Gate Arrays (FPGAs) and Soft Processors}

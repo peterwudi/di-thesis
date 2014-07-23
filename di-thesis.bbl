@@ -62,6 +62,12 @@ Daniel~A Jim{\'e}nez, Stephen~W Keckler, and Calvin Lin.
 \newblock In {\em Proceedings of the 33rd annual ACM/IEEE international
   symposium on Microarchitecture}, pages 67--76. ACM, 2000.
 
+\bibitem{histogram}
+D.C. Lee, P.J. Crowley, Jean-Loup Baer, T.E. Anderson, and B.K. Bershad.
+\newblock Execution characteristics of desktop applications on windows nt.
+\newblock In {\em Computer Architecture, 1998. Proceedings. The 25th Annual
+  International Symposium on}, pages 27--38, Jun 1998.
+
 \bibitem{McFarling}
 S.~McFarling.
 \newblock {Combining Branch Predictors}.

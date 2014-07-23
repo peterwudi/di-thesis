@@ -1,15 +1,15 @@
 \BOOKMARK [0][-]{chapter.1}{Introduction}{}% 1
 \BOOKMARK [0][-]{chapter.2}{Background and Goals}{}% 2
 \BOOKMARK [1][-]{section.2.1}{Why Branch Prediction?}{chapter.2}% 3
-\BOOKMARK [1][-]{section.2.2}{Branch Prediction Scheme}{chapter.2}% 4
-\BOOKMARK [1][-]{section.2.3}{Branch Target Predictors}{chapter.2}% 5
-\BOOKMARK [1][-]{section.2.4}{Branch Direction Predictors}{chapter.2}% 6
-\BOOKMARK [1][-]{section.2.5}{Static Predictor}{chapter.2}% 7
-\BOOKMARK [2][-]{subsection.2.5.1}{Bimodal, Gshare and Gselect Predictor}{section.2.5}% 8
-\BOOKMARK [2][-]{subsection.2.5.2}{Perceptron Predictor}{section.2.5}% 9
-\BOOKMARK [2][-]{subsection.2.5.3}{Tagged Geometric History Length Branch Predictor \(TAGE\)}{section.2.5}% 10
-\BOOKMARK [1][-]{section.2.6}{Field Programmable Gate Arrays \(FPGAs\) and Soft Processors}{chapter.2}% 11
-\BOOKMARK [1][-]{section.2.7}{Design Goals}{chapter.2}% 12
+\BOOKMARK [1][-]{section.2.2}{Branch Prediction Overview}{chapter.2}% 4
+\BOOKMARK [1][-]{section.2.3}{Branch Target Prediction}{chapter.2}% 5
+\BOOKMARK [1][-]{section.2.4}{Branch Direction Prediction}{chapter.2}% 6
+\BOOKMARK [2][-]{subsection.2.4.1}{Static Prediction Scheme}{section.2.4}% 7
+\BOOKMARK [2][-]{subsection.2.4.2}{Bimodal, Gshare and Gselect Predictor}{section.2.4}% 8
+\BOOKMARK [2][-]{subsection.2.4.3}{Perceptron Predictor}{section.2.4}% 9
+\BOOKMARK [2][-]{subsection.2.4.4}{Tagged Geometric History Length Branch Predictor \(TAGE\)}{section.2.4}% 10
+\BOOKMARK [1][-]{section.2.5}{Field Programmable Gate Arrays \(FPGAs\) and Soft Processors}{chapter.2}% 11
+\BOOKMARK [1][-]{section.2.6}{Design Goals}{chapter.2}% 12
 \BOOKMARK [0][-]{chapter.3}{The Minimalistic FPGA-Friendly Branch Predictors}{}% 13
 \BOOKMARK [1][-]{section.3.1}{Target Prediction}{chapter.3}% 14
 \BOOKMARK [2][-]{subsection.3.1.1}{Target Address Pre-calculation}{section.3.1}% 15
