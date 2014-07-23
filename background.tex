@@ -81,7 +81,7 @@ When updating TAGE, the useful counter $u$ of the provider component is updated 
 The prediction counter $ctr$ of the provider is incremented if the prediction is correct and decremented otherwise. If the prediction from the provider $T_i$, where $i < M$, is incorrect, a new entry will be allocated on a predictor component $T_k$ that uses a longer history, i.e., $i<k\leq M$.
 
 
-\section{Field Programmable Gate Arrays (FPGAs) and Soft Processors}
+\section{Field Programmable Gate Arrays and Soft Processors}
 \label{sec:background:fpga}
 Field Programmable Gate Arrays (FPGAs) are chips that can be reconfigured by designers. Modern FPGAs such as Altera's Stratix IV~\cite{StratixIV} have large number of logic blocks connected by reconfigurable interconnects. The logic blocks usually consist of Look-up Tables (LUTs), registers and Block RAMs (BRAMs) etc. Designers program digital circuits with Hardware Description Languages (HDLs) such as Verilog and VHDL, and then use CAD tools provided by the FPGA vendors to synthesize the design.
 

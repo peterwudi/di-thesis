@@ -8,7 +8,7 @@
 \contentsline {subsection}{\numberline {2.4.2}Bimodal, Gshare and Gselect Predictor}{6}{subsection.2.4.2}
 \contentsline {subsection}{\numberline {2.4.3}Perceptron Predictor}{6}{subsection.2.4.3}
 \contentsline {subsection}{\numberline {2.4.4}Tagged Geometric History Length Branch Predictor (TAGE)}{7}{subsection.2.4.4}
-\contentsline {section}{\numberline {2.5}Field Programmable Gate Arrays (FPGAs) and Soft Processors}{9}{section.2.5}
+\contentsline {section}{\numberline {2.5}Field Programmable Gate Arrays and Soft Processors}{9}{section.2.5}
 \contentsline {section}{\numberline {2.6}Design Goals}{9}{section.2.6}
 \contentsline {chapter}{\numberline {3}The Minimalistic FPGA-Friendly Branch Predictors}{11}{chapter.3}
 \contentsline {section}{\numberline {3.1}Target Prediction}{11}{section.3.1}
@@ -16,30 +16,30 @@
 \contentsline {subsection}{\numberline {3.1.2}Return Address Stack}{13}{subsection.3.1.2}
 \contentsline {subsection}{\numberline {3.1.3}Eliminating the BTB}{13}{subsection.3.1.3}
 \contentsline {section}{\numberline {3.2}Direction Prediction}{14}{section.3.2}
-\contentsline {section}{\numberline {3.3}FPGA implementation optimizations}{14}{section.3.3}
+\contentsline {section}{\numberline {3.3}FPGA implementation optimizations}{15}{section.3.3}
 \contentsline {subsection}{\numberline {3.3.1}Eliminating the BTB}{15}{subsection.3.3.1}
-\contentsline {subsection}{\numberline {3.3.2}FPGA-Friendly Direction Predictor Indexing}{15}{subsection.3.3.2}
-\contentsline {subsection}{\numberline {3.3.3}Instruction Decoding}{16}{subsection.3.3.3}
-\contentsline {chapter}{\numberline {4}The Advanced FPGA-Friendly Branch Predictors}{17}{chapter.4}
-\contentsline {section}{\numberline {4.1}Perceptron Implementation}{17}{section.4.1}
-\contentsline {subsubsection}{Perceptron Table Organization}{17}{section*.6}
-\contentsline {subsubsection}{Multiplication}{18}{section*.7}
-\contentsline {subsubsection}{Adder Tree}{18}{section*.8}
-\contentsline {section}{\numberline {4.2}TAGE Implementation}{20}{section.4.2}
-\contentsline {section}{\numberline {4.3}Branch Target Predictor}{20}{section.4.3}
-\contentsline {chapter}{\numberline {5}Evaluation}{22}{chapter.5}
-\contentsline {section}{\numberline {5.1}Methodology}{22}{section.5.1}
-\contentsline {section}{\numberline {5.2}Target Prediction}{23}{section.5.2}
-\contentsline {section}{\numberline {5.3}The Minimalistic FPGA-Friendly Branch predictor}{24}{section.5.3}
-\contentsline {subsection}{\numberline {5.3.1}Direction Prediction}{24}{subsection.5.3.1}
-\contentsline {section}{\numberline {5.4}Area and Frequency}{24}{section.5.4}
-\contentsline {subsection}{\numberline {5.4.1}Performance}{25}{subsection.5.4.1}
-\contentsline {section}{\numberline {5.5}Advanced Branch predictors}{26}{section.5.5}
-\contentsline {subsection}{\numberline {5.5.1}Branch Prediction Accuracy}{26}{subsection.5.5.1}
-\contentsline {subsubsection}{Perceptron}{26}{section*.9}
-\contentsline {subsubsection}{TAGE}{27}{section*.10}
-\contentsline {subsubsection}{Accuracy Comparison}{28}{section*.11}
-\contentsline {subsection}{\numberline {5.5.2}Frequency}{28}{subsection.5.5.2}
-\contentsline {subsection}{\numberline {5.5.3}Performance and Resource Cost}{29}{subsection.5.5.3}
-\contentsline {chapter}{\numberline {6}Conclusion}{31}{chapter.6}
-\contentsline {chapter}{Bibliography}{32}{chapter.6}
+\contentsline {subsection}{\numberline {3.3.2}FPGA-Friendly Direction Predictor Indexing}{17}{subsection.3.3.2}
+\contentsline {subsection}{\numberline {3.3.3}Instruction Decoding}{18}{subsection.3.3.3}
+\contentsline {chapter}{\numberline {4}The Advanced FPGA-Friendly Branch Predictors}{19}{chapter.4}
+\contentsline {section}{\numberline {4.1}Perceptron Implementation}{19}{section.4.1}
+\contentsline {subsubsection}{Perceptron Table Organization}{19}{section*.6}
+\contentsline {subsubsection}{Multiplication}{20}{section*.7}
+\contentsline {subsubsection}{Adder Tree}{20}{section*.8}
+\contentsline {section}{\numberline {4.2}TAGE Implementation}{22}{section.4.2}
+\contentsline {section}{\numberline {4.3}Branch Target Predictor}{22}{section.4.3}
+\contentsline {chapter}{\numberline {5}Evaluation}{24}{chapter.5}
+\contentsline {section}{\numberline {5.1}Methodology}{24}{section.5.1}
+\contentsline {section}{\numberline {5.2}Target Prediction}{25}{section.5.2}
+\contentsline {section}{\numberline {5.3}The Minimalistic FPGA-Friendly Branch predictor}{26}{section.5.3}
+\contentsline {subsection}{\numberline {5.3.1}Direction Prediction}{26}{subsection.5.3.1}
+\contentsline {section}{\numberline {5.4}Area and Frequency}{26}{section.5.4}
+\contentsline {subsection}{\numberline {5.4.1}Performance}{27}{subsection.5.4.1}
+\contentsline {section}{\numberline {5.5}Advanced Branch predictors}{28}{section.5.5}
+\contentsline {subsection}{\numberline {5.5.1}Branch Prediction Accuracy}{28}{subsection.5.5.1}
+\contentsline {subsubsection}{Perceptron}{28}{section*.9}
+\contentsline {subsubsection}{TAGE}{29}{section*.10}
+\contentsline {subsubsection}{Accuracy Comparison}{30}{section*.11}
+\contentsline {subsection}{\numberline {5.5.2}Frequency}{30}{subsection.5.5.2}
+\contentsline {subsection}{\numberline {5.5.3}Performance and Resource Cost}{31}{subsection.5.5.3}
+\contentsline {chapter}{\numberline {6}Conclusion}{33}{chapter.6}
+\contentsline {chapter}{Bibliography}{34}{chapter.6}

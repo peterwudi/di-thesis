@@ -8,7 +8,7 @@
 \BOOKMARK [2][-]{subsection.2.4.2}{Bimodal, Gshare and Gselect Predictor}{section.2.4}% 8
 \BOOKMARK [2][-]{subsection.2.4.3}{Perceptron Predictor}{section.2.4}% 9
 \BOOKMARK [2][-]{subsection.2.4.4}{Tagged Geometric History Length Branch Predictor \(TAGE\)}{section.2.4}% 10
-\BOOKMARK [1][-]{section.2.5}{Field Programmable Gate Arrays \(FPGAs\) and Soft Processors}{chapter.2}% 11
+\BOOKMARK [1][-]{section.2.5}{Field Programmable Gate Arrays and Soft Processors}{chapter.2}% 11
 \BOOKMARK [1][-]{section.2.6}{Design Goals}{chapter.2}% 12
 \BOOKMARK [0][-]{chapter.3}{The Minimalistic FPGA-Friendly Branch Predictors}{}% 13
 \BOOKMARK [1][-]{section.3.1}{Target Prediction}{chapter.3}% 14
