@@ -105,6 +105,10 @@ Di~Wu, K.~Aasaraai, and A.~Moshovos.
 Xilinx Inc.
 \newblock {\em {MicroBlaze Processor Reference Guide}}, July 2012.
 
+\bibitem{virtex}
+Xilinx Inc.
+\newblock {\em 7 Series FPGAs Overview}, Feb. 2014.
+
 \bibitem{softprocessor}
 Peter Yiannacouras, Jonathan Rose, and J~Gregory Steffan.
 \newblock The microarchitecture of fpga-based soft processors.

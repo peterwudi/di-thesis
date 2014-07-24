@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2014.6.26)  23 JUL 2014 17:36
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2014.6.26)  24 JUL 2014 17:23
 entering extended mode
 **E:/University*of*Toronto/masters/thesis/di-thesis.tex
 ("E:/University of Toronto/masters/thesis/di-thesis.tex"
@@ -367,28 +367,28 @@ Chapter 2.
 
 
 
-] <Figures/bpcanonical.pdf, id=334, 794.97pt x 614.295pt>
+] <Figures/bpcanonical.pdf, id=361, 794.97pt x 614.295pt>
 File: Figures/bpcanonical.pdf Graphic file (type pdf)
 
 <use Figures/bpcanonical.pdf>
 Package pdftex.def Info: Figures/bpcanonical.pdf used on input line 18.
 (pdftex.def)             Requested size: 686.56339pt x 484.20763pt.
  [4] [5 <E:/University of Toronto/masters/thesis/Figures/bpcanonical.pdf>] <Fig
-ures/simpleDIR.pdf, id=406, 722.7pt x 542.025pt>
+ures/simpleDIR.pdf, id=433, 722.7pt x 542.025pt>
 File: Figures/simpleDIR.pdf Graphic file (type pdf)
 
 <use Figures/simpleDIR.pdf>
 Package pdftex.def Info: Figures/simpleDIR.pdf used on input line 44.
 (pdftex.def)             Requested size: 643.20103pt x 368.57544pt.
 
-<Figures/perceptron.pdf, id=410, 722.7pt x 542.025pt>
+<Figures/perceptron.pdf, id=437, 722.7pt x 542.025pt>
 File: Figures/perceptron.pdf Graphic file (type pdf)
 
 <use Figures/perceptron.pdf>
 Package pdftex.def Info: Figures/perceptron.pdf used on input line 50.
 (pdftex.def)             Requested size: 505.88881pt x 216.8095pt.
  [6 <E:/University of Toronto/masters/thesis/Figures/simpleDIR.pdf>] <Figures/t
-age.pdf, id=436, 722.7pt x 542.025pt>
+age.pdf, id=463, 722.7pt x 542.025pt>
 File: Figures/tage.pdf Graphic file (type pdf)
 
 <use Figures/tage.pdf>
@@ -398,29 +398,25 @@ Package pdftex.def Info: Figures/tage.pdf used on input line 75.
 iversity of Toronto/masters/thesis/Figures/tage.pdf>]
 [9]) [10] ("E:\University of Toronto\masters\thesis\minimal.tex"
 Chapter 3.
-
-Underfull \vbox (badness 2744) has occurred while \output is active []
-
- [11
+[11
 
 
 
-]
-<Figures/bimodalCP.pdf, id=668, 722.7pt x 542.025pt>
+] <Figures/bimodalCP.pdf, id=669, 722.7pt x 542.025pt>
 File: Figures/bimodalCP.pdf Graphic file (type pdf)
 
 <use Figures/bimodalCP.pdf>
 Package pdftex.def Info: Figures/bimodalCP.pdf used on input line 17.
 (pdftex.def)             Requested size: 722.69823pt x 455.30014pt.
 
-<Figures/histogram.pdf, id=672, 597.55246pt x 845.07718pt>
+<Figures/histogram.pdf, id=673, 597.55246pt x 845.07718pt>
 File: Figures/histogram.pdf Graphic file (type pdf)
 
 <use Figures/histogram.pdf>
 Package pdftex.def Info: Figures/histogram.pdf used on input line 20.
 (pdftex.def)             Requested size: 489.1463pt x 303.05148pt.
  [12 <E:/University of Toronto/masters/thesis/Figures/bimodalCP.pdf>]
-<Figures/histogram_ind_jmp.pdf, id=717, 597.55246pt x 845.07718pt>
+<Figures/histogram_ind_jmp.pdf, id=718, 597.55246pt x 845.07718pt>
 File: Figures/histogram_ind_jmp.pdf Graphic file (type pdf)
 
 <use Figures/histogram_ind_jmp.pdf>
@@ -430,14 +426,14 @@ Package pdftex.def Info: Figures/histogram_ind_jmp.pdf used on input line 26.
 Underfull \vbox (badness 6284) has occurred while \output is active []
 
  [14 <E:/University of Toronto/masters/thesis/Figures/histogram_ind_jmp.pdf>]
-<Figures/fusedbtb.pdf, id=771, 722.7pt x 542.025pt>
+<Figures/fusedbtb.pdf, id=772, 722.7pt x 542.025pt>
 File: Figures/fusedbtb.pdf Graphic file (type pdf)
  <use Figures/fusedbtb.pdf>
 Package pdftex.def Info: Figures/fusedbtb.pdf used on input line 47.
 (pdftex.def)             Requested size: 271.01526pt x 253.24344pt.
 
 [15 <E:/University of Toronto/masters/thesis/Figures/fusedbtb.pdf>]
-<Figures/fusedbtbusage.pdf, id=1105, 722.7pt x 542.025pt>
+<Figures/fusedbtbusage.pdf, id=1106, 722.7pt x 542.025pt>
 File: Figures/fusedbtbusage.pdf Graphic file (type pdf)
 
 <use Figures/fusedbtbusage.pdf>
@@ -447,7 +443,7 @@ Package pdftex.def Info: Figures/fusedbtbusage.pdf used on input line 53.
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [16 <E:/University of Toronto/masters/thesis/Figures/fusedbtbusage.pdf>]
-<Figures/GSelectCP.pdf, id=1130, 1084.05pt x 939.51pt>
+<Figures/GSelectCP.pdf, id=1131, 1084.05pt x 939.51pt>
 File: Figures/GSelectCP.pdf Graphic file (type pdf)
 
 <use Figures/GSelectCP.pdf>
@@ -474,46 +470,32 @@ File: Figures/perceptronMult.pdf Graphic file (type pdf)
 Package pdftex.def Info: Figures/perceptronMult.pdf used on input line 21.
 (pdftex.def)             Requested size: 484.20761pt x 339.66797pt.
 
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-LaTeX Warning: Reference `sec:eval:advanced:accuracy' on page 20 undefined on i
-nput line 25.
+ [20 <E:/University of Toronto/masters/thesis/Figures/perceptronTable.pdf>]
 
-[20 <E:/University of Toronto/masters/thesis/Figures/perceptronTable.pdf>]
+LaTeX Warning: `h' float specifier changed to `ht'.
 
-LaTeX Warning: Reference `sec:eval:advanced:accuracy' on page 21 undefined on i
-nput line 27.
+[21 <E:/University of Toronto/masters/thesis/Figures/perceptronMult.pdf>]
+<Figures/perceptronStructure.pdf, id=1388, 722.7pt x 542.025pt>
+File: Figures/perceptronStructure.pdf Graphic file (type pdf)
 
+<use Figures/perceptronStructure.pdf>
+Package pdftex.def Info: Figures/perceptronStructure.pdf used on input line 55.
 
-LaTeX Warning: Reference `sec:eval:advanced:perf' on page 21 undefined on input
- line 27.
+(pdftex.def)             Requested size: 722.69823pt x 542.02367pt.
+ [22]
 
+LaTeX Warning: `h' float specifier changed to `ht'.
 
-Underfull \vbox (badness 4242) has occurred while \output is active []
-
- [21 <E:/University of Toronto/masters/thesis/Figures/perceptronMult.pdf>]
-
-LaTeX Warning: Reference `sec:eval:advanced:accuracy' on page 22 undefined on i
-nput line 36.
-
-
-LaTeX Warning: Reference `sec:eval:advanced:perf' on page 22 undefined on input
- line 36.
-
-
-LaTeX Warning: Reference `sec:eval:advanced:accuracy' on page 22 undefined on i
-nput line 42.
-
-
-LaTeX Warning: Reference `sec:eval:advanced:fmax' on page 22 undefined on input
- line 42.
-
-[22]) [23] ("E:\University of Toronto\masters\thesis\evaluation.tex"
+[23 <E:/University of Toronto/masters/thesis/Figures/perceptronStructure.pdf>]
+[24]) [25] ("E:\University of Toronto\masters\thesis\evaluation.tex"
 Chapter 5.
-[24
+[26
 
 
 
-] <Figures/target_mpki.pdf, id=1408, 845.07718pt x 597.55246pt>
+] <Figures/target_mpki.pdf, id=1569, 845.07718pt x 597.55246pt>
 File: Figures/target_mpki.pdf Graphic file (type pdf)
 
 <use Figures/target_mpki.pdf>
@@ -522,8 +504,8 @@ Package pdftex.def Info: Figures/target_mpki.pdf used on input line 25.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [25 <E:/University of Toronto/masters/thesis/Figures/target_mpki.pdf>]
-<Figures/direction_mpki.pdf, id=1422, 597.55246pt x 845.07718pt>
+ [27 <E:/University of Toronto/masters/thesis/Figures/target_mpki.pdf>]
+<Figures/direction_mpki.pdf, id=1583, 597.55246pt x 845.07718pt>
 File: Figures/direction_mpki.pdf Graphic file (type pdf)
 
 <use Figures/direction_mpki.pdf>
@@ -531,110 +513,114 @@ Package pdftex.def Info: Figures/direction_mpki.pdf used on input line 35.
 (pdftex.def)             Requested size: 316.17987pt x 175.12328pt.
 
 
-LaTeX Warning: Reference `sec:fpga' on page 26 undefined on input line 37.
+LaTeX Warning: Reference `sec:fpga' on page 28 undefined on input line 37.
 
 
-LaTeX Warning: Reference `sec:eval:fpga' on page 26 undefined on input line 37.
+LaTeX Warning: Reference `sec:eval:fpga' on page 28 undefined on input line 37.
 
 
-<Figures/Fmax.pdf, id=1426, 597.55246pt x 845.07718pt>
+<Figures/Fmax.pdf, id=1587, 597.55246pt x 845.07718pt>
 File: Figures/Fmax.pdf Graphic file (type pdf)
  <use Figures/Fmax.pdf>
 Package pdftex.def Info: Figures/Fmax.pdf used on input line 44.
 (pdftex.def)             Requested size: 316.17987pt x 197.65033pt.
 
-[26 <E:/University of Toronto/masters/thesis/Figures/direction_mpki.pdf>]
-<Figures/ipc.pdf, id=1440, 845.07718pt x 597.55246pt>
+[28 <E:/University of Toronto/masters/thesis/Figures/direction_mpki.pdf>]
+<Figures/ipc.pdf, id=1601, 845.07718pt x 597.55246pt>
 File: Figures/ipc.pdf Graphic file (type pdf)
  <use Figures/ipc.pdf>
 Package pdftex.def Info: Figures/ipc.pdf used on input line 50.
 (pdftex.def)             Requested size: 271.01526pt x 118.31645pt.
 
-<Figures/ips.pdf, id=1444, 597.55246pt x 845.07718pt>
+<Figures/ips.pdf, id=1605, 597.55246pt x 845.07718pt>
 File: Figures/ips.pdf Graphic file (type pdf)
  <use Figures/ips.pdf>
 Package pdftex.def Info: Figures/ips.pdf used on input line 54.
 (pdftex.def)             Requested size: 271.01526pt x 141.97952pt.
 
-[27 <E:/University of Toronto/masters/thesis/Figures/Fmax.pdf> <E:/University o
+[29 <E:/University of Toronto/masters/thesis/Figures/Fmax.pdf> <E:/University o
 f Toronto/masters/thesis/Figures/ipc.pdf>]
-<Figures/perceptronMPKI.pdf, id=1475, 845.07718pt x 597.55246pt>
+
+LaTeX Warning: Reference `sec:eval:perf' on page 30 undefined on input line 67.
+
+
+<Figures/perceptronMPKI.pdf, id=1636, 845.07718pt x 597.55246pt>
 File: Figures/perceptronMPKI.pdf Graphic file (type pdf)
 
 <use Figures/perceptronMPKI.pdf>
 Package pdftex.def Info: Figures/perceptronMPKI.pdf used on input line 68.
 (pdftex.def)             Requested size: 722.21666pt x 207.29442pt.
 
-<Figures/perceptronHOB.pdf, id=1478, 845.07718pt x 597.55246pt>
+<Figures/perceptronHOB.pdf, id=1639, 845.07718pt x 597.55246pt>
 File: Figures/perceptronHOB.pdf Graphic file (type pdf)
 
 <use Figures/perceptronHOB.pdf>
 Package pdftex.def Info: Figures/perceptronHOB.pdf used on input line 71.
 (pdftex.def)             Requested size: 700.53554pt x 221.74707pt.
- [28 <E:/University of Toronto/masters/thesis/Figures/ips.pdf> <E:/University o
+ [30 <E:/University of Toronto/masters/thesis/Figures/ips.pdf> <E:/University o
 f Toronto/masters/thesis/Figures/perceptronMPKI.pdf>]
 
-LaTeX Warning: Reference `sec:fpga:perceptron:adder' on page 29 undefined on in
+LaTeX Warning: Reference `sec:fpga:perceptron:adder' on page 31 undefined on in
 put line 73.
 
-[29 <E:/University of Toronto/masters/thesis/Figures/perceptronHOB.pdf>]
-<Figures/tageMPKI.pdf, id=1525, 845.07718pt x 597.55246pt>
+[31 <E:/University of Toronto/masters/thesis/Figures/perceptronHOB.pdf>]
+<Figures/tageMPKI.pdf, id=1685, 845.07718pt x 597.55246pt>
 File: Figures/tageMPKI.pdf Graphic file (type pdf)
 
 <use Figures/tageMPKI.pdf>
 Package pdftex.def Info: Figures/tageMPKI.pdf used on input line 85.
 (pdftex.def)             Requested size: 722.21669pt x 214.52074pt.
 
-<Figures/admpki.pdf, id=1528, 845.07718pt x 597.55246pt>
+<Figures/admpki.pdf, id=1688, 845.07718pt x 597.55246pt>
 File: Figures/admpki.pdf Graphic file (type pdf)
 
 <use Figures/admpki.pdf>
 Package pdftex.def Info: Figures/admpki.pdf used on input line 93.
 (pdftex.def)             Requested size: 722.21666pt x 207.29442pt.
 
-<Figures/adfmax.pdf, id=1531, 597.55246pt x 845.07718pt>
+<Figures/adfmax.pdf, id=1691, 597.55246pt x 845.07718pt>
 File: Figures/adfmax.pdf Graphic file (type pdf)
 
 <use Figures/adfmax.pdf>
 Package pdftex.def Info: Figures/adfmax.pdf used on input line 98.
 (pdftex.def)             Requested size: 489.1463pt x 136.83066pt.
- [30 <E:/University of Toronto/masters/thesis/Figures/tageMPKI.pdf>] <Figures/a
-dipc.pdf, id=1549, 845.07718pt x 597.55246pt>
+ [32 <E:/University of Toronto/masters/thesis/Figures/tageMPKI.pdf>] <Figures/a
+dipc.pdf, id=1709, 845.07718pt x 597.55246pt>
 File: Figures/adipc.pdf Graphic file (type pdf)
 
 <use Figures/adipc.pdf>
 Package pdftex.def Info: Figures/adipc.pdf used on input line 105.
 (pdftex.def)             Requested size: 722.21666pt x 178.38693pt.
 
-<Figures/adips.pdf, id=1552, 845.07718pt x 597.55246pt>
+<Figures/adips.pdf, id=1712, 845.07718pt x 597.55246pt>
 File: Figures/adips.pdf Graphic file (type pdf)
 
 <use Figures/adips.pdf>
 Package pdftex.def Info: Figures/adips.pdf used on input line 108.
 (pdftex.def)             Requested size: 729.44409pt x 214.52075pt.
- [31 <E:/University of Toronto/masters/thesis/Figures/admpki.pdf> <E:/Universit
+ [33 <E:/University of Toronto/masters/thesis/Figures/admpki.pdf> <E:/Universit
 y of Toronto/masters/thesis/Figures/adfmax.pdf>]
-<Figures/adarea.pdf, id=1601, 845.07718pt x 597.55246pt>
+<Figures/adarea.pdf, id=1761, 845.07718pt x 597.55246pt>
 File: Figures/adarea.pdf Graphic file (type pdf)
 
 <use Figures/adarea.pdf>
 Package pdftex.def Info: Figures/adarea.pdf used on input line 113.
 (pdftex.def)             Requested size: 729.44409pt x 207.29442pt.
-) [32 <E:/University of Toronto/masters/thesis/Figures/adipc.pdf> <E:/Universit
+) [34 <E:/University of Toronto/masters/thesis/Figures/adipc.pdf> <E:/Universit
 y of Toronto/masters/thesis/Figures/adips.pdf> <E:/University of Toronto/master
 s/thesis/Figures/adarea.pdf>]
 ("E:\University of Toronto\masters\thesis\conclusion.tex"
 Chapter 6.
-) [33
+) [35
 
 
 
-] ("E:\University of Toronto\masters\thesis\di-thesis.bbl" [34
+] ("E:\University of Toronto\masters\thesis\di-thesis.bbl" [36
 
 
 ])
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 222.
- [35]
+ [37]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 222.
 
 ("E:\University of Toronto\masters\thesis\di-thesis.aux"
@@ -647,7 +633,7 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 222.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 222.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 222.
 Package rerunfilecheck Info: File `di-thesis.out' has not changed.
-(rerunfilecheck)             Checksum: FC715C6792C40B74F62E8330C072B7F2;2847.
+(rerunfilecheck)             Checksum: 5B09F4593373850915D6B148EE89F3DB;3158.
 
 
 LaTeX Warning: There were undefined references.
@@ -655,32 +641,40 @@ LaTeX Warning: There were undefined references.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 222.
  ) 
 Here is how much of TeX's memory you used:
- 6093 strings out of 493921
- 93445 string characters out of 3144876
- 178627 words of memory out of 3000000
- 9137 multiletter control sequences out of 15000+200000
- 8096 words of font info for 29 fonts, out of 3000000 for 9000
+ 6128 strings out of 493921
+ 94033 string characters out of 3144876
+ 179921 words of memory out of 3000000
+ 9156 multiletter control sequences out of 15000+200000
+ 10545 words of font info for 37 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 30i,9n,34p,1420b,430s stack positions out of 5000i,500n,10000p,200000b,50000s
-<D:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb>
-<D:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><D
-:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><D:
-/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><D:/P
-rogram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><D:/Pro
-gram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi5.pfb><D:/Progra
-m Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi7.pfb><D:/Program F
-iles (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><D:/Program File
-s (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><D:/Program Files (
-x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr5.pfb><D:/Program Files (x86)
-/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><D:/Program Files (x86)/MiK
-TeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><D:/Program Files (x86)/MiKTe
-X 2.9/fonts/type1/public/amsfonts/cm/cmsy5.pfb><D:/Program Files (x86)/MiKTeX 2
-.9/fonts/type1/public/amsfonts/cm/cmsy7.pfb><D:/Program Files (x86)/MiKTeX 2.9/
-fonts/type1/public/amsfonts/cm/cmti10.pfb><D:/Program Files (x86)/MiKTeX 2.9/fo
-nts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on di-thesis.pdf (43 pages, 2353478 bytes).
+ 30i,11n,34p,1420b,430s stack positions out of 5000i,500n,10000p,200000b,50000s
+<D:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbsy10.pfb
+><D:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cmextra/cmbsy5.
+pfb><D:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cmextra/cmbs
+y7.pfb><D:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10
+.pfb><D:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.p
+fb><D:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx5.pfb>
+<D:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx7.pfb><D:
+/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><D:/
+Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><D:/Pr
+ogram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><D:/Prog
+ram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi5.pfb><D:/Program
+ Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi7.pfb><D:/Program Fi
+les (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmib10.pfb><D:/Program Fil
+es (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cmextra/cmmib5.pfb><D:/Program 
+Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cmextra/cmmib7.pfb><D:/Progr
+am Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><D:/Program 
+Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><D:/Program Fil
+es (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr5.pfb><D:/Program Files (
+x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><D:/Program Files (x86)
+/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><D:/Program Files (x86)/M
+iKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy5.pfb><D:/Program Files (x86)/MiKT
+eX 2.9/fonts/type1/public/amsfonts/cm/cmsy7.pfb><D:/Program Files (x86)/MiKTeX 
+2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb><D:/Program Files (x86)/MiKTeX 2.
+9/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
+Output written on di-thesis.pdf (45 pages, 2760443 bytes).
 PDF statistics:
- 1762 PDF objects out of 2073 (max. 8388607)
- 140 named destinations out of 1000 (max. 500000)
- 588 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1948 PDF objects out of 2073 (max. 8388607)
+ 147 named destinations out of 1000 (max. 500000)
+ 631 words of extra memory for PDF output out of 10000 (max. 10000000)
 

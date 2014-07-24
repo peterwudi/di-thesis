@@ -22,18 +22,22 @@
 \BOOKMARK [2][-]{subsection.3.3.3}{Instruction Decoding}{section.3.3}% 22
 \BOOKMARK [0][-]{chapter.4}{The Advanced FPGA-Friendly Branch Predictors}{}% 23
 \BOOKMARK [1][-]{section.4.1}{Perceptron Implementation}{chapter.4}% 24
-\BOOKMARK [1][-]{section.4.2}{TAGE Implementation}{chapter.4}% 25
-\BOOKMARK [1][-]{section.4.3}{Branch Target Predictor}{chapter.4}% 26
-\BOOKMARK [0][-]{chapter.5}{Evaluation}{}% 27
-\BOOKMARK [1][-]{section.5.1}{Methodology}{chapter.5}% 28
-\BOOKMARK [1][-]{section.5.2}{Target Prediction}{chapter.5}% 29
-\BOOKMARK [1][-]{section.5.3}{The Minimalistic FPGA-Friendly Branch predictor}{chapter.5}% 30
-\BOOKMARK [2][-]{subsection.5.3.1}{Direction Prediction}{section.5.3}% 31
-\BOOKMARK [1][-]{section.5.4}{Area and Frequency}{chapter.5}% 32
-\BOOKMARK [2][-]{subsection.5.4.1}{Performance}{section.5.4}% 33
-\BOOKMARK [1][-]{section.5.5}{Advanced Branch predictors}{chapter.5}% 34
-\BOOKMARK [2][-]{subsection.5.5.1}{Branch Prediction Accuracy}{section.5.5}% 35
-\BOOKMARK [2][-]{subsection.5.5.2}{Frequency}{section.5.5}% 36
-\BOOKMARK [2][-]{subsection.5.5.3}{Performance and Resource Cost}{section.5.5}% 37
-\BOOKMARK [0][-]{chapter.6}{Conclusion}{}% 38
-\BOOKMARK [0][-]{chapter.6}{Bibliography}{}% 39
+\BOOKMARK [2][-]{subsection.4.1.1}{Perceptron Table Organization}{section.4.1}% 25
+\BOOKMARK [2][-]{subsection.4.1.2}{Multiplication}{section.4.1}% 26
+\BOOKMARK [2][-]{subsection.4.1.3}{Adder Tree}{section.4.1}% 27
+\BOOKMARK [2][-]{subsection.4.1.4}{Perceptron Predictor Structure on FPGA}{section.4.1}% 28
+\BOOKMARK [1][-]{section.4.2}{TAGE Implementation}{chapter.4}% 29
+\BOOKMARK [1][-]{section.4.3}{Branch Target Predictor}{chapter.4}% 30
+\BOOKMARK [0][-]{chapter.5}{Evaluation}{}% 31
+\BOOKMARK [1][-]{section.5.1}{Methodology}{chapter.5}% 32
+\BOOKMARK [1][-]{section.5.2}{Target Prediction}{chapter.5}% 33
+\BOOKMARK [1][-]{section.5.3}{The Minimalistic FPGA-Friendly Branch predictor}{chapter.5}% 34
+\BOOKMARK [2][-]{subsection.5.3.1}{Direction Prediction}{section.5.3}% 35
+\BOOKMARK [1][-]{section.5.4}{Area and Frequency}{chapter.5}% 36
+\BOOKMARK [2][-]{subsection.5.4.1}{Performance}{section.5.4}% 37
+\BOOKMARK [1][-]{section.5.5}{Advanced Branch predictors}{chapter.5}% 38
+\BOOKMARK [2][-]{subsection.5.5.1}{Branch Prediction Accuracy}{section.5.5}% 39
+\BOOKMARK [2][-]{subsection.5.5.2}{Frequency}{section.5.5}% 40
+\BOOKMARK [2][-]{subsection.5.5.3}{Performance and Resource Cost}{section.5.5}% 41
+\BOOKMARK [0][-]{chapter.6}{Conclusion}{}% 42
+\BOOKMARK [0][-]{chapter.6}{Bibliography}{}% 43

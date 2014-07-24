@@ -22,24 +22,25 @@
 \contentsline {subsection}{\numberline {3.3.3}Instruction Decoding}{18}{subsection.3.3.3}
 \contentsline {chapter}{\numberline {4}The Advanced FPGA-Friendly Branch Predictors}{19}{chapter.4}
 \contentsline {section}{\numberline {4.1}Perceptron Implementation}{19}{section.4.1}
-\contentsline {subsubsection}{Perceptron Table Organization}{19}{section*.6}
-\contentsline {subsubsection}{Multiplication}{20}{section*.7}
-\contentsline {subsubsection}{Adder Tree}{20}{section*.8}
-\contentsline {section}{\numberline {4.2}TAGE Implementation}{22}{section.4.2}
-\contentsline {section}{\numberline {4.3}Branch Target Predictor}{22}{section.4.3}
-\contentsline {chapter}{\numberline {5}Evaluation}{24}{chapter.5}
-\contentsline {section}{\numberline {5.1}Methodology}{24}{section.5.1}
-\contentsline {section}{\numberline {5.2}Target Prediction}{25}{section.5.2}
-\contentsline {section}{\numberline {5.3}The Minimalistic FPGA-Friendly Branch predictor}{26}{section.5.3}
-\contentsline {subsection}{\numberline {5.3.1}Direction Prediction}{26}{subsection.5.3.1}
-\contentsline {section}{\numberline {5.4}Area and Frequency}{26}{section.5.4}
-\contentsline {subsection}{\numberline {5.4.1}Performance}{27}{subsection.5.4.1}
-\contentsline {section}{\numberline {5.5}Advanced Branch predictors}{28}{section.5.5}
-\contentsline {subsection}{\numberline {5.5.1}Branch Prediction Accuracy}{28}{subsection.5.5.1}
-\contentsline {subsubsection}{Perceptron}{28}{section*.9}
-\contentsline {subsubsection}{TAGE}{29}{section*.10}
-\contentsline {subsubsection}{Accuracy Comparison}{30}{section*.11}
-\contentsline {subsection}{\numberline {5.5.2}Frequency}{30}{subsection.5.5.2}
-\contentsline {subsection}{\numberline {5.5.3}Performance and Resource Cost}{31}{subsection.5.5.3}
-\contentsline {chapter}{\numberline {6}Conclusion}{33}{chapter.6}
-\contentsline {chapter}{Bibliography}{34}{chapter.6}
+\contentsline {subsection}{\numberline {4.1.1}Perceptron Table Organization}{19}{subsection.4.1.1}
+\contentsline {subsection}{\numberline {4.1.2}Multiplication}{20}{subsection.4.1.2}
+\contentsline {subsection}{\numberline {4.1.3}Adder Tree}{21}{subsection.4.1.3}
+\contentsline {subsection}{\numberline {4.1.4}Perceptron Predictor Structure on FPGA}{22}{subsection.4.1.4}
+\contentsline {section}{\numberline {4.2}TAGE Implementation}{23}{section.4.2}
+\contentsline {section}{\numberline {4.3}Branch Target Predictor}{24}{section.4.3}
+\contentsline {chapter}{\numberline {5}Evaluation}{26}{chapter.5}
+\contentsline {section}{\numberline {5.1}Methodology}{26}{section.5.1}
+\contentsline {section}{\numberline {5.2}Target Prediction}{27}{section.5.2}
+\contentsline {section}{\numberline {5.3}The Minimalistic FPGA-Friendly Branch predictor}{28}{section.5.3}
+\contentsline {subsection}{\numberline {5.3.1}Direction Prediction}{28}{subsection.5.3.1}
+\contentsline {section}{\numberline {5.4}Area and Frequency}{28}{section.5.4}
+\contentsline {subsection}{\numberline {5.4.1}Performance}{29}{subsection.5.4.1}
+\contentsline {section}{\numberline {5.5}Advanced Branch predictors}{30}{section.5.5}
+\contentsline {subsection}{\numberline {5.5.1}Branch Prediction Accuracy}{30}{subsection.5.5.1}
+\contentsline {subsubsection}{Perceptron}{30}{section*.6}
+\contentsline {subsubsection}{TAGE}{31}{section*.7}
+\contentsline {subsubsection}{Accuracy Comparison}{32}{section*.8}
+\contentsline {subsection}{\numberline {5.5.2}Frequency}{32}{subsection.5.5.2}
+\contentsline {subsection}{\numberline {5.5.3}Performance and Resource Cost}{33}{subsection.5.5.3}
+\contentsline {chapter}{\numberline {6}Conclusion}{35}{chapter.6}
+\contentsline {chapter}{Bibliography}{36}{chapter.6}
