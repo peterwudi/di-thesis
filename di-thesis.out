@@ -36,8 +36,11 @@
 \BOOKMARK [1][-]{section.5.4}{Area and Frequency}{chapter.5}% 36
 \BOOKMARK [2][-]{subsection.5.4.1}{Performance}{section.5.4}% 37
 \BOOKMARK [1][-]{section.5.5}{Advanced Branch predictors}{chapter.5}% 38
-\BOOKMARK [2][-]{subsection.5.5.1}{Branch Prediction Accuracy}{section.5.5}% 39
-\BOOKMARK [2][-]{subsection.5.5.2}{Frequency}{section.5.5}% 40
-\BOOKMARK [2][-]{subsection.5.5.3}{Performance and Resource Cost}{section.5.5}% 41
-\BOOKMARK [0][-]{chapter.6}{Conclusion}{}% 42
-\BOOKMARK [0][-]{chapter.6}{Bibliography}{}% 43
+\BOOKMARK [2][-]{subsection.5.5.1}{Perceptron}{section.5.5}% 39
+\BOOKMARK [2][-]{subsection.5.5.2}{TAGE}{section.5.5}% 40
+\BOOKMARK [2][-]{subsection.5.5.3}{Accuracy Comparison}{section.5.5}% 41
+\BOOKMARK [2][-]{subsection.5.5.4}{Frequency}{section.5.5}% 42
+\BOOKMARK [2][-]{subsection.5.5.5}{Performance and Resource Cost}{section.5.5}% 43
+\BOOKMARK [1][-]{section.5.6}{1KB gRselect vs. O-TAGE-SC}{chapter.5}% 44
+\BOOKMARK [0][-]{chapter.6}{Conclusion}{}% 45
+\BOOKMARK [0][-]{chapter.6}{Bibliography}{}% 46

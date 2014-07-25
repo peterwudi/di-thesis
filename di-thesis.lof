@@ -21,12 +21,14 @@
 \contentsline {figure}{\numberline {5.3}{\ignorespaces Maximum frequency and area utilisation. (PD = pre-decoding)}}{29}{figure.5.3}
 \contentsline {figure}{\numberline {5.4}{\ignorespaces Improvement in IPC over \textsc {Base}.}}{29}{figure.5.4}
 \contentsline {figure}{\numberline {5.5}{\ignorespaces IPS comparison of processors with various predictors.}}{30}{figure.5.5}
-\contentsline {figure}{\numberline {5.6}{\ignorespaces Perceptron: MPKI of the most accurate Perceptron configuration with various hardware budgets.}}{30}{figure.5.6}
+\contentsline {figure}{\numberline {5.6}{\ignorespaces Perceptron: MPKI of the most accurate Perceptron configuration with various hardware budgets.}}{31}{figure.5.6}
 \contentsline {figure}{\numberline {5.7}{\ignorespaces Perceptron: MPKI when using different number of HOBs for the most accurate perceptron configuration.}}{31}{figure.5.7}
 \contentsline {figure}{\numberline {5.8}{\ignorespaces TAGE: MPKI and IPC of the four TAGE variations.}}{32}{figure.5.8}
 \contentsline {figure}{\numberline {5.9}{\ignorespaces MPKI of the direction predictors.}}{33}{figure.5.9}
 \contentsline {figure}{\numberline {5.10}{\ignorespaces Maximum operating frequency of the considered branch prediction schemes with various hardware budget.}}{33}{figure.5.10}
 \contentsline {figure}{\numberline {5.11}{\ignorespaces IPC of the considered branch predictors.}}{34}{figure.5.11}
-\contentsline {figure}{\numberline {5.12}{\ignorespaces Processor IPS comparison with various predictors.}}{34}{figure.5.12}
-\contentsline {figure}{\numberline {5.13}{\ignorespaces ALUTs usage comparison with various predictors.}}{34}{figure.5.13}
+\contentsline {figure}{\numberline {5.12}{\ignorespaces Processor IPS comparison with various predictors.}}{35}{figure.5.12}
+\contentsline {figure}{\numberline {5.13}{\ignorespaces ALUTs usage comparison with various predictors.}}{35}{figure.5.13}
+\contentsline {figure}{\numberline {5.14}{\ignorespaces MPKI of the 1KB gRselect and \unhbox \voidb@x \hbox {O-TAGE-SC} over all the benchmarks and the average MPKI.}}{36}{figure.5.14}
+\contentsline {figure}{\numberline {5.15}{\ignorespaces IPC of the 1KB gRselect and \unhbox \voidb@x \hbox {O-TAGE-SC} over all the benchmarks and the average IPC.}}{36}{figure.5.15}
 \addvspace {10\p@ }

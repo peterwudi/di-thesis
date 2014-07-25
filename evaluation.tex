@@ -10,9 +10,9 @@ To compare the predictors this work measures: (1)~Accuracy as Mispredictions Per
 
 Simulation measures MPKI and IPC using a custom, cycle-accurate, full-system Nios~II simulator. The simulator boots ucLinux~\cite{uclinux}, and runs a representative subset of SPEC CPU2006 integer benchmarks with reference inputs~\cite{spec2k6}.
 
-The evaluation of the minimalistic predictor uses a baseline predictor (\textsc{Base}) with a fused BTB and bimodal, as discussed in Section~\ref{sec:min:fpga:nobtb} both with 256 entries. \textsc{Base} does not decode instructions and thus uses the BTB and the bimodal for all instructions. 
+The evaluation of the minimalistic predictor uses a baseline predictor (\textsc{Base}) with a fused BTB and bimodal, as discussed in Section~\ref{sec:min:fpga:nobtb} both with 256 entries. \textsc{Base} does not decode instructions and thus uses the BTB and the bimodal for all instructions.
 
-The baseline predictors considered considered for the Perceptron and TAGE predictors are: (1)~bimodal, (2)~gshare and (3)~gRselect.
+The baseline predictors considered considered for the Perceptron and TAGE predictors are: (1)~bimodal, (2)~gshare and (3)~gRselect. For fair comparisons, the baseline predictors are scaled to the same size as the largest Perceptron and TAGE predictors.
 
 All designs were implemented in Verilog and synthesized using Quartus II 13.0 on a Stratix IV EP4SE230F29C2 chip in order to measure their maximum clock frequency and area cost. The maximum frequency is reported as the average maximum clock frequency of five placement and routing passes with different random seeds. Area usage is reported in terms of ALUTs used.
 
@@ -27,91 +27,91 @@ Using PAC or FAC with a 256-entry BTB reduces mispredictions by 81\% and 90\% re
 
 \section{The Minimalistic FPGA-Friendly Branch predictor}
 \label{sec:eval:min}
-
 \subsection{Direction Prediction}
 \label{sec:eval:min:direction}
 Fig.~\ref{fig:direction:mpki} reports the improvement in MPKI for various direction predictors relative to \textsc{Base}. Decoding the instructions and performing prediction only for branches improves MPKI by 17\% (bimodal-256). Using a larger bimodal with 4K entries further improves MPKI by only 8\% suggesting that bimodal is fundamentally limited in the branch sequences it can predict. However, using a 256- or a 4K-entry gshare improves MPKI by 79\% and 82\% respectively. 
 
-\kfig{direction_mpki.pdf}{fig:direction:mpki}{Direction Predictors: MPKI improvement over \textsc{Base}.}{trim = 0.8in 3.8in 0.8in 4.2in, clip, width=0.7\textwidth}
+\kfig{direction_mpki.pdf}{fig:direction:mpki}{Direction Predictors: MPKI improvement over \textsc{Base}.}{trim = 0.7in 3.8in 0.8in 4.2in, clip, width=0.7\textwidth}
 
-Section~\ref{sec:fpga} explained why gselect may be better to implement on an FPGA. Fig.~\ref{fig:direction:mpki} show that a conventionally indexed 4K-entry gselect results in competitive accuracy, improving \textsc{Base} by 80\%. Section~\ref{sec:eval:fpga} explained that the desired number of entries for the direction predictor is either 768  or 4K when  fused with a  BTB or not respectively. The figure shows that a conventionally indexed 4K-entry gselect improves MPKI by 80\%, while the proposed FPGA-friendly organization, gRselect, improves MPKI by 79\%.
-In conclusion, gshare achieves the best accuracy with gselect and gRselect offering competitive accuracies.
+Section~\ref{sec:min:fpga:indexing} explained why gselect may be better to implement on an FPGA. Fig.~\ref{fig:direction:mpki} show that a conventionally indexed 4K-entry gselect results in competitive accuracy, improving \textsc{Base} by 80\%. Section~\ref{sec:eval:min:fmax} explained that the desired number of entries for the direction predictor is either 768 or 4K when fused with a BTB or not respectively. The figure shows that a conventionally indexed 4K-entry gselect improves MPKI by 80\%, while the proposed FPGA-friendly organization, gRselect, improves MPKI by 79\%. In conclusion, gshare achieves the best accuracy with gselect and gRselect offering competitive accuracies.
 
 \section{Area and Frequency}
 \label{sec:eval:min:fmax}
-
-Fig.~\ref{fig:Fmax} shows the maximum frequency and area utilisation for each predictor design. All configurations use one BRAM. As expected, BASE is the fastest and least expensive. Adding instruction filtering reduces fmax from 353 MHz to 287 MHz, a 18\% drop. By adding address calculation, frequency drops even further. However, removing the BTB partially recovers from this frequency drop. Finally, adding a RAS to a gRselect with pre-decoding, results in a predictor that operates at 259 MHz and that uses only 147 ALUTs.
-\kfig{Fmax.pdf}{fig:Fmax}{Maximum frequency and area utilisation. (PD = pre-decoding)}{trim = 0.7in 3.5in 0.7in 3.9in, clip, width=0.7\textwidth}
+Fig.~\ref{fig:Fmax} shows the maximum frequency and area utilization for each predictor design. All configurations use one BRAM. As expected, \textsc{Base} is the fastest and least expensive. Adding instruction filtering reduces the maximum frequency from 353 MHz to 287 MHz, a 18\% drop. By adding address calculation, frequency drops even further. However, removing the BTB partially recovers from this frequency drop. Finally, adding a RAS to a gRselect with pre-decoding, results in a predictor that operates at 259 MHz and that uses only 147 ALUTs.
+\kfig{Fmax.pdf}{fig:Fmax}{Maximum frequency and area utilisation. (PD = pre-decoding)}{trim = 0.7in 3.5in 0.7in 3.9in, clip, width=0.8\textwidth}
 
 \subsection{Performance}
 \label{sec:eval:performance}
-
 Fig.~\ref{fig:ipc} reports  average IPC gain compared to \textsc{Base}. The bimodal predictor results in the lowest IPC  while gselect performs almost as well as gshare.
-\kfig{ipc.pdf}{fig:ipc}{Improvement in IPC over \textsc{Base}.}{trim = 0.5in 1.8in 0.5in 1.8in, clip, width=0.6\textwidth}
+\kfig{ipc.pdf}{fig:ipc}{Improvement in IPC over \textsc{Base}.}{trim = 1in 1.8in 0.5in 1.8in, clip, width=0.7\textwidth}
 
-
-IPC is proportional to performance only when the clock frequency remains the same. Actual performance depends  on IPS, the product of IPC and clock frequency. Fig.~\ref{fig:ips} reports overall performance in IPS. This experiment assumes a 250MHz maximum clock speed for the processor, the maximum clock frequency of Nios-II-f on the Stratix~IV~\cite{niosfmax}. The best performing predictor is a 4K-entry gRselect with FAC+RAS, no BTB, and that uses pre-decoded instructions.
-\kfig{ips.pdf}{fig:ips}{IPS comparison of processors with various predictors.}{trim = 0.8in 4in 0.8in 4.2in, clip, width=0.6\textwidth}
+IPC is proportional to performance only when the clock frequency remains the same. Actual performance depends  on IPS, the product of IPC and clock frequency. Fig.~\ref{fig:ips} reports overall performance in IPS. This experiment assumes a 270 MHz maximum clock speed for the processor, the maximum clock frequency of Nios-II-f on the Stratix~IV~\cite{niosfmax}. The best performing predictor is a 4K-entry gRselect with FAC+RAS, no BTB, and that uses pre-decoded instructions.
+\kfig{ips.pdf}{fig:ips}{IPS comparison of processors with various predictors.}{trim = 0.8in 4in 0.8in 4.2in, clip, width=0.7\textwidth}
 
 
 
 \section{Advanced Branch predictors}
 \label{sec:eval:advanced}
+This section discusses the direction prediction accuracy of Perceptron and TAGE predictors. As discussed in Section~\ref{sec:advanced:target}, the target predictor used in this section is also FAC+RAS. This section first presents data that justify the final design of Perceptron and TAGE configurations, then a comparison with bimodal, gshare and gRselect is presented.
 
-\subsection{Branch Prediction Accuracy}
-\label{sec:eval:advanced:accuracy}
-This section first presents data that justify the final design of Perceptron and TAGE configurations, then a comparison with bimodal, gshare and gRselect is presented.
-
-\subsubsection{Perceptron}
-\label{sec:eval:advanced:accuracy:perceptron}
-This work considers Perceptron predictors with a hardware budget ranging from 1KB to 32KB. For each hardware budget, the number of global history bits is varied and the best performing one is chosen. Fig.~\ref{fig:perceptronMPKI} shows the most accurate Perceptron configuration for each hardware budget. All of these configurations uses 16 history bits. As Section~\ref{sec:eval:perf} will show, although the 32KB Perceptron is 3.2\% more accurate than the 16KB Perceptron, its IPC saturates at the 16KB budget, therefore for the rest of this work the 16KB Perceptron predictor is used.
+\subsection{Perceptron}
+\label{sec:eval:advanced:perceptron}
+This work considers Perceptron predictors with a hardware budget ranging from 1KB to 32KB. For each hardware budget, the number of global history bits is varied and the best performing one is chosen. Fig.~\ref{fig:perceptronMPKI} shows the most accurate Perceptron configuration for each hardware budget. All of these configurations uses 16 history bits. As Section~\ref{sec:eval:advanced:perf} will show, although the 32KB Perceptron is 3.2\% more accurate than the 16KB Perceptron, its IPC saturates at the 16KB budget, therefore for the rest of this work the 16KB Perceptron predictor is used.
 \kfig{perceptronMPKI.pdf}{fig:perceptronMPKI}{Perceptron: MPKI of the most accurate Perceptron configuration with various hardware budgets.}{angle = 0, trim = 0.9in 2.7in 0.8in 2.7in, clip, width=0.7\textwidth}
 
 To determine how many HOBs the predictor should use, we took the 16KB Perceptron and experimented with all possible numbers of HOBs used. Fig.~\ref{fig:perceptronHOB} shows the MPKI of this Perceptron when different number of HOBs are used. The data shows that using three HOBs degrades accuracy by less than 1\% compared to using all eight bits. However, the MPKI doubles when using only two HOBs. Therefore the the implemented Perceptron designs use three HOBs to improve operating frequency without affecting accuracy.
 \kfig{perceptronHOB.pdf}{fig:perceptronHOB}{Perceptron: MPKI when using different number of HOBs for the most accurate perceptron configuration.}{angle = 0, trim = 1in 2.6in 1in 2.6in, clip, width=0.7\textwidth}
 
-The best performing Perceptron uses 16 global history bits. It has a 16KB perceptron table, which stores 1K perceptrons. Each perceptron contains 16 8-bit weights with the arrangement discussed in Section~\ref{sec:fpga:perceptron:adder}. It also has a 6KB complement table that stores three HOBs per weight in its 2's complement form to improve frequency. Thus we name this best performing Perceptron the \textit{16KB+6KB Perceptron}. We will follow this convention in the rest of this paper, but the hardware budgets for various Perceptron configurations in the remaining figures only refer to their perceptron table sizes.
+The IPC-wise best performing Perceptron uses 16 global history bits. It has a 16KB perceptron table, which stores 1K perceptrons. Each perceptron contains 16 8-bit weights with the arrangement discussed in Section~\ref{sec:advanced:perceptron:adder}. It also has a 6KB complement table that stores three HOBs per weight in its 2's complement form to improve frequency. Thus this thesis names this best performing Perceptron the \textit{16KB+6KB Perceptron}. This thesis will follow this convention in the remaining sections, but the hardware budgets for various Perceptron configurations in the remaining figures only refer to their perceptron table sizes.
 
-\subsubsection{TAGE}
-\label{sec:eval:advanced:accuracy:tage}
+\subsection{TAGE}
+\label{sec:eval:advanced:tage}
 This work uses the TAGE predictor introduced by Seznec et al.~\cite{tage}.  This work proposes four designs incorporating TAGE:  (1)~the single-cycle TAGE, which requires TAGE to provide a prediction in one cycle (i.e., in the fetch stage), (2)~the Overriding TAGE (\mbox{O-TAGE}), which uses just the bimodal predictor (i.e., $T_0$) to provide a base prediction in the first cycle, and \textit{always} overrides the base prediction if TAGE disagrees at the end of the second cycle, (3)~the single-cycle TAGE with a Statistical Corrector (single-cycle \mbox{TAGE-SC}), which forces the predictor to use the base prediction unless TAGE consistently disagrees over several encounters of the same event, and (4)~the Overriding TAGE with a Statistical Corrector (\mbox{O-TAGE-SC}), which is similar to the single-cycle \mbox{TAGE-SC} except that TAGE overrides the base prediction in the second cycle.
 
-Specifically, \mbox{O-TAGE-SC} is motivated by Seznec's observation that TAGE fails at predicting branches that are statistically biased towards a direction but not correlated to the history path~\cite{isltage}. On some of these branches, TAGE often performs worse than a simple PC-indexed table, e.g., a bimodal predictor. This may result in many miss-overrides on these type of branches. More importantly, in Nios~II-f where the branch resolution latency is only two cycles, the overriding TAGE saves one cycle for each correct override, but loses two cycles for each incorrect override. 
-%Hence, the overriding TAGE must make two right decisions for every one wrong decision to break even.
-Hence, the overriding TAGE must be very confident to make an overriding decision, which necessitates the statistical corrector.
+Specifically, \mbox{O-TAGE-SC} is motivated by Seznec's observation that TAGE fails at predicting branches that are statistically biased towards a direction but not correlated to the history path~\cite{isltage}. On some of these branches, TAGE often performs worse than a simple PC-indexed table, e.g., a bimodal predictor. This may result in many miss-overrides on these type of branches. More importantly, in Nios~II-f where the branch resolution latency is only two cycles, the overriding TAGE saves one cycle for each correct override, but loses two cycles for each incorrect override. Hence, the overriding TAGE must make two right decisions for every one wrong decision to break even. The overriding TAGE must be very confident to make an overriding decision, which necessitates the statistical corrector.
 
 The statistical corrector we implemented is a small table with 256 entries that is indexed by eight bits from the PC. Each entry is a 10-bit saturating counter. If TAGE correctly overrides a decision, the corresponding counter is incremented by one, otherwise the counter is \textit{reset} to zero. TAGE only overrides when the counter is saturated.
-All TAGE\ configurations studies use 32KB and Seznec's original table configurations. Adjusting TAGE's size is a non-trivial task, moreover, the results of this work show that the 32KB \mbox{O-TAGE-SC} outperforms the other predictors. Accordingly, we do not vary TAGE's size in this work. Fig.~\ref{fig:tageMPKI} shows the MPKI of the four designs that incorporate TAGE. It shows that the single-cycle and overriding predictors have virtually identical MPKI, the statistical correcter improves MPKI by \mytilde 2.4x.
-\kfig{tageMPKI.pdf}{fig:tageMPKI}{TAGE: MPKI and IPC of the four TAGE variations.}{angle = 0, trim = 0.7in 2.6in 1in 2.7in, clip, width=0.7\textwidth}
+
+As listed in Table~\ref{tab:tageconfig}, TAGE predictor alone uses 241.5Kbits or \mytilde30.2KB storage. The statistical corrector uses 2.5Kbits, therefore the total storage of \mbox{TAGE-SC} and \mbox{O-TAGE-SC} is 244Kbits or 30.5KB. All TAGE variations are within 32KB budget. Adjusting TAGE's size is a non-trivial task, moreover, the results of this work show that the 32KB \mbox{O-TAGE-SC} outperforms the other predictors. Accordingly, we do not vary TAGE's size in this work. Fig.~\ref{fig:tageMPKI} shows the MPKI of the four designs that incorporate TAGE. It shows that the single-cycle and overriding predictors have virtually identical MPKI, the statistical correcter improves MPKI by \mytilde 2.4x.
+\kfig{tageMPKI.pdf}{fig:tageMPKI}{TAGE: MPKI and IPC of the four TAGE variations.}{angle = 0, trim = 0.7in 2.6in 1in 2.6in, clip, width=0.7\textwidth}
 
 %There are more accurate TAGE variations such as a 64KB ISL-TAGE~\cite{isltage}. A key technique to improve accuracy is that it uses bank interleaved \textit{physical} tables so that several adjacent \textit{logic} tables can share the storage space to avoid underutilization. This requires a crossbar to select banks, which makes pipelining ISL-TAGE non-trivial. Therefore we leave this investigation for future work.
 
 
-\subsubsection{Accuracy Comparison}
-\label{sec:eval:advanced:accuracy:comparison}
+\subsection{Accuracy Comparison}
+\label{sec:eval:advanced:comparison}
 For fair comparisons, we scale bimodal, gshare and gRselect from 1KB to 32KB, which is the same hardware budget as TAGE and the largest Perceptron considered in this work. Fig.~\ref{fig:admpki} shows the MPKI of various direction predictors. The TAGE variations use 32KB. All the branch predictors get more accurate as the hardware budget increases. The single-cycle \mbox{TAGE-SC} is the most accurate, followed by \mbox{O-TAGE-SC} with less than 0.06\% difference. The single-cycle \mbox{TAGE-SC} is \mytilde 2.3x more accurate than the 32KB gRselect and the 32KB gshare.
-\kfig{admpki.pdf}{fig:admpki}{MPKI of the direction predictors.}{angle = 0, trim = 0.9in 2.7in 0.8in 2.7in, clip, width=0.9\textwidth}
+\kfig{admpki.pdf}{fig:admpki}{MPKI of the direction predictors.}{angle = 0, trim = 0.95in 2.7in 0.8in 2.7in, clip, width=1\textwidth}
 
 \subsection{Frequency}
 \label{sec:eval:advanced:fmax}
 Fig.~\ref{fig:adfmax} shows the maximum operating frequency for each branch prediction scheme and for various hardware budgets.
-\kfig{adfmax.pdf}{fig:adfmax}{Maximum operating frequency of the considered branch prediction schemes with various hardware budget.}{angle = 0, trim = 0.8in 4.6in 0.7in 5.2in, clip, width=0.9\textwidth}
+\kfig{adfmax.pdf}{fig:adfmax}{Maximum operating frequency of the considered branch prediction schemes with various hardware budget.}{angle = 0, trim = 0.95in 4.6in 0.8in 5.2in, clip, width=1\textwidth}
 
-The fastest predictors are \mbox{O-TAGE-SC} and \mbox{O-TAGE}, both of them are capped at 270 MHz, the maximum clock frequency for Nios~II-f on Altera Stratix~IV C2 speed grade devices~\cite{niosfmax}. The 1KB Perceptron and the 1KB gRselect follow the overriding TAGE variations. The maximum frequency of gshare, bimodal and Perceptron drop rapidly with increasing size, while gRselect's frequency does not suffer too much. Despite that the logic is larger and more difficult to place and route,  the table indexing of gRselect comes from the GHR register. GRselect reads a wide entry and then using bits form the PC\ to select the appropriate ones. The indexing of gshare, bimodal and Perceptron uses  the predicted PC. The PC is both the input and the output of the branch predictor. This loop forms the critical path of gshare, bimodal and Perceptron, which quickly gets slower as the size of the predictors increase. The single-cycle \mbox{TAGE-SC} operates at 223.7MHz, which is 14.8\% slower than the 1KB gRselect and 17.2\% slower than \mbox{O-TAGE-SC}.
+The fastest predictors are \mbox{O-TAGE-SC} and \mbox{O-TAGE}, both of them are capped at 270 MHz, the maximum clock frequency for Nios~II-f on Altera Stratix~IV C2 speed grade devices~\cite{niosfmax}. The 1KB Perceptron and the 1KB gRselect follow the overriding TAGE variations. The maximum frequency of gshare, bimodal and Perceptron drop rapidly with increasing size, while gRselect's frequency does not suffer too much. Despite that the logic is larger and more difficult to place and route, the table indexing of gRselect comes from the GHR register. GRselect reads a wide entry and then using bits form the PC to select the appropriate ones. The indexing of gshare, bimodal and Perceptron uses the predicted PC. The PC is both the input and the output of the branch predictor. This loop forms the critical path of gshare, bimodal and Perceptron, which quickly gets slower as the size of the predictors increase. The single-cycle \mbox{TAGE-SC} operates at 224 MHz, which is 14.8\% slower than the 1KB gRselect and 17.2\% slower than \mbox{O-TAGE-SC}.
 
 \subsection{Performance and Resource Cost}
 \label{sec:eval:advanced:perf}
-Fig.~\ref{fig:adipc} shows the IPC of the predictors. Although the MPKI of the 32KB Perceptron is higher than the 16KB Perceptron, they deliver identical IPC, therefore the 16KB version is selected as the final Perceptron implementation. The single-cycle \mbox{TAGE-SC} has the highest IPC, however, as this section shows, its high IPC cannot amortize the slowdown in operating frequency. \mbox{O-TAGE} is much faster, but its IPC drops significantly. Finally, the IPC of \mbox{O-TAGE-SC} is within 0.5\% of the single-cycle \mbox{TAGE-SC}.
-\kfig{adipc.pdf}{fig:adipc}{IPC of the considered branch predictors.}{angle = 0, trim = 0.9in 2.9in 0.8in 2.9in, clip, width=0.9\textwidth}
+Fig.~\ref{fig:adipc} shows the IPC of the predictors. Although the MPKI of the 32KB+12KB Perceptron is higher than the 16KB+6KB Perceptron, they deliver identical IPC, therefore the 16KB+6KB version is selected as the final Perceptron implementation. The single-cycle \mbox{TAGE-SC} has the highest IPC, however, as this section shows, its high IPC cannot amortize the slowdown in operating frequency. \mbox{O-TAGE} is much faster, but its IPC drops significantly. Finally, the IPC of \mbox{O-TAGE-SC} is within 0.5\% of the single-cycle \mbox{TAGE-SC}.
+\kfig{adipc.pdf}{fig:adipc}{IPC of the considered branch predictors.}{angle = 0, trim = 0.95in 2.9in 0.8in 2.8in, clip, width=1\textwidth}
 
 IPC is a measurement that does not take operating frequency into consideration. The actual performance of a processor is measured by Instructions Per Second (IPS), which is the product of IPC and the maximum operating frequency. Fig.~\ref{fig:adips} reports the overall performance in terms of IPS.
-\kfig{adips.pdf}{fig:adips}{Processor IPS comparison with various predictors.}{angle = 0, trim = 0.9in 2.7in 0.7in 2.6in, clip, width=0.9\textwidth}
+\kfig{adips.pdf}{fig:adips}{Processor IPS comparison with various predictors.}{angle = 0, trim = 0.95in 2.7in 0.7in 2.6in, clip, width=1\textwidth}
 
-The IPS of gRselect, gshare, bimodal and perceptron drops as they scale, therefore we chose the smallest configurations of these schemes to maximize IPS. The best performing predictor is \mbox{O-TAGE-SC}, which delivers 5.2\% higher IPS than the previously proposed 1KB gRselect. Although the single-cycle \mbox{TAGE-SC} is the most accurate, its IPS is lower than the best performing predictor in all other prediction schemes  because its latency is too high. The 1KB Perceptron ends up being 0.2\% better than the 1KB gRselect, because of the optimization efforts into improving its frequency. 
+The IPS of gRselect, gshare, bimodal and perceptron drops as they scale, therefore we chose the smallest configurations of these schemes to maximize IPS. The best performing predictor is \mbox{O-TAGE-SC}, which delivers 5.2\% higher IPS than the 1KB gRselect. Although the single-cycle \mbox{TAGE-SC} is the most accurate, its IPS is lower than the best performing predictor in all other prediction schemes  because its latency is too high. The 1KB Perceptron ends up being 0.2\% better than the 1KB gRselect, because of the optimization efforts into improving its frequency. 
 
 Finally, Fig.~\ref{fig:adarea} shows the resource usage in term of ALUTs used. \mbox{O-TAGE-SC} uses 2.93x ALUTs and Percpetron uses 6.45x ALUTs as the 1KB gRselect.
-\kfig{adarea.pdf}{fig:adarea}{ALUTs usage comparison with various predictors.}{angle = 0, trim = 0.9in 2.7in 0.7in 2.7in, clip, width=0.7\textwidth}
+\kfig{adarea.pdf}{fig:adarea}{ALUTs usage comparison with various predictors.}{angle = 0, trim = 0.9in 2.7in 0.7in 2.7in, clip, width=0.8\textwidth}
 
+\section{1KB gRselect vs. O-TAGE-SC}
+\label{sec:eval:vs}
+The previous section has shown that \mbox{O-TAGE-SC} is \mytilde 3x as accurate as the 1KB gRselect, but it only outperforms the 1KB gRselect by 5.2\% in terms of IPS. Moreover, only \mytilde 1\% out of the 5.2\% IPS gain comes from better IPC and the rest comes from faster operating frequency. Fig.~\ref{fig:vsmpki} and Fig.~\ref{fig:vsipc} shows the MPKI and IPC of the 1KB gRselect and \mbox{O-TAGE-SC} over all the benchmarks used in this work. The average MPKI and IPC of the two predictors are shown as the two right-most columns.
+
+\kfig{vsmpki.pdf}{fig:vsmpki}{MPKI of the 1KB gRselect and \mbox{O-TAGE-SC} over all the benchmarks and the average MPKI.}{angle = 0, trim = 0.9in 2.7in 0.8in 2.5in, clip, width=0.9\textwidth}
+
+\kfig{vsipc.pdf}{fig:vsipc}{IPC of the 1KB gRselect and \mbox{O-TAGE-SC} over all the benchmarks and the average IPC.}{angle = 0, trim = 0.8in 4.5in 0.7in 5in, clip, width=0.9\textwidth}
+
+From Fig.~\ref{fig:vsmpki}, \mbox{O-TAGE-SC} is 1.98x more accurate on average than the 1KB gRselect over all the benchmarks. The best case is \textit{libquantum}, where \mbox{O-TAGE-SC} is 239.9x more accurate, and even in the worst case \textit{astar}, \mbox{O-TAGE-SC} is still 19\% more accurate. However, from Fig.~\ref{fig:vsipc}, \mbox{O-TAGE-SC} is only 1.2\% better in terms of IPC. The best case is \textit{sjeng}, where \mbox{O-TAGE-SC} is 4.2\% better, and the worst case is \textit{astar}, where \mbox{O-TAGE-SC} is 1.5\% worse. The reason why 
 
 
 
