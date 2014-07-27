@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2014.6.26)  25 JUL 2014 00:07
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2014.6.26)  26 JUL 2014 15:43
 entering extended mode
 **E:/University*of*Toronto/masters/thesis/di-thesis.tex
 ("E:/University of Toronto/masters/thesis/di-thesis.tex"
@@ -512,7 +512,7 @@ Chapter 5.
 
 
 
-] <Figures/target_mpki.pdf, id=1585, 845.07718pt x 597.55246pt>
+] <Figures/target_mpki.pdf, id=1587, 845.07718pt x 597.55246pt>
 File: Figures/target_mpki.pdf Graphic file (type pdf)
 
 <use Figures/target_mpki.pdf>
@@ -522,27 +522,27 @@ Package pdftex.def Info: Figures/target_mpki.pdf used on input line 25.
 Underfull \vbox (badness 6825) has occurred while \output is active []
 
  [27 <E:/University of Toronto/masters/thesis/Figures/target_mpki.pdf>]
-<Figures/direction_mpki.pdf, id=1598, 597.55246pt x 845.07718pt>
+<Figures/direction_mpki.pdf, id=1600, 597.55246pt x 845.07718pt>
 File: Figures/direction_mpki.pdf Graphic file (type pdf)
 
 <use Figures/direction_mpki.pdf>
 Package pdftex.def Info: Figures/direction_mpki.pdf used on input line 34.
 (pdftex.def)             Requested size: 316.17987pt x 172.53703pt.
 
-<Figures/Fmax.pdf, id=1604, 597.55246pt x 845.07718pt>
+<Figures/Fmax.pdf, id=1606, 597.55246pt x 845.07718pt>
 File: Figures/Fmax.pdf Graphic file (type pdf)
  <use Figures/Fmax.pdf>
 Package pdftex.def Info: Figures/Fmax.pdf used on input line 41.
 (pdftex.def)             Requested size: 361.35138pt x 225.88676pt.
 
 [28 <E:/University of Toronto/masters/thesis/Figures/direction_mpki.pdf>]
-<Figures/ipc.pdf, id=1619, 845.07718pt x 597.55246pt>
+<Figures/ipc.pdf, id=1621, 845.07718pt x 597.55246pt>
 File: Figures/ipc.pdf Graphic file (type pdf)
  <use Figures/ipc.pdf>
 Package pdftex.def Info: Figures/ipc.pdf used on input line 46.
 (pdftex.def)             Requested size: 316.17987pt x 144.8029pt.
 
-<Figures/ips.pdf, id=1623, 597.55246pt x 845.07718pt>
+<Figures/ips.pdf, id=1625, 597.55246pt x 845.07718pt>
 File: Figures/ips.pdf Graphic file (type pdf)
  <use Figures/ips.pdf>
 Package pdftex.def Info: Figures/ips.pdf used on input line 49.
@@ -550,83 +550,85 @@ Package pdftex.def Info: Figures/ips.pdf used on input line 49.
 
 [29 <E:/University of Toronto/masters/thesis/Figures/Fmax.pdf> <E:/University o
 f Toronto/masters/thesis/Figures/ipc.pdf>]
-<Figures/perceptronMPKI.pdf, id=1651, 845.07718pt x 597.55246pt>
+<Figures/perceptronMPKI.pdf, id=1653, 845.07718pt x 597.55246pt>
 File: Figures/perceptronMPKI.pdf Graphic file (type pdf)
 
 <use Figures/perceptronMPKI.pdf>
 Package pdftex.def Info: Figures/perceptronMPKI.pdf used on input line 60.
 (pdftex.def)             Requested size: 722.21666pt x 207.29442pt.
 
-<Figures/perceptronHOB.pdf, id=1654, 845.07718pt x 597.55246pt>
+<Figures/perceptronHOB.pdf, id=1656, 845.07718pt x 597.55246pt>
 File: Figures/perceptronHOB.pdf Graphic file (type pdf)
 
 <use Figures/perceptronHOB.pdf>
 Package pdftex.def Info: Figures/perceptronHOB.pdf used on input line 63.
 (pdftex.def)             Requested size: 700.53554pt x 221.74707pt.
- [30 <E:/University of Toronto/masters/thesis/Figures/ips.pdf>] [31 <E:/Univers
-ity of Toronto/masters/thesis/Figures/perceptronMPKI.pdf> <E:/University of Tor
-onto/masters/thesis/Figures/perceptronHOB.pdf>]
-<Figures/tageMPKI.pdf, id=1697, 845.07718pt x 597.55246pt>
+ [30 <E:/University of Toronto/masters/thesis/Figures/ips.pdf>]
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no ™ in font cmr10!
+ <Figures/tageMPKI.pdf, id=1676, 845.07718pt x 597.55246pt>
 File: Figures/tageMPKI.pdf Graphic file (type pdf)
 
 <use Figures/tageMPKI.pdf>
-Package pdftex.def Info: Figures/tageMPKI.pdf used on input line 76.
+Package pdftex.def Info: Figures/tageMPKI.pdf used on input line 70.
 (pdftex.def)             Requested size: 722.21669pt x 221.74707pt.
 
-<Figures/admpki.pdf, id=1700, 845.07718pt x 597.55246pt>
+<Figures/admpki.pdf, id=1679, 845.07718pt x 597.55246pt>
 File: Figures/admpki.pdf Graphic file (type pdf)
 
 <use Figures/admpki.pdf>
-Package pdftex.def Info: Figures/admpki.pdf used on input line 84.
+Package pdftex.def Info: Figures/admpki.pdf used on input line 78.
 (pdftex.def)             Requested size: 718.60297pt x 207.29442pt.
- [32 <E:/University of Toronto/masters/thesis/Figures/tageMPKI.pdf>] <Figures/a
-dfmax.pdf, id=1717, 597.55246pt x 845.07718pt>
+ [31 <E:/University of Toronto/masters/thesis/Figures/perceptronMPKI.pdf> <E:/U
+niversity of Toronto/masters/thesis/Figures/perceptronHOB.pdf>] <Figures/adfmax
+.pdf, id=1704, 597.55246pt x 845.07718pt>
 File: Figures/adfmax.pdf Graphic file (type pdf)
 
 <use Figures/adfmax.pdf>
-Package pdftex.def Info: Figures/adfmax.pdf used on input line 89.
+Package pdftex.def Info: Figures/adfmax.pdf used on input line 83.
 (pdftex.def)             Requested size: 471.07884pt x 136.83066pt.
- [33 <E:/University of Toronto/masters/thesis/Figures/admpki.pdf> <E:/Universit
-y of Toronto/masters/thesis/Figures/adfmax.pdf>]
-<Figures/adipc.pdf, id=1767, 845.07718pt x 597.55246pt>
+ [32 <E:/University of Toronto/masters/thesis/Figures/tageMPKI.pdf> <E:/Univers
+ity of Toronto/masters/thesis/Figures/admpki.pdf>]
+<Figures/adipc.pdf, id=1742, 845.07718pt x 597.55246pt>
 File: Figures/adipc.pdf Graphic file (type pdf)
 
 <use Figures/adipc.pdf>
-Package pdftex.def Info: Figures/adipc.pdf used on input line 96.
+Package pdftex.def Info: Figures/adipc.pdf used on input line 90.
 (pdftex.def)             Requested size: 718.60297pt x 185.61325pt.
 
-<Figures/adips.pdf, id=1770, 845.07718pt x 597.55246pt>
+<Figures/adips.pdf, id=1745, 845.07718pt x 597.55246pt>
 File: Figures/adips.pdf Graphic file (type pdf)
 
 <use Figures/adips.pdf>
-Package pdftex.def Info: Figures/adips.pdf used on input line 99.
+Package pdftex.def Info: Figures/adips.pdf used on input line 93.
 (pdftex.def)             Requested size: 725.8304pt x 214.52075pt.
-
-<Figures/adarea.pdf, id=1773, 845.07718pt x 597.55246pt>
+ [33 <E:/University of Toronto/masters/thesis/Figures/adfmax.pdf> <E:/Universit
+y of Toronto/masters/thesis/Figures/adipc.pdf>]
+<Figures/adarea.pdf, id=1794, 845.07718pt x 597.55246pt>
 File: Figures/adarea.pdf Graphic file (type pdf)
 
 <use Figures/adarea.pdf>
-Package pdftex.def Info: Figures/adarea.pdf used on input line 104.
+Package pdftex.def Info: Figures/adarea.pdf used on input line 98.
 (pdftex.def)             Requested size: 729.44409pt x 207.29442pt.
- [34 <E:/University of Toronto/masters/thesis/Figures/adipc.pdf>] <Figures/vsmp
-ki.pdf, id=1802, 845.07718pt x 597.55246pt>
+ [34 <E:/University of Toronto/masters/thesis/Figures/adips.pdf> <E:/University
+ of Toronto/masters/thesis/Figures/adarea.pdf>]
+<Figures/vsmpki.pdf, id=1832, 845.07718pt x 597.55246pt>
 File: Figures/vsmpki.pdf Graphic file (type pdf)
 
 <use Figures/vsmpki.pdf>
-Package pdftex.def Info: Figures/vsmpki.pdf used on input line 110.
+Package pdftex.def Info: Figures/vsmpki.pdf used on input line 104.
 (pdftex.def)             Requested size: 722.21666pt x 221.74817pt.
 
-<Figures/vsipc.pdf, id=1804, 597.55246pt x 845.07718pt>
+<Figures/vsipc.pdf, id=1834, 597.55246pt x 845.07718pt>
 File: Figures/vsipc.pdf Graphic file (type pdf)
 
 <use Figures/vsipc.pdf>
-Package pdftex.def Info: Figures/vsipc.pdf used on input line 112.
+Package pdftex.def Info: Figures/vsipc.pdf used on input line 106.
 (pdftex.def)             Requested size: 489.1463pt x 158.51181pt.
-) [35 <E:/University of Toronto/masters/thesis/Figures/adips.pdf> <E:/Universit
-y of Toronto/masters/thesis/Figures/adarea.pdf>]
-[36 <E:/University of Toronto/masters/thesis/Figures/vsmpki.pdf> <E:/University
- of Toronto/masters/thesis/Figures/vsipc.pdf>]
-("E:\University of Toronto\masters\thesis\conclusion.tex"
+ [35 <E:/University of Toronto/masters/thesis/Figures/vsmpki.pdf> <E:/Universit
+y of Toronto/masters/thesis/Figures/vsipc.pdf>])
+[36] ("E:\University of Toronto\masters\thesis\conclusion.tex"
 Chapter 6.
 ) [37
 
@@ -689,7 +691,7 @@ iKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy5.pfb><D:/Program Files (x86)/MiKT
 eX 2.9/fonts/type1/public/amsfonts/cm/cmsy7.pfb><D:/Program Files (x86)/MiKTeX 
 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb><D:/Program Files (x86)/MiKTeX 2.
 9/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on di-thesis.pdf (47 pages, 2435254 bytes).
+Output written on di-thesis.pdf (47 pages, 2435782 bytes).
 PDF statistics:
  1997 PDF objects out of 2073 (max. 8388607)
  151 named destinations out of 1000 (max. 500000)
