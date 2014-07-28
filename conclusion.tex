@@ -1,9 +1,19 @@
 \chapter{Conclusion}
 \label{chap:conclusion}
 
+This thesis studied the implementation of branch predictors for general purpose soft processors. It targeted high frequency and high accuracy branch predictors for pipelined processors, and explored various branch predictor designs. These designs were combinations of a branch target buffer, a return address stack, commonly used simple and advanced direction predictors, pre-decoding, in-fetch instruction decoding, and target address calculation. Several FPGA-specific optimizations were proposed resulting in a branch predictor that is FPGA-friendly in that it offers high accuracy and high operating frequency.
 
-This work studied the implementation of branch predictors for general purpose soft processors.  This work targeted high frequency, low area overhead branch predictors for pipelined processors, and explored various branch predictor designs. These designs were combinations of a branch target buffer, a return address stack, three commonly used direction predictors, pre-decoding, in-fetch instruction decoding, and target address calculation. Several FPGA-specific optimizations were proposed resulting in a branch predictor that is FPGA-friendly in that it offers high accuracy, high operating frequency with few resources. Future work may consider more elaborate processor designs and/or other workloads that may benefit from more elaborate branch direction predictors than the ones considered in this work.
+In summary, this thesis makes the following contributions:
+
+(1)~This thesis explores the tradeoffs of various combination of structures for branch target prediction on FPGAs. It has shown that eliminating the BTB and using the combination of FAC and RAS as the branch target predictor is the best design for both the minimalistic predictor and the more advance \mbox{O-TAGE-SC}.
+
+(2)~This thesis studies the FPGA implementations of bimodal, gshare and gselect. It identifies the critical paths of these predictors. Accordingly, this thesis proposes a FPGA-friendly predictor gRselect that reverses the order of indexing to improve maximum operating frequency. It has shown that within the same hardware budget, gRselect together with FAC+RAS is the best performing branch predictor.
+
+(3)~This thesis shows that scaling bimodal, gshare and gRselect up to 32KB improves IPC marginally, but slows down the predictor significantly. The best performing bimodal, gshare and gRselect configurations all uses 1KB hardware budget.
+
+(3)~This thesis studies the FPGA implementations of the state-of-the-art direction Perceptron and TAGE branch predictors. Several FPGA implementation optimization techniques were proposed to achieve high operating frequency. It explored the designs tradeoffs of Perceptron and TAGE, and proposed \mbox{O-TAGE-SC}, an overriding predictor that delivers 5.2\% better instruction throughput over the 1KB gRselect.
+
+Although \mbox{O-TAGE-SC} is \mytilde 3x more accurate than the 1KB gRselect, the IPS improvement is  smaller due to the processor's simple in-order pipeline. Future work may consider investigating the benefits of implementing \mbox{O-TAGE-SC} for more elaborated soft processors, e.g., an Out-of-Order soft processor. 
 
 
-
-This work studied the implementation of  Perceptron and TAGE branch predictors for general purpose soft processors. It explored the designs tradeoffs of Perceptron and TAGE, and proposed \mbox{O-TAGE-SC}, an overriding predictor that delivers 5.2\% better instruction throughput over the best performing previously proposed predictor, gRselect. Several FPGA implementation optimization techniques were proposed to achieve high operating frequency. Although \mbox{O-TAGE-SC} is \mytilde 3x more accurate than the 1KB gRselect, the IPS improvement is  smaller due to the processor's simple in-order pipeline. Future work may consider investigating the benefits of implementing \mbox{O-TAGE-SC} for more elaborated soft processors, e.g., an Out-of-Order soft processor. 
+There is a trend to scale soft processors to support more computation-intensive applications. High performance processors such as Superscalar and Out-of-Order processors usually require high prediction accuracy 
