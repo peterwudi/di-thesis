@@ -67,7 +67,7 @@ The IPC-wise best performing Perceptron uses 16 global history bits. It has a 16
 \subsection{TAGE}
 \label{sec:eval:advanced:tage}
 All TAGE configurations studied in this work use Seznec’s original table configurations~\cite{tage}. As listed in Table~\ref{tab:tageconfig}, TAGE predictor alone uses 241.5Kbits or \mytilde30.2KB storage. The statistical corrector uses 2.5Kbits, therefore the total storage of \mbox{TAGE-SC} and \mbox{O-TAGE-SC} is 244Kbits or 30.5KB. All TAGE variations are within 32KB budget. Adjusting TAGE's size is a non-trivial task, moreover, the results of this work show that the 32KB \mbox{O-TAGE-SC} outperforms the other predictors. Accordingly, we do not vary TAGE's size in this work. Fig.~\ref{fig:tageMPKI} shows the MPKI of the four designs that incorporate TAGE. It shows that the single-cycle and overriding predictors have virtually identical MPKI, the statistical correcter improves MPKI by \mytilde 2.4x.
-\kfig{tageMPKI.pdf}{fig:tageMPKI}{TAGE: MPKI and IPC of the four TAGE variations.}{angle = 0, trim = 0.7in 2.6in 1in 2.6in, clip, width=0.7\textwidth}
+\kfig{tageMPKI.pdf}{fig:tageMPKI}{TAGE: MPKI of the four TAGE variations.}{angle = 0, trim = 0.7in 2.6in 1in 2.6in, clip, width=0.7\textwidth}
 
 %There are more accurate TAGE variations such as a 64KB ISL-TAGE~\cite{isltage}. A key technique to improve accuracy is that it uses bank interleaved \textit{physical} tables so that several adjacent \textit{logic} tables can share the storage space to avoid underutilization. This requires a crossbar to select banks, which makes pipelining ISL-TAGE non-trivial. Therefore we leave this investigation for future work.
 
