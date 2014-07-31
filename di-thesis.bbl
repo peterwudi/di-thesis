@@ -56,6 +56,12 @@ O.~Cadenas, G.~Megson, and D.~Jones.
 \newblock {A study of branch prediction strategies}.
 \newblock In {\em Annual Symposium on Computer Architecture}, June 1981.
 
+\bibitem{confidence}
+Erik Jacobsen, Eric Rotenberg, and J.~E. Smith.
+\newblock Assigning confidence to conditional branch predictions.
+\newblock In {\em In Proceedings of the 29th ACM/IEEE International Symposium
+  on Microarchitecture}, pages 142--152, 1996.
+
 \bibitem{override}
 Daniel~A Jim{\'e}nez, Stephen~W Keckler, and Calvin Lin.
 \newblock The impact of delay on the design of branch predictors.
