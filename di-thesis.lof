@@ -26,7 +26,7 @@
 \contentsline {figure}{\numberline {5.8}{\ignorespaces TAGE: MPKI of the four TAGE variations.}}{33}{figure.5.8}
 \contentsline {figure}{\numberline {5.9}{\ignorespaces MPKI of the direction predictors.}}{33}{figure.5.9}
 \contentsline {figure}{\numberline {5.10}{\ignorespaces Maximum operating frequency of the considered branch prediction schemes with various hardware budget.}}{34}{figure.5.10}
-\contentsline {figure}{\numberline {5.11}{\ignorespaces IPC of the considered branch predictors.}}{34}{figure.5.11}
+\contentsline {figure}{\numberline {5.11}{\ignorespaces IPC of the considered branch predictors.}}{35}{figure.5.11}
 \contentsline {figure}{\numberline {5.12}{\ignorespaces Processor IPS comparison with various predictors.}}{35}{figure.5.12}
 \contentsline {figure}{\numberline {5.13}{\ignorespaces ALUTs usage comparison with various predictors.}}{35}{figure.5.13}
 \contentsline {figure}{\numberline {5.14}{\ignorespaces MPKI of the 1KB gRselect and \unhbox \voidb@x \hbox {O-TAGE-SC} over all the benchmarks and the average MPKI.}}{36}{figure.5.14}
