@@ -1,15 +1,16 @@
 \contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}
-\contentsline {chapter}{\numberline {2}Background and Goals}{3}{chapter.2}
-\contentsline {section}{\numberline {2.1}Why Branch Prediction?}{3}{section.2.1}
-\contentsline {section}{\numberline {2.2}Branch Prediction Overview}{4}{section.2.2}
-\contentsline {section}{\numberline {2.3}Branch Target Prediction}{4}{section.2.3}
-\contentsline {section}{\numberline {2.4}Branch Direction Prediction}{5}{section.2.4}
-\contentsline {subsection}{\numberline {2.4.1}Static Prediction Scheme}{5}{subsection.2.4.1}
-\contentsline {subsection}{\numberline {2.4.2}Bimodal, Gshare and Gselect Predictor}{6}{subsection.2.4.2}
-\contentsline {subsection}{\numberline {2.4.3}Perceptron Predictor}{6}{subsection.2.4.3}
-\contentsline {subsection}{\numberline {2.4.4}Tagged Geometric History Length Branch Predictor (TAGE)}{7}{subsection.2.4.4}
+\contentsline {section}{\numberline {1.1}Design Goals}{2}{section.1.1}
+\contentsline {section}{\numberline {1.2}Contributions}{2}{section.1.2}
+\contentsline {chapter}{\numberline {2}Background and Goals}{4}{chapter.2}
+\contentsline {section}{\numberline {2.1}Why Branch Prediction?}{4}{section.2.1}
+\contentsline {section}{\numberline {2.2}Branch Prediction Overview}{5}{section.2.2}
+\contentsline {section}{\numberline {2.3}Branch Target Prediction}{5}{section.2.3}
+\contentsline {section}{\numberline {2.4}Branch Direction Prediction}{6}{section.2.4}
+\contentsline {subsection}{\numberline {2.4.1}Static Prediction Scheme}{6}{subsection.2.4.1}
+\contentsline {subsection}{\numberline {2.4.2}Bimodal, Gshare and Gselect Predictor}{7}{subsection.2.4.2}
+\contentsline {subsection}{\numberline {2.4.3}Perceptron Predictor}{8}{subsection.2.4.3}
+\contentsline {subsection}{\numberline {2.4.4}Tagged Geometric History Length Branch Predictor (TAGE)}{9}{subsection.2.4.4}
 \contentsline {section}{\numberline {2.5}Field Programmable Gate Arrays and Soft Processors}{9}{section.2.5}
-\contentsline {section}{\numberline {2.6}Design Goals}{9}{section.2.6}
 \contentsline {chapter}{\numberline {3}The Minimalistic FPGA-Friendly Branch Predictors}{11}{chapter.3}
 \contentsline {section}{\numberline {3.1}Target Prediction}{11}{section.3.1}
 \contentsline {subsection}{\numberline {3.1.1}Target Address Pre-calculation}{12}{subsection.3.1.1}

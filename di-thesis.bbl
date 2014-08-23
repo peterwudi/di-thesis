@@ -68,6 +68,13 @@ Daniel~A Jim{\'e}nez, Stephen~W Keckler, and Calvin Lin.
 \newblock In {\em Proceedings of the 33rd annual ACM/IEEE international
   symposium on Microarchitecture}, pages 67--76. ACM, 2000.
 
+\bibitem{ras}
+David~R. Kaeli and Philip~G. Emma.
+\newblock Branch history table prediction of moving target branches due to
+  subroutine returns.
+\newblock In {\em Proceedings of the 18th Annual International Symposium on
+  Computer Architecture}, ISCA '91, pages 34--42, New York, NY, USA, 1991. ACM.
+
 \bibitem{histogram}
 D.C. Lee, P.J. Crowley, Jean-Loup Baer, T.E. Anderson, and B.K. Bershad.
 \newblock Execution characteristics of desktop applications on windows nt.
@@ -114,6 +121,14 @@ Xilinx Inc.
 \bibitem{virtex}
 Xilinx Inc.
 \newblock {\em 7 Series FPGAs Overview}, Feb. 2014.
+
+\bibitem{pht}
+Tse-Yu Yeh and Yale~N. Patt.
+\newblock A comparison of dynamic branch predictors that use two levels of
+  branch history.
+\newblock In {\em Proceedings of the 20th Annual International Symposium on
+  Computer Architecture}, ISCA '93, pages 257--266, New York, NY, USA, 1993.
+  ACM.
 
 \bibitem{softprocessor}
 Peter Yiannacouras, Jonathan Rose, and J~Gregory Steffan.

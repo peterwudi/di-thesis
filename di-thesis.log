@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2014.6.26)  1 AUG 2014 18:47
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2014.6.26)  23 AUG 2014 00:49
 entering extended mode
 **E:/University*of*Toronto/masters/thesis/di-thesis.tex
 ("E:/University of Toronto/masters/thesis/di-thesis.tex"
@@ -333,9 +333,9 @@ LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
 {C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}] [2] [3]
 ("E:\University of Toronto\masters\thesis\di-thesis.toc"
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 3.
+(Font)              <7> on input line 2.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 3.
+(Font)              <5> on input line 2.
  [4
 
 ])
@@ -360,63 +360,66 @@ Underfull \vbox (badness 5189) has occurred while \output is active []
 
 
 
-])
-[2] ("E:\University of Toronto\masters\thesis\background.tex"
+]
+[2]) [3] ("E:\University of Toronto\masters\thesis\background.tex"
 Chapter 2.
-[3
+
+LaTeX Warning: Reference `sec:background:goal' on page 4 undefined on input lin
+e 3.
+
+[4
 
 
 
-] <Figures/bpcanonical.pdf, id=383, 794.97pt x 614.295pt>
+] <Figures/bpcanonical.pdf, id=399, 794.97pt x 614.295pt>
 File: Figures/bpcanonical.pdf Graphic file (type pdf)
 
 <use Figures/bpcanonical.pdf>
 Package pdftex.def Info: Figures/bpcanonical.pdf used on input line 18.
 (pdftex.def)             Requested size: 686.56339pt x 484.20763pt.
- [4] [5 <E:/University of Toronto/masters/thesis/Figures/bpcanonical.pdf>] <Fig
-ures/simpleDIR.pdf, id=452, 722.7pt x 542.025pt>
+ [5] [6 <E:/University of Toronto/masters/thesis/Figures/bpcanonical.pdf>] <Fig
+ures/simpleDIR.pdf, id=470, 722.7pt x 542.025pt>
 File: Figures/simpleDIR.pdf Graphic file (type pdf)
 
 <use Figures/simpleDIR.pdf>
-Package pdftex.def Info: Figures/simpleDIR.pdf used on input line 44.
+Package pdftex.def Info: Figures/simpleDIR.pdf used on input line 46.
 (pdftex.def)             Requested size: 643.20103pt x 368.57544pt.
-
-<Figures/perceptron.pdf, id=456, 722.7pt x 542.025pt>
+ [7 <E:/University of Toronto/masters/thesis/Figures/simpleDIR.pdf>] <Figures/p
+erceptron.pdf, id=499, 722.7pt x 542.025pt>
 File: Figures/perceptron.pdf Graphic file (type pdf)
 
 <use Figures/perceptron.pdf>
-Package pdftex.def Info: Figures/perceptron.pdf used on input line 50.
+Package pdftex.def Info: Figures/perceptron.pdf used on input line 52.
 (pdftex.def)             Requested size: 505.88881pt x 216.8095pt.
- [6 <E:/University of Toronto/masters/thesis/Figures/simpleDIR.pdf>] <Figures/t
-age.pdf, id=484, 722.7pt x 542.025pt>
+ [8 <E:/University of Toronto/masters/thesis/Figures/perceptron.pdf>] <Figures/
+tage.pdf, id=543, 722.7pt x 542.025pt>
 File: Figures/tage.pdf Graphic file (type pdf)
 
 <use Figures/tage.pdf>
-Package pdftex.def Info: Figures/tage.pdf used on input line 75.
+Package pdftex.def Info: Figures/tage.pdf used on input line 77.
 (pdftex.def)             Requested size: 650.42847pt x 484.20764pt.
- [7 <E:/University of Toronto/masters/thesis/Figures/perceptron.pdf>] [8 <E:/Un
-iversity of Toronto/masters/thesis/Figures/tage.pdf>]
-[9]) [10] ("E:\University of Toronto\masters\thesis\minimal.tex"
+ [9]) [10 <E:/University of Toronto/masters/thesis/Figures/tage.pdf>] ("E:\Univ
+ersity of Toronto\masters\thesis\minimal.tex"
 Chapter 3.
 [11
 
 
 
-] <Figures/bimodalCP.pdf, id=765, 722.7pt x 542.025pt>
+] <Figures/bimodalCP.pdf, id=773, 722.7pt x 542.025pt>
 File: Figures/bimodalCP.pdf Graphic file (type pdf)
 
 <use Figures/bimodalCP.pdf>
 Package pdftex.def Info: Figures/bimodalCP.pdf used on input line 17.
 (pdftex.def)             Requested size: 722.69823pt x 455.30014pt.
 
-<Figures/histogram.pdf, id=769, 597.55246pt x 845.07718pt>
+<Figures/histogram.pdf, id=777, 597.55246pt x 845.07718pt>
 File: Figures/histogram.pdf Graphic file (type pdf)
 
 <use Figures/histogram.pdf>
 Package pdftex.def Info: Figures/histogram.pdf used on input line 20.
 (pdftex.def)             Requested size: 489.1463pt x 303.05148pt.
  [12 <E:/University of Toronto/masters/thesis/Figures/bimodalCP.pdf>]
-<Figures/histogram_ind_jmp.pdf, id=822, 597.55246pt x 845.07718pt>
+<Figures/histogram_ind_jmp.pdf, id=831, 597.55246pt x 845.07718pt>
 File: Figures/histogram_ind_jmp.pdf Graphic file (type pdf)
 
 <use Figures/histogram_ind_jmp.pdf>
@@ -426,14 +429,18 @@ Package pdftex.def Info: Figures/histogram_ind_jmp.pdf used on input line 26.
 Underfull \vbox (badness 6284) has occurred while \output is active []
 
  [14 <E:/University of Toronto/masters/thesis/Figures/histogram_ind_jmp.pdf>]
-<Figures/fusedbtb.pdf, id=876, 722.7pt x 542.025pt>
+
+LaTeX Warning: Reference `sec:background:goal' on page 15 undefined on input li
+ne 46.
+
+<Figures/fusedbtb.pdf, id=885, 722.7pt x 542.025pt>
 File: Figures/fusedbtb.pdf Graphic file (type pdf)
  <use Figures/fusedbtb.pdf>
 Package pdftex.def Info: Figures/fusedbtb.pdf used on input line 47.
 (pdftex.def)             Requested size: 271.01526pt x 253.24344pt.
 
 [15 <E:/University of Toronto/masters/thesis/Figures/fusedbtb.pdf>]
-<Figures/fusedbtbusage.pdf, id=1198, 722.7pt x 542.025pt>
+<Figures/fusedbtbusage.pdf, id=1207, 722.7pt x 542.025pt>
 File: Figures/fusedbtbusage.pdf Graphic file (type pdf)
 
 <use Figures/fusedbtbusage.pdf>
@@ -443,7 +450,7 @@ Package pdftex.def Info: Figures/fusedbtbusage.pdf used on input line 53.
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [16 <E:/University of Toronto/masters/thesis/Figures/fusedbtbusage.pdf>]
-<Figures/GSelectCP.pdf, id=1224, 1084.05pt x 939.51pt>
+<Figures/GSelectCP.pdf, id=1234, 1084.05pt x 939.51pt>
 File: Figures/GSelectCP.pdf Graphic file (type pdf)
 
 <use Figures/GSelectCP.pdf>
@@ -456,14 +463,14 @@ Chapter 4.
 
 
 
-] <Figures/perceptronTable.pdf, id=1349, 722.7pt x 542.025pt>
+] <Figures/perceptronTable.pdf, id=1359, 722.7pt x 542.025pt>
 File: Figures/perceptronTable.pdf Graphic file (type pdf)
 
 <use Figures/perceptronTable.pdf>
 Package pdftex.def Info: Figures/perceptronTable.pdf used on input line 15.
 (pdftex.def)             Requested size: 404.71149pt x 354.12172pt.
 
-<Figures/perceptronMult.pdf, id=1353, 722.7pt x 542.025pt>
+<Figures/perceptronMult.pdf, id=1363, 722.7pt x 542.025pt>
 File: Figures/perceptronMult.pdf Graphic file (type pdf)
 
 <use Figures/perceptronMult.pdf>
@@ -477,7 +484,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [21 <E:/University of Toronto/masters/thesis/Figures/perceptronMult.pdf>]
-<Figures/perceptronStructure.pdf, id=1525, 722.7pt x 542.025pt>
+<Figures/perceptronStructure.pdf, id=1535, 722.7pt x 542.025pt>
 File: Figures/perceptronStructure.pdf Graphic file (type pdf)
 
 <use Figures/perceptronStructure.pdf>
@@ -492,7 +499,7 @@ Chapter 5.
 
 
 
-] <Figures/target_mpki.pdf, id=1764, 845.07718pt x 597.55246pt>
+] <Figures/target_mpki.pdf, id=1775, 845.07718pt x 597.55246pt>
 File: Figures/target_mpki.pdf Graphic file (type pdf)
 
 <use Figures/target_mpki.pdf>
@@ -502,27 +509,27 @@ Package pdftex.def Info: Figures/target_mpki.pdf used on input line 25.
 Underfull \vbox (badness 6825) has occurred while \output is active []
 
  [28 <E:/University of Toronto/masters/thesis/Figures/target_mpki.pdf>]
-<Figures/direction_mpki.pdf, id=1778, 597.55246pt x 845.07718pt>
+<Figures/direction_mpki.pdf, id=1789, 597.55246pt x 845.07718pt>
 File: Figures/direction_mpki.pdf Graphic file (type pdf)
 
 <use Figures/direction_mpki.pdf>
 Package pdftex.def Info: Figures/direction_mpki.pdf used on input line 34.
 (pdftex.def)             Requested size: 316.17987pt x 172.53703pt.
 
-<Figures/Fmax.pdf, id=1784, 597.55246pt x 845.07718pt>
+<Figures/Fmax.pdf, id=1795, 597.55246pt x 845.07718pt>
 File: Figures/Fmax.pdf Graphic file (type pdf)
  <use Figures/Fmax.pdf>
 Package pdftex.def Info: Figures/Fmax.pdf used on input line 41.
 (pdftex.def)             Requested size: 361.35138pt x 225.88676pt.
 
 [29 <E:/University of Toronto/masters/thesis/Figures/direction_mpki.pdf>]
-<Figures/ipc.pdf, id=1799, 845.07718pt x 597.55246pt>
+<Figures/ipc.pdf, id=1810, 845.07718pt x 597.55246pt>
 File: Figures/ipc.pdf Graphic file (type pdf)
  <use Figures/ipc.pdf>
 Package pdftex.def Info: Figures/ipc.pdf used on input line 46.
 (pdftex.def)             Requested size: 316.17987pt x 144.8029pt.
 
-<Figures/ips.pdf, id=1803, 597.55246pt x 845.07718pt>
+<Figures/ips.pdf, id=1814, 597.55246pt x 845.07718pt>
 File: Figures/ips.pdf Graphic file (type pdf)
  <use Figures/ips.pdf>
 Package pdftex.def Info: Figures/ips.pdf used on input line 49.
@@ -530,14 +537,14 @@ Package pdftex.def Info: Figures/ips.pdf used on input line 49.
 
 [30 <E:/University of Toronto/masters/thesis/Figures/Fmax.pdf> <E:/University o
 f Toronto/masters/thesis/Figures/ipc.pdf>]
-<Figures/perceptronMPKI.pdf, id=1834, 845.07718pt x 597.55246pt>
+<Figures/perceptronMPKI.pdf, id=1845, 845.07718pt x 597.55246pt>
 File: Figures/perceptronMPKI.pdf Graphic file (type pdf)
 
 <use Figures/perceptronMPKI.pdf>
 Package pdftex.def Info: Figures/perceptronMPKI.pdf used on input line 60.
 (pdftex.def)             Requested size: 722.21666pt x 207.29442pt.
 
-<Figures/perceptronHOB.pdf, id=1837, 845.07718pt x 597.55246pt>
+<Figures/perceptronHOB.pdf, id=1848, 845.07718pt x 597.55246pt>
 File: Figures/perceptronHOB.pdf Graphic file (type pdf)
 
 <use Figures/perceptronHOB.pdf>
@@ -547,7 +554,7 @@ Package pdftex.def Info: Figures/perceptronHOB.pdf used on input line 63.
 Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no ™ in font cmr10!
- <Figures/tageMPKI.pdf, id=1860, 845.07718pt x 597.55246pt>
+ <Figures/tageMPKI.pdf, id=1871, 845.07718pt x 597.55246pt>
 File: Figures/tageMPKI.pdf Graphic file (type pdf)
 
 <use Figures/tageMPKI.pdf>
@@ -555,14 +562,14 @@ Package pdftex.def Info: Figures/tageMPKI.pdf used on input line 70.
 (pdftex.def)             Requested size: 722.21669pt x 221.74707pt.
  [32 <E:/University of Toronto/masters/thesis/Figures/perceptronMPKI.pdf> <E:/U
 niversity of Toronto/masters/thesis/Figures/perceptronHOB.pdf>] <Figures/admpki
-.pdf, id=1891, 845.07718pt x 597.55246pt>
+.pdf, id=1902, 845.07718pt x 597.55246pt>
 File: Figures/admpki.pdf Graphic file (type pdf)
 
 <use Figures/admpki.pdf>
 Package pdftex.def Info: Figures/admpki.pdf used on input line 76.
 (pdftex.def)             Requested size: 718.60297pt x 207.29442pt.
 
-<Figures/adfmax.pdf, id=1894, 597.55246pt x 845.07718pt>
+<Figures/adfmax.pdf, id=1905, 597.55246pt x 845.07718pt>
 File: Figures/adfmax.pdf Graphic file (type pdf)
 
 <use Figures/adfmax.pdf>
@@ -570,21 +577,21 @@ Package pdftex.def Info: Figures/adfmax.pdf used on input line 81.
 (pdftex.def)             Requested size: 471.07884pt x 136.83066pt.
  [33 <E:/University of Toronto/masters/thesis/Figures/tageMPKI.pdf> <E:/Univers
 ity of Toronto/masters/thesis/Figures/admpki.pdf>]
-<Figures/adipc.pdf, id=1938, 845.07718pt x 597.55246pt>
+<Figures/adipc.pdf, id=1949, 845.07718pt x 597.55246pt>
 File: Figures/adipc.pdf Graphic file (type pdf)
 
 <use Figures/adipc.pdf>
 Package pdftex.def Info: Figures/adipc.pdf used on input line 88.
 (pdftex.def)             Requested size: 718.60297pt x 185.61325pt.
 
-<Figures/adips.pdf, id=1941, 845.07718pt x 597.55246pt>
+<Figures/adips.pdf, id=1952, 845.07718pt x 597.55246pt>
 File: Figures/adips.pdf Graphic file (type pdf)
 
 <use Figures/adips.pdf>
 Package pdftex.def Info: Figures/adips.pdf used on input line 91.
 (pdftex.def)             Requested size: 725.8304pt x 214.52075pt.
  [34 <E:/University of Toronto/masters/thesis/Figures/adfmax.pdf>] <Figures/ada
-rea.pdf, id=1972, 845.07718pt x 597.55246pt>
+rea.pdf, id=1983, 845.07718pt x 597.55246pt>
 File: Figures/adarea.pdf Graphic file (type pdf)
 
 <use Figures/adarea.pdf>
@@ -599,7 +606,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [35 <E:/University of Toronto/masters/thesis/Figures/adipc.pdf> <E:/University
  of Toronto/masters/thesis/Figures/adips.pdf> <E:/University of Toronto/masters
-/thesis/Figures/adarea.pdf>] <Figures/vsmpki.pdf, id=2042, 845.07718pt x 597.55
+/thesis/Figures/adarea.pdf>] <Figures/vsmpki.pdf, id=2053, 845.07718pt x 597.55
 246pt>
 File: Figures/vsmpki.pdf Graphic file (type pdf)
 
@@ -607,7 +614,7 @@ File: Figures/vsmpki.pdf Graphic file (type pdf)
 Package pdftex.def Info: Figures/vsmpki.pdf used on input line 121.
 (pdftex.def)             Requested size: 722.21666pt x 221.74817pt.
 
-<Figures/vsipc.pdf, id=2044, 597.55246pt x 845.07718pt>
+<Figures/vsipc.pdf, id=2055, 597.55246pt x 845.07718pt>
 File: Figures/vsipc.pdf Graphic file (type pdf)
 
 <use Figures/vsipc.pdf>
@@ -628,32 +635,36 @@ Underfull \vbox (badness 1264) has occurred while \output is active []
 [39] ("E:\University of Toronto\masters\thesis\di-thesis.bbl" [40
 
 
-])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 222.
- [41]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 222.
+] [41])
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 220.
 
-("E:\University of Toronto\masters\thesis\di-thesis.aux"
+[42]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 220.
+ ("E:\University of Toronto\masters\thesis\di-thesis.aux"
 ("E:\University of Toronto\masters\thesis\introduction.aux")
 ("E:\University of Toronto\masters\thesis\background.aux")
 ("E:\University of Toronto\masters\thesis\minimal.aux")
 ("E:\University of Toronto\masters\thesis\advanced.aux")
 ("E:\University of Toronto\masters\thesis\evaluation.aux")
 ("E:\University of Toronto\masters\thesis\conclusion.aux"))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 222.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 222.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 220.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 220.
 Package rerunfilecheck Info: File `di-thesis.out' has not changed.
-(rerunfilecheck)             Checksum: 8E4A53DB21DE8C1670BC5F51330FDDDF;3349.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 222.
+(rerunfilecheck)             Checksum: 5D188E5AABF592CD6167CD10BE21490A;3410.
+
+
+LaTeX Warning: There were undefined references.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 220.
  ) 
 Here is how much of TeX's memory you used:
- 6149 strings out of 493921
- 94305 string characters out of 3144876
- 181218 words of memory out of 3000000
- 9167 multiletter control sequences out of 15000+200000
+ 6158 strings out of 493921
+ 94403 string characters out of 3144876
+ 180335 words of memory out of 3000000
+ 9172 multiletter control sequences out of 15000+200000
  10545 words of font info for 37 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 30i,11n,34p,1490b,430s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 30i,11n,34p,1491b,430s stack positions out of 5000i,500n,10000p,200000b,50000s
 <D:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbsy10.pfb
 ><D:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cmextra/cmbsy5.
 pfb><D:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cmextra/cmbs
@@ -678,9 +689,9 @@ iKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy5.pfb><D:/Program Files (x86)/MiKT
 eX 2.9/fonts/type1/public/amsfonts/cm/cmsy7.pfb><D:/Program Files (x86)/MiKTeX 
 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb><D:/Program Files (x86)/MiKTeX 2.
 9/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on di-thesis.pdf (49 pages, 3977452 bytes).
+Output written on di-thesis.pdf (50 pages, 3985755 bytes).
 PDF statistics:
- 2217 PDF objects out of 2487 (max. 8388607)
- 155 named destinations out of 1000 (max. 500000)
- 677 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 2233 PDF objects out of 2487 (max. 8388607)
+ 159 named destinations out of 1000 (max. 500000)
+ 685 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -42,7 +42,7 @@
 %% *** Add any desired options. ***
 \documentclass[doublespaced]{ut-thesis}
 \usepackage{graphicx}
- 
+
 \usepackage{hyperref}
 \hypersetup{
   colorlinks   = true, %Colours links instead of ugly boxes
@@ -135,8 +135,7 @@
 \begin{abstract}
 %% *** Put your Abstract here. ***
 %% (At most 150 words for M.Sc. or 350 words for Ph.D.)
-Branch prediction has been extensively studied in the context of application specific custom logic (ASIC) implementations. Since the tradeoffs are different for reconfigurable logic, na\"ively porting ASIC-based branch predictors to FPGAs may prove slow and/or resource-inefficient. Accordingly, this work studies the FPGA implementation of several commonly used branch predictor designs and does so in the context of simple pipelined processors, the most commonly used general purpose soft processor architecture due to its excellent balance of performance and resource cost. For this purpose, it assumes a pipelined processor implementation representative of Altera's Nios~II-f~\cite{niosii} and investigates the performance and resource cost of various branch predictors. The analysis confirms that existing designs are not efficient nor high-performing on reconfigurable logic. Accordingly, this work proposes FPGA-specific modifications that improve accuracy, resource cost, or both.
-
+Branch prediction has been extensively studied in the context of application specific custom logic (ASIC) implementations. Since the tradeoffs are different for reconfigurable logic, na\"ively porting ASIC-based branch predictors to FPGAs may prove slow and/or resource-inefficient. Accordingly, this work studies the FPGA implementation of several commonly used branch predictor designs and does so in the context of simple pipelined processors, the most commonly used general purpose soft processor architecture due to its excellent balance of performance and resource cost. For this purpose, it assumes a pipelined processor implementation representative of Altera's Nios~II-f~\cite{niosii} and investigates the performance and resource cost of various branch predictors. The analysis confirms that existing designs are not efficient nor high-performing on reconfigurable logic. Accordingly, this work proposes FPGA-specific modifications that improve accuracy, resource cost, or both. Finally, this work proposes a minimalistic branch predictor \textit{gRselect} with the same hardware budget as Nios~II-f, as well as an overriding TAGE~\cite{override}\cite{tage} predictor \mbox{\textit{O-TAGE-SC}} that delivers the highest performance amongst all the considered branch prediction schemes. 
 
 \end{abstract}
 
@@ -159,10 +158,9 @@ Branch prediction has been extensively studied in the context of application spe
 %% (uncomment to have it appear in the document).
 \begin{acknowledgements}
 %% *** Put your Acknowledgements here. ***
-TODO: put acknoledgements here
+I have been fortunate enough to receive enormous help and support while completing this thesis. Firstly, I would like to express my deepest gratitude to my supervisor, Prof. Andreas Moshovos, for his unending guidance and support. Secondly, it has been my great pleasure to work with all the members of the AENAO research group for their feedbacks throughout this work. Special thanks to Kaveh Aasaraai and Ian Katsuno for their unreserved help on FPGA technologies.
 
-
-????????? 
+Finally, I would like to thank my parents for all the unconditioned love and support during my undergraduate and graduate studies. Moreover, a heartful thank you to my beloved girlfriend Mengyun Shen for always being there cheering me up, I cannot imagine finishing this work without your constant understanding and faith in me.
 \end{acknowledgements}
 
 %% This generates the Table of Contents (on a separate page).

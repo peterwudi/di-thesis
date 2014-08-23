@@ -1,9 +1,9 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {2.1}{\ignorespaces Canonical Branch Predictor.}}{5}{figure.2.1}
-\contentsline {figure}{\numberline {2.2}{\ignorespaces Bimodal, Gshare and Gselect.}}{6}{figure.2.2}
-\contentsline {figure}{\numberline {2.3}{\ignorespaces The Perceptron branch predictor.}}{7}{figure.2.3}
-\contentsline {figure}{\numberline {2.4}{\ignorespaces A 5-component TAGE branch predictor.}}{8}{figure.2.4}
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Canonical Branch Predictor.}}{6}{figure.2.1}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Bimodal, Gshare and Gselect.}}{7}{figure.2.2}
+\contentsline {figure}{\numberline {2.3}{\ignorespaces The Perceptron branch predictor.}}{8}{figure.2.3}
+\contentsline {figure}{\numberline {2.4}{\ignorespaces A 5-component TAGE branch predictor.}}{10}{figure.2.4}
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {3.1}{\ignorespaces BTB with Full Address Calculation.}}{12}{figure.3.1}
 \contentsline {figure}{\numberline {3.2}{\ignorespaces Branch Target Type Distribution.}}{13}{figure.3.2}
