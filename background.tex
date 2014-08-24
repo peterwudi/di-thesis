@@ -1,6 +1,6 @@
-\chapter{Background and Goals}
+\chapter{Background}
 \label{chap:background}
-This chapter reviews branch prediction basics and relevant past work. Section~\ref{sec:background:whybp} introduces the importance of branch prediction. Section~\ref{sec:background:bpoverview} describes the structure of a canonical branch predictor. Sections~\ref{sec:background:target} and~\ref{sec:background:dirpred} overviews the branch prediction schemes considered in this thesis. Section~\ref{sec:background:fpga} briefly introduces Field Programmable Gate Arrays (FPGAs) and soft processors. Finally, Section~\ref{sec:background:goal} presents the goal of this thesis. 
+This chapter reviews branch prediction basics and relevant past work. Section~\ref{sec:background:whybp} introduces the importance of branch prediction. Section~\ref{sec:background:bpoverview} describes the structure of a canonical branch predictor. Sections~\ref{sec:background:target} and~\ref{sec:background:dirpred} overviews the branch prediction schemes considered in this thesis. Finally, Section~\ref{sec:background:fpga} briefly introduces Field Programmable Gate Arrays (FPGAs) and soft processors.
 
 \section{Why Branch Prediction?}
 \label{sec:background:whybp}
@@ -26,7 +26,7 @@ Another common structure used for branch target prediction is the Return Address
 
 \section{Branch Direction Prediction}
 \label{sec:background:dirpred}
-This section describes the branch direction predictors. This section first briefly reviews \textit{static} prediction schemes. Then, it reviews \textit{dynamic} prediction schemes, starting with the simple schemes such as bimodal, gshare and gselect~\cite{McFarling}, to more complex schemes such as Perceptron~\cite{perceptron} and TAGE~\cite{tage}.
+This section describes the branch direction predictors. This section first briefly reviews \textit{static} prediction schemes. Then, it reviews \textit{dynamic} prediction schemes, starting with the simple schemes such as bimodal~\cite{bimodal}, gshare and gselect~\cite{McFarling}, to more complex schemes such as Perceptron~\cite{perceptron} and TAGE~\cite{tage}.
 
 \subsection{Static Prediction Scheme}
 \label{sec:background:dirpred:static}

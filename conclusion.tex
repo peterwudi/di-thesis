@@ -11,6 +11,6 @@ In summary, this thesis makes the following contributions:
 
 (3)~This thesis shows that scaling bimodal, gshare and gRselect up to 32KB improves IPC marginally, but slows down the predictor significantly. The best performing bimodal, gshare and gRselect configurations all uses 1KB hardware budget.
 
-(4)~This thesis studies the FPGA implementations of the state-of-the-art direction Perceptron and TAGE branch predictors. Several FPGA implementation optimization techniques were proposed to achieve high operating frequency. It explored the designs tradeoffs of Perceptron and TAGE, and proposed \mbox{O-TAGE-SC}, an overriding predictor that delivers 5.2\% better instruction throughput over the 1KB gRselect.
+(4)~This thesis studies the FPGA implementations of the state-of-the-art Perceptron and TAGE branch direction predictors. Several FPGA implementation optimization techniques were proposed to achieve high operating frequency. It explored the designs tradeoffs of Perceptron and TAGE, and proposed \mbox{O-TAGE-SC}, an overriding predictor that delivers 5.2\% better instruction throughput over the 1KB gRselect.
 
 Although \mbox{O-TAGE-SC} is \mytilde 3x more accurate than the 1KB gRselect, the IPS improvement is  smaller due to the processor's simple in-order pipeline. Future work may consider investigating the benefits of implementing \mbox{O-TAGE-SC} for more elaborated soft processors, e.g., an Out-of-Order soft processor. 

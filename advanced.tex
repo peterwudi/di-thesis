@@ -44,7 +44,7 @@ Cadenas et al. proposed a method to rearrange the weights stored in the table in
 \end{center}
 \end{table}
 
-This new arrangement pushes part of the calculation to the less time critical update logic of the Perceptron predictor so that only $h/2$ additions have to be performed, hence reduces the number of adders required by 50\%. However, if we look at its implementation closely, this new arrangement \textit{selects} whether the sum or the difference of original weights $w_i$ and $w_{i+1}$, where $i = 1,3,5,...h-1$, should be calculated. That is, the $h/2$ adders saved during prediction are \textit{replaced} with the same number of multiplexers. The latency difference between 3-bit 2-to-1 muxes and 3-bit adders are negligibly small, which seems to trivialize the usefulness of this arrangement. However, as Section~\ref{sec:advanced:perceptron:structure} will show, this layer of muxes combined with the muxes shown in Fig.~\ref{fig:perceptronMult} map well on FPGAs, therefore it still proves to be beneficial to use this arrangement.
+However, if we look at its implementation closely, this new arrangement \textit{selects} whether the sum or the difference of original weights $w_i$ and $w_{i+1}$, where $i = 1,3,5,...h-1$, should be calculated. That is, the $h/2$ adders saved during prediction are \textit{replaced} with the same number of multiplexers. The latency difference between 3-bit 2-to-1 muxes and 3-bit adders are negligibly small, which seems to trivialize the usefulness of this arrangement. However, as Section~\ref{sec:advanced:perceptron:structure} will show, this layer of muxes combined with the muxes shown in Fig.~\ref{fig:perceptronMult} map well on FPGAs, therefore it still proves to be beneficial to use this arrangement.
 
 Using fast adders such as carry-lookahead adders does not help to reduce the adder tree latency as the problem is not summing few very wide numbers, but many narrow numbers. Most of the latency comes from going through layers of adders rather than propagating the carry bits. To further improve maximum frequency, this work adapts the implementation of a Wallace Tree~\cite{wallacetree}. A Wallace tree is a hardware implementation of a digital circuit that efficiently sums the partial products when multiplying two integers, which is similar to what  is needed in Perceptron. The Wallace tree implementation proves to be 10.5\% faster than a na\"ive binary reduction tree implementation. 
 
@@ -76,7 +76,7 @@ As a result, this work proposes four TAGE-based designs that use one or two cycl
 
 \kfig{tageconfig.pdf}{fig:tageconfig}{The four TAGE-based designs: (a) single-cycle TAGE, (b) single-cycle TAGE-SC, (c) O-TAGE, and (d) O-TAGE-SC.}{angle = 0, trim = 0in 0in 2.4in 0in, clip, width=0.9\textwidth}
 
-The specific configuration parameters are summarized in Table.~\ref{tab:tageconfig}. 
+The specific configuration parameters of the original TAGE are summarized in Table.~\ref{tab:tageconfig}. 
 
 \begin{table}[h]
 \begin{center}
@@ -104,7 +104,7 @@ $T_{12}$ & 10 Kbits\\ \hline
 \label{sec:advanced:target}
 Chapter~\ref{chap:minimal} has shown that when using one M9K BRAM -- a hardware budget on par with that of Nios~II-f -- eliminating the BTB and using \textit{Full Address Calculation} (FAC) together with a RAS results in better performance~\cite{grselect}. It has also shown that direct branches and returns comprise over 99.8\% of all branches. Implementing FAC with RAS can cover these branches with 100\% accuracy, therefore having a BTB to cover all branches results in negligible improvement in target prediction accuracy.
 
-Since, this chapter investigates how branch prediction accuracy can improve when additional hardware resources are used, adding a BTB for better target prediction coverage could improve target prediction accuracy. Accordingly, we consider reintroducing a BTB. However, simulations show that accuracy is still better without a BTB\footnotemark\footnotetext{These simulation resutls are not included in this thesis.}. This is because when the target predictor only has FAC and RAS, it never predicts indirect branches that are not returns because it is not capable to do so. As a result, the destructive aliasing in the \textit{direction} predictor is alleviated because fewer branches are being predicted. Based on this observation, the Perceptron and TAGE predictors in this chapter also uses FAC with a 16-entry RAS as the branch target predictor.
+Since, this chapter investigates how branch prediction accuracy can improve when additional hardware resources are used, adding a BTB for better target prediction coverage could improve target prediction accuracy. Accordingly, we consider reintroducing a BTB. However, simulations show that accuracy is still better without a BTB\footnote[1]{These simulation resutls are not included in this thesis.}. This is because when the target predictor only has FAC and RAS, it never predicts indirect branches that are not returns because it is not capable to do so. As a result, the destructive aliasing in the \textit{direction} predictor is alleviated because fewer branches are being predicted. Based on this observation, the Perceptron and TAGE predictors in this chapter also uses FAC with a 16-entry RAS as the branch target predictor.
 
 
 
