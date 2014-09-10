@@ -41,7 +41,7 @@ Altera Corporation.
 \bibitem{perceptronRearrange}
 O.~Cadenas, G.~Megson, and D.~Jones.
 \newblock A new organization for a perceptron-based branch predictor and its
-  fpga implementation.
+  {FPGA} implementation.
 \newblock In {\em Proc. IEEE Computer Society Annual Symposium on VLSI.}, pages
   305--306, May 2005.
 
@@ -120,7 +120,7 @@ Xilinx Inc.
 
 \bibitem{virtex}
 Xilinx Inc.
-\newblock {\em 7 Series FPGAs Overview}, Feb. 2014.
+\newblock {\em 7 Series {FPGA}s Overview}, Feb. 2014.
 
 \bibitem{pht}
 Tse-Yu Yeh and Yale~N. Patt.
@@ -132,7 +132,7 @@ Tse-Yu Yeh and Yale~N. Patt.
 
 \bibitem{softprocessor}
 Peter Yiannacouras, Jonathan Rose, and J~Gregory Steffan.
-\newblock The microarchitecture of fpga-based soft processors.
+\newblock The microarchitecture of {FPGA}-based soft processors.
 \newblock In {\em Proceedings of the 2005 international conference on
   Compilers, architectures and synthesis for embedded systems}, pages 202--212.
   ACM, 2005.

@@ -1,11 +1,11 @@
-\chapter{Conclusion}
+\chapter{Conclusions}
 \label{chap:conclusion}
 
 This thesis studied the implementation of branch predictors for general purpose soft processors. It targeted high frequency and high accuracy branch predictors for pipelined processors, and explored various branch predictor designs. These designs were combinations of a branch target buffer, a return address stack, commonly used simple and advanced direction predictors, pre-decoding, in-fetch instruction decoding, and target address calculation. Several FPGA-specific optimizations were proposed resulting in a branch predictor that is FPGA-friendly in that it offers high accuracy and high operating frequency.
 
 In summary, this thesis makes the following contributions:
 
-(1)~This thesis explores the tradeoffs of various combination of structures for branch target prediction on FPGAs. It has shown that eliminating the BTB and using the combination of FAC and RAS as the branch target predictor is the best design for both the minimalistic predictor and the more advance \mbox{O-TAGE-SC}.
+(1)~This thesis explores the tradeoffs of various combinations of structures for branch target prediction on FPGAs. It has shown that eliminating the BTB and using the combination of FAC and RAS as the branch target predictor is the best design for both the minimalistic predictor and the more advanced \mbox{O-TAGE-SC}.
 
 (2)~This thesis studies the FPGA implementations of bimodal, gshare and gselect. It identifies the critical paths of these predictors. Accordingly, this thesis proposes a FPGA-friendly predictor gRselect that reverses the order of indexing to improve maximum operating frequency. It has shown that within the same hardware budget, gRselect together with FAC+RAS is the best performing branch predictor.
 
@@ -13,4 +13,6 @@ In summary, this thesis makes the following contributions:
 
 (4)~This thesis studies the FPGA implementations of the state-of-the-art Perceptron and TAGE branch direction predictors. Several FPGA implementation optimization techniques were proposed to achieve high operating frequency. It explored the designs tradeoffs of Perceptron and TAGE, and proposed \mbox{O-TAGE-SC}, an overriding predictor that delivers 5.2\% better instruction throughput over the 1KB gRselect.
 
-Although \mbox{O-TAGE-SC} is \mytilde 3x more accurate than the 1KB gRselect, the IPS improvement is  smaller due to the processor's simple in-order pipeline. Future work may consider investigating the benefits of implementing \mbox{O-TAGE-SC} for more elaborated soft processors, e.g., an Out-of-Order soft processor. 
+Because an FPGA is a very different substrate than an ASIC, the design tradeoffs must be re-evaluated when designing branch predictors for soft processors. Not only the structures of the branch predictors must map well onto FPGAs, techniques that are impractical on an ASIC should also be considered.
+
+Although \mbox{O-TAGE-SC} is \mytilde 3x more accurate than the 1KB gRselect, the IPS improvement is much smaller due to the processor's simple in-order pipeline. Considering more accurate branch predictors such as the ISL-TAGE for Nios~II would only improve IPS marginally. This work recommends the 1KB FAC+RAS with gRselect for Nios~II-f because the 5.2\% improvement does not justify the 32x more storage used. Future work may consider investigating the benefits of implementing \mbox{O-TAGE-SC} for more elaborate soft processors, e.g., an Out-of-Order soft processor, which requires a more accurate branch predictor.
